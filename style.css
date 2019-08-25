@@ -1,0 +1,136 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Amatic SC', cursive;
+}
+
+#mappage {
+    background: white;
+    height: 94vh;
+    display: flex;
+    flex-direction: column;
+    padding: 3vh;
+}
+
+#mainmapview {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    height: 1px;
+}
+
+    #sidebar {
+        width: 400px;
+        height: 100%;
+        background-color: rgb(209, 209, 209);
+        margin-right: 1.5vh;
+        border-radius: 10px;
+    } 
+
+    #sidebarcolumn {
+        flex-direction: column;
+        display: flex;
+        height: 100%;
+    }
+
+    #sidebarfilter {
+        height: 200px;
+    }
+
+    #sidebarlistitems {
+        overflow-y: auto;
+    }
+
+    .sidebarlistitem {
+        background: rgb(180, 180, 180);
+        height: 160px;
+        margin: 0 5px 10px 10px;
+        font-family: 'Lato', sans-serif;
+        display: flex;
+        flex-direction: row;
+        color: #005f00;
+    }
+
+    .sidebarlistitem img {
+        height:160px;
+        width: 160px;
+        object-fit: cover;
+        flex-shrink: 0;
+    }
+
+    .sidebartext h3 {
+        margin: 0;
+        color: #005f00;
+        font-family: 'Lato', sans-serif;
+        font-size: 18px;
+    }   
+
+    .sidebartext p {
+        margin: 10px 0;
+    }
+
+    .sidebartext {
+        padding: 10px; 
+        font-size: 15px;
+    }
+
+    .address {
+        color: #019701;
+    }
+
+    #mapid {
+    flex-grow: 1;
+    border-radius: 10px;
+    }
+
+#top-bar {
+    background-color: none;
+    text-align: center;
+    color: #74BF04;
+    font-weight: bold;
+    padding: 15px;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Amatic SC', cursive;    
+}
+
+    #logotest {
+        height: 120px;
+    }
+
+    #top-bar h1 {
+        margin: 0;
+    }
+
+    #top-bar ul {
+        list-style: none;
+        padding: 0;
+        margin:0 ;
+    }
+
+    #top-bar li {
+        display: inline-block;
+        margin-left: 10px;
+    }
+
+    #topbarleft {
+        width: 400px;
+    }
+
+    #topbarright {
+        flex-grow: 1;
+        text-align: right;
+        font-size: 4vh;
+    }
+
+    #topbarright li a {
+        text-decoration: none;
+        color: #74BF04;
+    }
+
