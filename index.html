@@ -7,7 +7,7 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
-	<link rel="shortcut icon" type="image/x-icon" href="Images/favicon.png" />
+	<link rel="shortcut icon" type="image/x-icon" href="Images/static/favicon.png" />
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
     <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
@@ -22,10 +22,7 @@
 	<div id="top-bar"> 
 		
 		<div id="topbarleft">
-			<!-- <h1>Green Living Brighton</h1>
-			<img id="leaf2" src="Images/leaf2.svg"/>
-			<img id="leaf1" src="Images/leaf1.svg"/> -->
-			<img id="logotest" src="Images/logotest.svg"/>
+			<img id="logo" src="Images/static/fulllogo.svg"/>
 		</div>
 
 		<div id="topbarright"><ul>
@@ -41,101 +38,29 @@
 			
 			<div id="sidebarcolumn">
 
-				<div id="sidebarfilter"></div>
+				<div id="primarysidebar"> 
+					<div id="sidebarfilter"></div>
 
-				<div id="sidebarlistitems">
-					
-					<div class="sidebarlistitem"> 
-						<img src="Images/harrietsofhove1.jpg"/>	
-						<div class="sidebartext">
-							<h3>Harriet's of Hove</h3>
-							<p class="address">48 Blatchington Road, Hove, BN3 3YH</p>
-							<p>Plastic free pantry and refill store</p>
-						</div>		
-					</div>
-
-					<div class="sidebarlistitem"> 
-						<img src="Images/hisbefrontstore.jpg"/>	
-						<div class="sidebartext">
-							<h3>HISBE</h3>
-							<p class="address">20-21 York Place, Brighton, BN1 4GU</p>
-							<p>Plastic free pantry and refill store</p>
-						</div>		
-					</div>
-
-					<div class="sidebarlistitem"> 
-						<img src="Images/storebrightonlogo.png"/>	
-						<div class="sidebartext">
-							<h3>Store</h3>
-							<p class="address">253E Ditchling Road, Brighton, BN1 6JD</p>
-							<p>Plastic free pantry and refill store</p>
-						</div>		
-					</div>
-
-					<div class="sidebarlistitem"> 
-						<img src="Images/woodstorefront.jpg"/>	
-						<div class="sidebartext">
-							<h3>The Wood Store Brighton</h3>
-							<p class="address">Elder Place, Brighton, BN1 4GY</p>
-							<p>Recycled and reclaimed wood and furniture</p>
-						</div>		
-					</div>
-
-					<div class="sidebarlistitem"> 
-						<img src="Images/backwoodcafe.jpg"/>	
-						<div class="sidebartext">
-							<h3>BackWood Sustainable Cafe</h3>
-							<p class="address">3-4 Circus Parade, Brighton, BN1 4GW</p>
-							<p>Zero waste to landfill, sustainable produce cafe</p>
-						</div>
-					</div>
-
-					<div class="sidebarlistitem"> 
-						<img src="Images/wastenot.jpg"/>	
-						<div class="sidebartext">
-							<h3>Wastenot</h3>
-							<p class="address">3-4 Circus Parade, Brighton, BN1 4GW</p>
-							<p>Plastic free pantry and refill store</p>
-						</div>
-					</div>
-
-					<div class="sidebarlistitem"> 
-							<img src="Images/thecaptainpig.jpg"/>	
-							<div class="sidebartext">
-								<h3>The Captain Pig</h3>
-								<p class="address">10 Church Street, Brighton, BN1 1US </p>
-								<p>Vegan store with refill section and plastic free options</p>
-							</div>
-					</div>
-
-					<div class="sidebarlistitem"> 
-							<img src="Images/earthandstars.jpg"/>	
-							<div class="sidebartext">
-								<h3>The Earth & Stars Pub</h3>
-								<p class="address">46 Windsor Street, Brighton, BN1 1RJ</p>
-								<p>Eco-friendly pub with plenty of vegan options</p>
-							</div>
-					</div>
-
-					<div class="sidebarlistitem"> 
-							<img src="Images/responsibletravel.jpg"/>	
-							<div class="sidebartext">
-								<h3>Responsible Travel</h3>
-								<p class="address">46 Windsor Street, Brighton, BN1 1RJ</p>
-								<p>Travel company with a strong emphasis on eco-friendly and ethnical travel</p>
-							</div>
-					</div>
-
-					<div class="sidebarlistitem"> 
-						<img src="Images/v360.jpg"/>	
-						<div class="sidebartext">
-							<h3>V360</h3>
-							<p class="address">Kings Road Arches, 112, Brighton BN1 2LN</p>
-							<p>Vegan icecream and sorbet shop</p>
-						</div>
+					<div id="sidebarlistitems"></div>
 				</div>
-
+			
+				<div id="popupsidebar">
+					<img class="icon" onclick="hideHiddenSidebar()" src="Images/static/backarrow.svg"/>
+					<div>
+						<img class= "businesslogo" src="Images/media/harrietsofhoveroundlogo.png"/>
+						<h1>Harriet's of Hove</h1>
+						<p>Harriet’s of Hove is a food, toiletries and kitchen products refills store with a difference. It is the only completely plastic free packaging shop in Hove and offers shoppers a new experience.
+							<br></br>
+							As well as refills, Harriet’s of Hove offers unpackaged seasonal vegetables, a wide range of bamboo products and many more sustainable items for people to rid unnecessary plastics from their daily lives. Whether you are a sustainability expert or simply curious about the environment, Harriet’s of Hove will offer something for everyone, with the focus on helping our Planet.
+						</p>
+							<div class="hiddenimagesrow">	
+								<img class="hiddenimages" src="Images/media/harrietsofhove2.jpg"/>
+								<img class="hiddenimages" src="Images/media/harrietsofhove3.jpg"/>
+								<img class="hiddenimages" src="Images/media/harrietsofhove1.jpg"/>
+							</div>
+					</div>
 				</div>
+				
 			</div>
 		</div>
 
@@ -145,7 +70,102 @@
 </div>
 
 <script>
+	var places = [
+		{
+			name: "Harriet's of Hove",
+			coords: [50.8313074,-0.1751294],
+			address: "48 Blatchington Road, Hove, BN3 3YH",
+			shortdescription: "Plastic free pantry and refill store",
+			thumbnail: "Images/media/harrietsofhove1.jpg",
+		},
+		{
+			name: "HISBE",
+			coords: [50.8288957,-0.1357773],
+			address: "20-21 York Place, Brighton, BN1 4GU",
+			shortdescription: "Plastic free pantry and refill store",
+			thumbnail: "Images/media/hisbefrontstore.jpg",	
+		},
+		{
+			name: "Wastenot",
+			coords: [50.831654,-0.1354634],
+			address: "Unit 9, Brighton Open Market, Marshalls Row, BN1 4JU",
+			shortdescription: "Plastic free pantry and refill store",
+			thumbnail: "Images/media/wastenot.jpg",	
+		},
+		{
+			name: "Store",
+			coords: [50.8429385,-0.1350116],
+			address: "253E Ditchling Road, Brighton, BN1 6JD",
+			shortdescription: "Plastic free pantry and refill store",
+			thumbnail: "Images/media/storebrightonlogo.png",	
+		},
+		{
+			name: "The Captain Pig",
+			coords: [50.8243355,-0.1405033],
+			address: "10 Church Street, Brighton, BN1 1US",
+			shortdescription: "Vegan store with refill section and plastic free options",
+			thumbnail: "Images/media/thecaptainpig.jpg",	
+		},
+		{
+			name: "The Earth & Stars Pub",
+			coords: [50.8248751,-0.1421102],
+			address: "46 Windsor Street, Brighton, BN1 1RJ",
+			shortdescription: "Eco-friendly pub with plenty of vegan options",
+			thumbnail: "Images/media/earthandstars.jpg",	
+		},
+		{
+			name: "The Wood Store Brighton",
+			coords: [50.832729, -0.138852],
+			address: "Elder Place, Brighton, BN1 4GY",
+			shortdescription: "Recycled and reclaimed wood and furniture",
+			thumbnail: "Images/media/woodstorefront.jpg",	
+		},
+		{
+			name: "BackWood Sustainable Café",
+			coords: [50.833398, -0.139837],
+			address: "3-4 Circus Parade, Brighton, BN1 4GW",
+			shortdescription: "Zero waste to landfill, sustainable produce café",
+			thumbnail: "Images/media/backwoodcafe.jpg",	
+		},
+		{
+			name: "Responsible Travel",
+			coords: [50.8231163,-0.1403466],
+			address: "46 Windsor Street, Brighton, BN1 1RJ",
+			shortdescription: "Travel company with a strong emphasis on eco-friendly and ethnical travel",
+			thumbnail: "Images/media/responsibletravel.jpg",	
+		},
+		{
+			name: "V360 Icecreams",
+			coords: [50.8210303,-0.1480986],
+			address: "Kings Road Arches, 112, Brighton BN1 2LN",
+			shortdescription: "Vegan icecream and sorbet shop",
+			thumbnail: "Images/media/v360.jpg",
+		},
+	]
 
+	function showHiddenSidebar() {
+		var el = document.getElementById('sidebarcolumn')
+		el.className = 'showinghidden'
+	}
+
+	function hideHiddenSidebar() {
+		var el = document.getElementById('sidebarcolumn')
+		el.className = ''
+	}
+
+	var results = document.getElementById("sidebarlistitems")
+	for (var place of places) {
+		var result = document.createElement("div")
+		result.className = "sidebarlistitem"
+		result.innerHTML = "<img src=\"" + place.thumbnail + "\"/>\
+						<div class=\"sidebartext\">\
+							<h3>" + place.name + "</h3>\
+							<p class=\"address\">" + place.address + "</p>\
+							<p>" + place.shortdescription + "</p>\
+						</div>"
+		result.onclick=showHiddenSidebar
+		results.appendChild(result)
+	}
 	var mymap = L.map('mapid').setView([50.840983, -0.137393], 13.3);
 	
 	L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
@@ -156,39 +176,11 @@
 		id: 'mapbox.streets'
 	}).addTo(mymap);
 
-    L.marker([50.8313074,-0.1751294]).addTo(mymap)
-		.bindPopup("<b>Harriet's of Hove</b><br />");
-
-    L.marker([50.8288957,-0.1357773]).addTo(mymap)
-        .bindPopup("<b>HISBE</b><br />");
-     
-    L.marker([50.831654,-0.1354634]).addTo(mymap)
-        .bindPopup("<b>Wastenot</b><br />");
-        
-	L.marker([50.8429385,-0.1350116]).addTo(mymap)
-    .bindPopup("<b>Store</b><br />");
-		
-	L.marker([50.8243355,-0.1405033]).addTo(mymap)
-    .bindPopup("<b>The Captain Pig</b><br />");
-
-	L.marker([50.832729, -0.138852]).addTo(mymap)
-    .bindPopup("<b>The Wood Store</b><br />");
-		
-	L.marker([50.833398, -0.139837]).addTo(mymap)
-    .bindPopup("<b>BackWood Sustainable Café</b><br />");
-
-	L.marker([50.8248751,-0.1421102]).addTo(mymap)
-    .bindPopup("<b>The Earth & Stars pub</b><br />");
-
-	L.marker([50.8231163,-0.1403466]).addTo(mymap)
-    .bindPopup("<b>Responsible Travel</b><br />");
-
-	L.marker([50.8210303,-0.1480986]).addTo(mymap)
-    .bindPopup("<b>V360 Icecreamsl</b><br />");
-
-	var popup = L.popup();
-
-	mymap.on('click', onMapClick);
+	for (var place of places) {
+		var marker = L.marker(place.coords).addTo(mymap)
+		.bindPopup("<b>"+place.name+"</b><br />")
+		.on('click', showHiddenSidebar)
+	}
 
 </script>
 
