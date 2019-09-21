@@ -9,6 +9,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Lato', sans-serif;
+    font-size: 16px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -70,6 +71,7 @@ h1, h2, h3, h4, h5, h6 {
         overflow: hidden;
         overflow-y: auto;
         color: #005f00;
+        padding: 10px;
     }
 
     #popupsidebar h1 {
@@ -81,9 +83,9 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .businesslogo {
-        width: 175px;
+        width: 190px;
         float: right;
-        margin: 0px 0px 0px 10px;
+        margin: 15px 0px 0px 0px;
     }
 
     .hiddenimagesrow {
@@ -94,6 +96,56 @@ h1, h2, h3, h4, h5, h6 {
 
     .hiddenimages {
         width: 400px;
+    }
+
+    .storeaddress ul {
+        list-style-image: none;
+        margin-top: 4px;
+        margin-bottom: 14px;
+        margin-left: 0;
+        padding-left: 5px;
+        display: inline-block;
+        max-width: 150px;
+        font-size: 13px;
+    }
+
+    ..storeaddress img {
+        vertical-align: top;
+    }
+
+    .websitelink {
+        font-size: 12.5px;
+    }
+
+    .websitelink ul {
+        list-style-image: none;
+        margin-top: 4px;
+        margin-bottom: 14px;
+        margin-left: 0;
+        padding-left: 5px;
+        display: inline-block;
+        max-width: 150px;
+    }
+
+    .websitelink img {
+        vertical-align: top;
+    }
+
+    .openinghours {
+        list-style: none;
+        font-size: 13px;
+    }
+
+    .openinghours ul {
+        margin-top: 4px;
+        margin-bottom: 14px;
+        margin-left: 0;
+        padding-left: 5px;
+        display: inline-block;
+    }
+
+    .openinghours img {
+        vertical-align: top;
     }
 
     .sidebarlistitem {
@@ -161,7 +213,7 @@ h1, h2, h3, h4, h5, h6 {
     #top-bar ul {
         list-style: none;
         padding: 0;
-        margin:0 ;
+        margin: 0;
     }
 
     #top-bar li {
