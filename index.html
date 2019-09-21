@@ -47,37 +47,24 @@
 				<div id="popupsidebar">
 					<img class="icon" onclick="hideHiddenSidebar()" src="Images/static/backarrow.svg"/>
 					<div>
-						<img class= "businesslogo" src="Images/media/harrietsofhoveroundlogo.png"/>
-						<h1>Harriet's of Hove</h1>
+						<span id="businesslogo"></span>	
+						<h1 id="sidebarplacename"></h1>
 							<div class="storeaddress">
 								<img src="Images/static/business.svg">
-								<ul>48 Blatchington Road, Hove, BN3 3YH</ul>
+								<ul id="storeaddress"></ul>
 							</div>
 							<div class="openinghours">
 								<img src="Images/static/calendarsymbol.svg">
-								<ul>Mon-Thurs 9am-5pm
-									<br>
-									Fri 9am-7pm
-									<br>
-									Sat 10am-5pm
-									<br>
-									Sun 11am-4pm
-								</ul>
+								<ul id="openinghours"></ul>
 							</div>
 							<div class="websitelink">
 									<img src="Images/static/web.svg">
-									<ul><a href="https://harrietsofhove.com/">https://harrietsofhove.com/</a></ul>
+									<ul id="websitelink"></ul>
 							</div>
 							<div class="longdescription">
-								<p>Harriet’s of Hove is a food, toiletries and kitchen products refills store with a difference. It is the only completely plastic free packaging shop in Hove and offers shoppers a new experience.
-								<br></br>
-								As well as refills, Harriet’s of Hove offers unpackaged seasonal vegetables, a wide range of bamboo products and many more sustainable items for people to rid unnecessary plastics from their daily lives. Whether you are a sustainability expert or simply curious about the environment, Harriet’s of Hove will offer something for everyone, with the focus on helping our Planet.
-								</p>
+								<p id="longdescription"></p>
 							</div>
-							<div class="hiddenimagesrow">	
-								<img class="hiddenimages" src="Images/media/harrietsofhove2.jpg"/>
-								<img class="hiddenimages" src="Images/media/harrietsofhove3.jpg"/>
-								<img class="hiddenimages" src="Images/media/harrietsofhove1.jpg"/>
+							<div class="hiddenimagesrow" id="hiddenimagesrow">	
 							</div>
 					</div>
 				</div>
@@ -96,84 +83,144 @@
 			name: "Harriet's of Hove",
 			coords: [50.8313074,-0.1751294],
 			address: "48 Blatchington Road, Hove, BN3 3YH",
-			shortdescription: "Plastic free pantry and refill store",
+			shortDescription: "Plastic free pantry and refill store",
 			thumbnail: "Images/media/harrietsofhove1.jpg",
+			businessLogo: "Images/media/harrietsofhoveroundlogo.png",
+			openingHours: [
+				"Mon-Thurs 9am-5pm",
+				"Fri 9am-7pm",
+				"Sat 10am-5pm",
+				"Sun 11am-4pm",
+			],
+			websiteLink: "https://harrietsofhove.com/",
+			longDescription: [
+				"Harriet’s of Hove is a food, toiletries and kitchen products refills store with a difference. It is the only completely plastic free packaging shop in Hove and offers shoppers a new experience.",
+				"As well as refills, Harriet’s of Hove offers unpackaged seasonal vegetables, a wide range of bamboo products and many more sustainable items for people to rid unnecessary plastics from their daily lives. Whether you are a sustainability expert or simply curious about the environment, Harriet’s of Hove will offer something for everyone, with the focus on helping our Planet.",
+			],
+			photos: [
+				"Images/media/harrietsofhove2.jpg",
+				"Images/media/harrietsofhove3.jpg",
+				"Images/media/harrietsofhove1.jpg",
+			],
 		},
 		{
 			name: "HISBE",
 			coords: [50.8288957,-0.1357773],
 			address: "20-21 York Place, Brighton, BN1 4GU",
-			shortdescription: "Plastic free pantry and refill store",
+			shortDescription: "Plastic free pantry and refill store",
 			thumbnail: "Images/media/hisbefrontstore.jpg",	
 		},
 		{
 			name: "Wastenot",
 			coords: [50.831654,-0.1354634],
 			address: "Unit 9, Brighton Open Market, Marshalls Row, BN1 4JU",
-			shortdescription: "Plastic free pantry and refill store",
+			shortDescription: "Plastic free pantry and refill store",
 			thumbnail: "Images/media/wastenot.jpg",	
 		},
 		{
 			name: "Store",
 			coords: [50.8429385,-0.1350116],
 			address: "253E Ditchling Road, Brighton, BN1 6JD",
-			shortdescription: "Plastic free pantry and refill store",
+			shortDescription: "Plastic free pantry and refill store",
 			thumbnail: "Images/media/storebrightonlogo.png",	
 		},
 		{
 			name: "The Captain Pig",
 			coords: [50.8243355,-0.1405033],
 			address: "10 Church Street, Brighton, BN1 1US",
-			shortdescription: "Vegan store with refill section and plastic free options",
+			shortDescription: "Vegan store with refill section and plastic free options",
 			thumbnail: "Images/media/thecaptainpig.jpg",	
 		},
 		{
 			name: "The Earth & Stars Pub",
 			coords: [50.8248751,-0.1421102],
 			address: "46 Windsor Street, Brighton, BN1 1RJ",
-			shortdescription: "Eco-friendly pub with plenty of vegan options",
+			shortDescription: "Eco-friendly pub with plenty of vegan options",
 			thumbnail: "Images/media/earthandstars.jpg",	
 		},
 		{
 			name: "The Wood Store Brighton",
 			coords: [50.832729, -0.138852],
 			address: "Elder Place, Brighton, BN1 4GY",
-			shortdescription: "Recycled and reclaimed wood and furniture",
+			shortDescription: "Recycled and reclaimed wood and furniture",
 			thumbnail: "Images/media/woodstorefront.jpg",	
 		},
 		{
 			name: "BackWood Sustainable Café",
 			coords: [50.833398, -0.139837],
 			address: "3-4 Circus Parade, Brighton, BN1 4GW",
-			shortdescription: "Zero waste to landfill, sustainable produce café",
+			shortDescription: "Zero waste to landfill, sustainable produce café",
 			thumbnail: "Images/media/backwoodcafe.jpg",	
 		},
 		{
 			name: "Responsible Travel",
 			coords: [50.8231163,-0.1403466],
 			address: "46 Windsor Street, Brighton, BN1 1RJ",
-			shortdescription: "Travel company with a strong emphasis on eco-friendly and ethnical travel",
+			shortDescription: "Travel company with a strong emphasis on eco-friendly and ethnical travel",
 			thumbnail: "Images/media/responsibletravel.jpg",	
 		},
 		{
 			name: "V360 Icecreams",
 			coords: [50.8210303,-0.1480986],
 			address: "Kings Road Arches, 112, Brighton BN1 2LN",
-			shortdescription: "Vegan icecream and sorbet shop",
+			shortDescription: "Vegan icecream and sorbet shop",
 			thumbnail: "Images/media/v360.jpg",
 		},
 		{name: "Eco Gym",
 			coords: [50.8206885,-0.1324551],
 			address: "39-40 St James’s Street, Brighton, BN2 1RG",
-			shortdescription: "Advocating making a positive difference for the planet and a healthy lifestyle",
+			shortDescription: "Advocating making a positive difference for the planet and a healthy lifestyle",
 			thumbnail: "Images/media/ecogym.png",
 
 		},
 	]
 
-	function showHiddenSidebar() {
+	function showHiddenSidebar(index) {
 		var el = document.getElementById('sidebarcolumn')
 		el.className = 'showinghidden'
+		document.getElementById('sidebarplacename').innerText = places[index].name
+
+		document.getElementById('storeaddress').innerText = places[index].address
+
+		document.getElementById('businesslogo').innerHTML = null
+		if (places[index].businessLogo) {
+			document.getElementById('businesslogo').innerHTML = '<img src="'+places[index].businessLogo+'" />'
+		}
+		
+
+		document.getElementById('openinghours').innerHTML = null
+		if (places[index].openingHours) {
+			var openingHoursHtml = ''
+			for (var line of places[index].openingHours) {
+				openingHoursHtml += line + '<br/>'
+			}
+			document.getElementById('openinghours').innerHTML = openingHoursHtml
+		}
+
+		document.getElementById('websitelink').innerHTML = null
+		if (places[index].websiteLink) {
+			var websiteLink = '<a href="'+places[index].websiteLink+'">'+places[index].websiteLink+'</a>'
+			document.getElementById('websitelink').innerHTML = websiteLink
+		}
+
+		document.getElementById('longdescription').innerHTML = null
+		if (places[index].longDescription) {
+			var longDescriptionHtml = ''
+			for (var line of places[index].longDescription) {
+				longDescriptionHtml += '<p>'+line +'</p>'
+			}
+			document.getElementById('longdescription').innerHTML = longDescriptionHtml
+		}
+
+		document.getElementById('hiddenimagesrow').innerHTML = null
+		if (places[index].photos) {
+			var photosHtml = ''
+			for (var photo of places[index].photos) {
+				photosHtml += '<img class="hiddenimages" src="'+photo+'"/>'
+			}
+			document.getElementById('hiddenimagesrow').innerHTML = photosHtml
+		}
+		
 	}
 
 	function hideHiddenSidebar() {
@@ -182,16 +229,19 @@
 	}
 
 	var results = document.getElementById("sidebarlistitems")
-	for (var place of places) {
+	for (var index in places) {
+		var place = places[index]
 		var result = document.createElement("div")
 		result.className = "sidebarlistitem"
 		result.innerHTML = "<img src=\"" + place.thumbnail + "\"/>\
 						<div class=\"sidebartext\">\
 							<h3>" + place.name + "</h3>\
 							<p class=\"address\">" + place.address + "</p>\
-							<p>" + place.shortdescription + "</p>\
+							<p>" + place.shortDescription + "</p>\
 						</div>"
-		result.onclick=showHiddenSidebar
+		result.onclick=function(index) {
+			showHiddenSidebar(index)
+		}.bind(this, index)
 		results.appendChild(result)
 	}
 	var mymap = L.map('mapid').setView([50.840983, -0.137393], 13.3);
