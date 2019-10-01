@@ -39,7 +39,65 @@
 			<div id="sidebarcolumn">
 
 				<div id="primarysidebar"> 
-					<div id="sidebarfilter"></div>
+					<div id="sidebarfilter">
+						<img id="filterlogo" src="Images/static/filterlist.svg"/>
+						<h4>Filters</h4>
+						<form action = " ">
+							<fieldset>
+								<span>	
+									<input type ="checkbox"
+									id = "chkPlasticFree"
+									value = "Plastic Free"
+									checked />
+									<label for = "chkPlasticFree">Plastic Free</label>	
+								</span>
+								<span>
+									<input type = "checkbox"
+									id = "chkPlantBased"
+									value = "Plant Based"
+									checked />
+									<label for = "chkPlantBased">Plant Based</label>
+								</span>
+								<span>
+									<input type = "checkbox"
+									id = "chkHealthandWellbeing"
+									value = "Health and Wellbeing"
+									checked />
+									<label for = "chkHealthandWellbeing">Health & Wellbeing</label>
+								</span>
+								<span>
+									<input type = "checkbox"
+									id = "chkSustainableDining"
+									value = "Sustainable Dining"
+									checked />
+									<label for = "chkSustainableDining">Sustainable Dining</label>
+								</span>	
+								<span>
+									<input type = "checkbox"
+										id = "chkUpcycling"
+										value = "Upcycling"
+										checked />
+										<label for = "chkUpcycling">Upcycling</label>
+								</span>
+								<span>
+										<input type = "checkbox"
+											id = "chkOther"
+											value = "Other"
+											checked />
+											<label for = "chkOther">Other</label>
+									</span>
+							<button type = "button"
+							  onclick = "filter()">
+							 Search
+							</button>
+							<button type = "reset"
+								onclick = "resetFilters()">
+								Reset
+							</button>
+							</fieldset>
+						   </form>
+					</div>
+
 
 					<div id="sidebarlistitems"></div>
 				</div>
@@ -48,18 +106,15 @@
 					<img class="icon" onclick="hideHiddenSidebar()" src="Images/static/backarrow.svg"/>
 					<div>
 						<span id="businesslogo"></span>	
-						<h1 id="sidebarplacename"></h1>
-							<div class="storeaddress">
-								<img src="Images/static/business.svg">
-								<ul id="storeaddress"></ul>
-							</div>
-							<div class="openinghours">
-								<img src="Images/static/calendarsymbol.svg">
-								<ul id="openinghours"></ul>
-							</div>
-							<div class="websitelink">
+						<div id="aboutbusinesssection">
+							<h1 id="sidebarplacename"></h1>
+								<span id="sidebartags"></span>
+								<div class="storeaddress" id="storeaddress"></div>
+								<div class="openinghours" id="openinghours"></div>
+								<div class="websitelink">
 									<img src="Images/static/web.svg">
 									<ul id="websitelink"></ul>
+								</div>
 							</div>
 							<div class="longdescription">
 								<p id="longdescription"></p>
@@ -100,7 +155,9 @@
 			photos: [
 				"Images/media/harrietsofhove2.jpg",
 				"Images/media/harrietsofhove3.jpg",
-				"Images/media/harrietsofhove1.jpg",
+			],
+				tags: [
+				"Plastic Free",	
 			],
 		},
 		{
@@ -108,7 +165,24 @@
 			coords: [50.8288957,-0.1357773],
 			address: "20-21 York Place, Brighton, BN1 4GU",
 			shortDescription: "Plastic free pantry and refill store",
-			thumbnail: "Images/media/hisbefrontstore.jpg",	
+			thumbnail: "Images/media/hisbefrontstore.jpg",
+			businessLogo: "Images/media/hisbelogo.jpg",
+			openingHours: [
+				"Everyday 8am – 9pm",
+				"",
+			],
+			websiteLink: "https://hisbe.co.uk/",
+			longDescription: [
+				"HISBE is a shop that aims to do things differently. Instead of bombarding you with hundreds of products all owned by a handful of giant corporations they focus instead on having a range of everyday groceries thoughtfully sourced from small, local producers and brands that trade responsibly, fairly and sustainably.",
+				"HISBE has a large selection of package free fruit and vegetables, as well as other packaged free items. So round up you totes and jars to fill up at this vibrant store."
+			],
+			photos: [
+				"Images/media/hisbe2.jpg",
+				"Images/media/hisbe3.jpg",
+			],
+			tags: [
+				"Plastic Free",	
+			],
 		},
 		{
 			name: "Wastenot",
@@ -116,34 +190,124 @@
 			address: "Unit 9, Brighton Open Market, Marshalls Row, BN1 4JU",
 			shortDescription: "Plastic free pantry and refill store",
 			thumbnail: "Images/media/wastenot.jpg",	
+			businessLogo: "Images/media/wastenotlogo.jpg",
+			openingHours: [
+				"Mon, Tues, Sat",
+				"9.30am-5.30pm",
+				"",
+				"Wed 9am-1pm",
+				"",
+				"Thurs, Fri 9am-6pm",
+				"",
+				"Sun and Bank holidays",
+				"11am-4pm",
+			],
+			websiteLink: "https://wastenot.shop/",
+			longDescription: [
+				"A fully zero waste shop selling bulk produce, and household items to help you cut down on your waste and reduce your impact on the planet."
+			],
+			photos: [
+				"Images/media/wastenot1.jpg",
+				"Images/media/wastenot3.jpg",
+			],
+			tags: [
+				"Plastic Free",	
+			],
 		},
 		{
 			name: "Store",
 			coords: [50.8429385,-0.1350116],
 			address: "253E Ditchling Road, Brighton, BN1 6JD",
 			shortDescription: "Plastic free pantry and refill store",
-			thumbnail: "Images/media/storebrightonlogo.png",	
+			thumbnail: "Images/media/storebrightonlogo.png",
+			businessLogo: "Images/media/storebrightonlogo.png",
+			openingHours: [
+			"Mon-Fri 9am-5.30pm",
+			"Sat 10am-5.30pm",      
+			"Sun 10am-2pm",
+			],
+			websiteLink: "https://www.storebrighton.co.uk/",
+			longDescription: [
+				"Store allows the opportunity for customers to buy  dried food, household essentials, toiletries and bodycare without the need for single use plastic packaging.",
+				" Customers are encouraged to bring their own containers (jars, bottles, bags, tubs etc) to refill by weight, only paying for the product, not the packaging."
+			],
+			photos: [
+				"Images/media/store1.jpg",
+				"Images/media/store2.jpg",
+				"Images/media/store3.jpg",
+			],
+			tags: [
+				"Plastic Free",	
+			],	
 		},
 		{
 			name: "The Captain Pig",
 			coords: [50.8243355,-0.1405033],
 			address: "10 Church Street, Brighton, BN1 1US",
 			shortDescription: "Vegan store with refill section and plastic free options",
-			thumbnail: "Images/media/thecaptainpig.jpg",	
+			thumbnail: "Images/media/thecaptainpig.jpg",
+			businessLogo: "Images/media/thecaptainpiglogo.jpg",
+			openingHours: [
+			"Mon CLOSED",
+			"Tues-Sat 10am-6pm",      
+			"Sun 11am-5pm",
+			"",
+			"",
+			],
+			longDescription: [
+				"Brighton's 1st Vegan grogery store. Here you can find vegan staples and goodies, an opportunity to buy local produce, organic fruit and vegetables, all at a minimum waste, with a refill station.",
+			],
+			photos: [
+				"Images/media/thecaptainpig1.jpg",
+				"Images/media/thecaptainpig2.jpg",
+				"Images/media/thecaptainpig3.jpg",
+			],
+			tags: [
+				"Plant Based", 
+				"Plastic Free",	
+			],	
+			displayTags: [
+				"Plant Based", 
+				"Plastic Free Options",
+			]
 		},
 		{
 			name: "The Earth & Stars Pub",
 			coords: [50.8248751,-0.1421102],
 			address: "46 Windsor Street, Brighton, BN1 1RJ",
 			shortDescription: "Eco-friendly pub with plenty of vegan options",
-			thumbnail: "Images/media/earthandstars.jpg",	
+			thumbnail: "Images/media/earthandstars.jpg",
+			businessLogo: "Images/media/earthandstarslogo.png",
+			openingHours: [
+			"Sun-Thurs 12pm-midnight",
+			"Fri-Sat 12pm-1am",      
+			],
+			websiteLink: "https://www.earthandstars.pub/",
+			longDescription: [
+				"Environmentally friendly pub in Brighton, the Earth and Stars is powered by a solar panels, serving organic lager, cider, spirits and wine, offering a rare chance to help save the planet by getting another round in.",
+				"This pub also offers a wide range of plant-based meal options.",
+			],
+			photos: [
+				"Images/media/earthandstars1.jpg",
+			],
+			tags: [
+				"Plant Based",	
+				"Sustainable Dining",	
+			],	
+			displayTags: [
+				"Plant Based Options", 
+				"Sustainable Dining",
+			]	
 		},
 		{
 			name: "The Wood Store Brighton",
 			coords: [50.832729, -0.138852],
 			address: "Elder Place, Brighton, BN1 4GY",
 			shortDescription: "Recycled and reclaimed wood and furniture",
-			thumbnail: "Images/media/woodstorefront.jpg",	
+			thumbnail: "Images/media/woodstorefront.jpg",
+			tags: [
+				"Upcycling",
+			],	
 		},
 		{
 			name: "BackWood Sustainable Café",
@@ -151,13 +315,24 @@
 			address: "3-4 Circus Parade, Brighton, BN1 4GW",
 			shortDescription: "Zero waste to landfill, sustainable produce café",
 			thumbnail: "Images/media/backwoodcafe.jpg",	
+			tags: [
+				"Sustainable Dining",
+				"Plant Based"	
+			],
+			displayTags: [
+				"Plant Based Options", 
+				"Sustainable Dining",
+			]
 		},
 		{
 			name: "Responsible Travel",
 			coords: [50.8231163,-0.1403466],
 			address: "46 Windsor Street, Brighton, BN1 1RJ",
 			shortDescription: "Travel company with a strong emphasis on eco-friendly and ethnical travel",
-			thumbnail: "Images/media/responsibletravel.jpg",	
+			thumbnail: "Images/media/responsibletravel.jpg",
+			tags: [
+				"Other",	
+			],	
 		},
 		{
 			name: "V360 Icecreams",
@@ -165,57 +340,117 @@
 			address: "Kings Road Arches, 112, Brighton BN1 2LN",
 			shortDescription: "Vegan icecream and sorbet shop",
 			thumbnail: "Images/media/v360.jpg",
+			tags: [
+				"Plant Based",	
+			],
 		},
 		{name: "Eco Gym",
 			coords: [50.8206885,-0.1324551],
 			address: "39-40 St James’s Street, Brighton, BN2 1RG",
 			shortDescription: "Advocating making a positive difference for the planet and a healthy lifestyle",
 			thumbnail: "Images/media/ecogym.png",
+			tags: [
+				"Health and Wellbeing",	
+			],
 
 		},
+		{name: "Magpie Recycling Co-Operative",
+			shortDescription: "Offering a wide range of recycling services, furniture collections and their furniture shop, Shabitat.",
+			thumbnail: "Images/media/magpierecycling.jpeg",
+			tags: [
+				"Other",	
+			],
+		},
 	]
+	
+	//from checkBoxes.html
+	function filter(){
+		var selected=[]
+		//get variables
+		if (document.getElementById("chkPlasticFree").checked) {
+			selected.push('Plastic Free');
+		}
+		if (document.getElementById("chkPlantBased").checked) {
+			selected.push('Plant Based');
+		}
+		if (document.getElementById("chkHealthandWellbeing").checked) {
+			selected.push('Health and Wellbeing');
+		}
+		if (document.getElementById("chkSustainableDining").checked) {
+			selected.push('Sustainable Dining');
+		}
+		if (document.getElementById("chkUpcycling").checked) {
+			selected.push('Upcycling');
+		}
+		if (document.getElementById("chkOther").checked) {
+			selected.push('Other');
+		}
+		showlistings(selected)
+	} // end function
+
+	// // //from checkBoxes.html
+	function resetFilters(e) {
+		showlistings(['Plastic Free', 'Plant Based', 'Health and Wellbeing', 'Sustainable Dining', 'Upcycling', 'Other'])
+	} //end function
 
 	function showHiddenSidebar(index) {
 		var el = document.getElementById('sidebarcolumn')
+		var place = places[index]
 		el.className = 'showinghidden'
-		document.getElementById('sidebarplacename').innerText = places[index].name
+		document.getElementById('sidebarplacename').innerText = place.name
 
-		document.getElementById('storeaddress').innerText = places[index].address
+		var tags = place.tags
+		if (place.displayTags) {
+			tags = place.displayTags
+		}
+		var tagsHtml = ''
+		for (tag of tags) {
+			tagsHtml += "<span>" + tag + "</span>"
+		}
+		document.getElementById('sidebartags').innerHTML = tagsHtml
+		document.getElementById('storeaddress').innerText = place.address
+		document.getElementById('storeaddress').innerHTML = null
+		if (place.address) {
+			var addressHtml = '<img src="Images/static/business.svg"><ul>'+place.address+'</ul>'
+			document.getElementById('storeaddress').innerHTML = addressHtml
+		}
+
 
 		document.getElementById('businesslogo').innerHTML = null
-		if (places[index].businessLogo) {
-			document.getElementById('businesslogo').innerHTML = '<img src="'+places[index].businessLogo+'" />'
+		if (place.businessLogo) {
+			document.getElementById('businesslogo').innerHTML = '<img src="'+place.businessLogo+'" />'
 		}
 		
 
 		document.getElementById('openinghours').innerHTML = null
-		if (places[index].openingHours) {
-			var openingHoursHtml = ''
-			for (var line of places[index].openingHours) {
+		if (place.openingHours) {
+			var openingHoursHtml = '<img src="Images/static/calendarsymbol.svg"><ul>'
+			for (var line of place.openingHours) {
 				openingHoursHtml += line + '<br/>'
 			}
+			openingHoursHtml += '</ul>'
 			document.getElementById('openinghours').innerHTML = openingHoursHtml
 		}
 
 		document.getElementById('websitelink').innerHTML = null
-		if (places[index].websiteLink) {
-			var websiteLink = '<a href="'+places[index].websiteLink+'">'+places[index].websiteLink+'</a>'
+		if (place.websiteLink) {
+			var websiteLink = '<a href="'+place.websiteLink+'">'+place.websiteLink+'</a>'
 			document.getElementById('websitelink').innerHTML = websiteLink
 		}
 
 		document.getElementById('longdescription').innerHTML = null
-		if (places[index].longDescription) {
+		if (place.longDescription) {
 			var longDescriptionHtml = ''
-			for (var line of places[index].longDescription) {
+			for (var line of place.longDescription) {
 				longDescriptionHtml += '<p>'+line +'</p>'
 			}
 			document.getElementById('longdescription').innerHTML = longDescriptionHtml
 		}
 
 		document.getElementById('hiddenimagesrow').innerHTML = null
-		if (places[index].photos) {
+		if (place.photos) {
 			var photosHtml = ''
-			for (var photo of places[index].photos) {
+			for (var photo of place.photos) {
 				photosHtml += '<img class="hiddenimages" src="'+photo+'"/>'
 			}
 			document.getElementById('hiddenimagesrow').innerHTML = photosHtml
@@ -228,22 +463,6 @@
 		el.className = ''
 	}
 
-	var results = document.getElementById("sidebarlistitems")
-	for (var index in places) {
-		var place = places[index]
-		var result = document.createElement("div")
-		result.className = "sidebarlistitem"
-		result.innerHTML = "<img src=\"" + place.thumbnail + "\"/>\
-						<div class=\"sidebartext\">\
-							<h3>" + place.name + "</h3>\
-							<p class=\"address\">" + place.address + "</p>\
-							<p>" + place.shortDescription + "</p>\
-						</div>"
-		result.onclick=function(index) {
-			showHiddenSidebar(index)
-		}.bind(this, index)
-		results.appendChild(result)
-	}
 	var mymap = L.map('mapid').setView([50.840983, -0.137393], 13.3);
 	
 	L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
@@ -254,11 +473,58 @@
 		id: 'mapbox.streets'
 	}).addTo(mymap);
 
-	for (var place of places) {
-		var marker = L.marker(place.coords).addTo(mymap)
-		.bindPopup("<b>"+place.name+"</b><br />")
-		.on('click', showHiddenSidebar)
-	}
+	var markerGroup = L.layerGroup().addTo(mymap);
+
+	function showlistings(selections) {
+		markerGroup.clearLayers()
+		
+		var results = document.getElementById("sidebarlistitems")
+		results.innerHTML=''
+		for (var index in places) {
+			var place = places[index]
+			var show= false
+			for (var selection of selections) {
+				if (place.tags.indexOf(selection) > -1) {
+					show=true
+				}
+			}
+			if (show) {	
+				var result = document.createElement("div")
+				var address = ''
+				if (place.address) {
+					address = '<p class="address">' + place.address + '</p>'
+				}
+				var tags = place.tags
+				if (place.displayTags) {
+					tags = place.displayTags
+				}
+				var tagsHtml = ''
+				for (tag of tags) {
+					tagsHtml += "<span>" + tag + "</span>"
+				}
+				result.className = "sidebarlistitem"
+				result.innerHTML = "<img src=\"" + place.thumbnail + "\"/>\
+								<div class=\"sidebartext\">\
+									<h3>" + place.name + "</h3>"
+									+ address +
+									"<p>" + place.shortDescription + "</p>" +
+									"<div class=\"filtertags\">" + tagsHtml + "</div>"
+								"</div>"		
+				result.onclick=function(index) {
+					showHiddenSidebar(index)
+				}.bind(this, index)
+				results.appendChild(result)
+				
+				var marker = L.marker(place.coords)
+					.bindPopup("<b>"+place.name+"</b><br />")
+					.on('click', showHiddenSidebar)
+					.addTo(markerGroup);
+			}
+		}
+	} 
+
+	showlistings(['Plastic Free', 'Plant Based', 'Health and Wellbeing', 'Sustainable Dining', 'Upcycling', 'Other'])
+
 
 </script>
 

@@ -41,6 +41,20 @@ h1, h2, h3, h4, h5, h6 {
         overflow: hidden;
     } 
 
+    .filtertags {
+        display: block;
+    }
+
+    .filtertags span {
+        padding: 5px;
+        border-radius: 10px;
+        background-color: rgba(128, 168, 95, 0.46);
+        display: inline-block;
+        font-size: 13px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+
     #sidebarcolumn {
         flex-direction: row;
         display: flex;
@@ -56,8 +70,49 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     #sidebarfilter {
-        height: 200px;
+        height: 150px;
+        padding: 10px;
+        }
+
+    #filterlogo {
+        vertical-align: top;
     }
+
+    #sidebarfilter fieldset {
+        padding: 0;
+        border: none;
+        color: #005f00;
+    } 
+
+    #sidebarfilter h4 {
+        font-family: 'Lato', sans-serif; 
+        padding: 0;
+        color: #005f00;
+        margin: 10px 10px 20px 0px;
+        display: inline;
+    }
+
+    #sidebarfilter span {
+        display: inline-block;
+        background-color:#B0CC99;
+        border-radius: 10px;
+        margin: 2px;
+    }
+
+    #sidebarfilter label {
+        padding: 10px;
+        padding-left: 0px;
+        cursor: pointer;
+    }
+
+    #sidebarfilter input {
+        cursor: pointer;
+    }
+
+    #sidebarfilter button {
+        cursor: pointer;
+    }
+
 
     #primarysidebar {
         overflow-y: auto;
@@ -76,6 +131,28 @@ h1, h2, h3, h4, h5, h6 {
 
     #popupsidebar h1 {
         color: #019701;
+        padding: 0;
+        margin: 5px;
+    }
+
+    #sidebartags {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #sidebartags span {
+        padding: 5px;
+        border-radius: 10px;
+        background-color:#B0CC99;
+        display: inline-block;
+        font-size: 13px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+
+    #aboutbusinesssection {
+        min-height: 205px;
     }
 
     .icon {
@@ -83,8 +160,8 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     #businesslogo {
-        width: 190px;
-        height: 190px;
+        width: 180px;
+        height: 180px;
         float: right;
         margin: 15px 0px 0px 0px;
     }
@@ -146,6 +223,7 @@ h1, h2, h3, h4, h5, h6 {
         margin-left: 0;
         padding-left: 5px;
         display: inline-block;
+        font-size-adjust: .5; 
     }
 
     .openinghours img {
@@ -154,16 +232,16 @@ h1, h2, h3, h4, h5, h6 {
 
     .sidebarlistitem {
         background: rgb(180, 180, 180);
-        height: 160px;
         margin: 0 5px 10px 10px;
         font-family: 'Lato', sans-serif;
         display: flex;
         flex-direction: row;
         color: #005f00;
+        min-height: 160px;
+        cursor: pointer;
     }
 
     .sidebarlistitem img {
-        height:160px;
         width: 160px;
         object-fit: cover;
         flex-shrink: 0;
