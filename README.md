@@ -6,5 +6,5 @@ git status
 git add -p
 git status
 git commit -m "YOUR MESSAGE"
-git log
+git push
 ```

@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    height: 100%;
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -8,17 +9,25 @@ html {
 body {
     padding: 0;
     margin: 0;
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
+    /* font-family: 'Lato', sans-serif; */
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    height: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Amatic SC', cursive;
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #153F33;
+}
+
+h2, h3, h4, h5, h6 {
+    /* font-family: 'Amatic SC', cursive; */
+    font-family: 'Raleway', sans-serif;
 }
 
 #mappage {
     background: white;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     padding: 3vh;
@@ -35,10 +44,11 @@ h1, h2, h3, h4, h5, h6 {
     #sidebar {
         width: 400px;
         height: 100%;
-        background-color: rgb(209, 209, 209);
+        background-color: #e5e5e5;
         margin-right: 1.5vh;
         border-radius: 10px;
         overflow: hidden;
+        box-shadow: inset 0px 3px 9px rgba(0,0,0,0.1);
     } 
 
     .filtertags {
@@ -46,13 +56,13 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .filtertags span {
-        padding: 5px;
-        border-radius: 10px;
-        background-color: rgba(128, 168, 95, 0.46);
+        padding: 5px 8px;
+        border-radius: 14px;
+        background-color: #9BBF65;
         display: inline-block;
-        font-size: 13px;
         margin-right: 5px;
         margin-bottom: 5px;
+        font-size: 14px;
     }
 
     #sidebarcolumn {
@@ -66,37 +76,40 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     #sidebarcolumn.showinghidden {
-        left: -400px;
+        left: -100%;
     }
 
     #sidebarfilter {
         height: 150px;
-        padding: 10px;
+        padding: 10px 0 10px 10px;
         }
 
     #filterlogo {
         vertical-align: top;
+        margin: -1px;
+        margin-bottom: 4px;
     }
 
     #sidebarfilter fieldset {
-        padding: 0;
+        padding: 5px 0 0 0;
         border: none;
-        color: #005f00;
+        color: #0D1A26;
     } 
 
     #sidebarfilter h4 {
-        font-family: 'Lato', sans-serif; 
+        /* font-family: 'Lato', sans-serif;  */
         padding: 0;
-        color: #005f00;
+        color: #154034;
         margin: 10px 10px 20px 0px;
         display: inline;
     }
 
     #sidebarfilter span {
         display: inline-block;
-        background-color:#B0CC99;
-        border-radius: 10px;
-        margin: 2px;
+        background-color:#9BBF65;
+        border-radius: 20px;
+        margin: 0px 2px 5px 0px;
+        padding: 2px 3px;
     }
 
     #sidebarfilter label {
@@ -111,6 +124,14 @@ h1, h2, h3, h4, h5, h6 {
 
     #sidebarfilter button {
         cursor: pointer;
+        background: #588C65;
+        font-size: 15px;
+        color: white;
+        border-radius: 20px;
+        margin: 2px;
+        padding: 4px 14px;
+        border: 0;
+        box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
     }
 
 
@@ -118,6 +139,7 @@ h1, h2, h3, h4, h5, h6 {
         overflow-y: auto;
         width: 400px;
         flex-direction: column;
+        display: flex;
     }
 
     #popupsidebar {
@@ -128,9 +150,12 @@ h1, h2, h3, h4, h5, h6 {
         color: #005f00;
         padding: 10px;
     }
+        #popupsidebar .icon-back {
+            cursor: pointer;
+        }
 
-    #popupsidebar h1 {
-        color: #019701;
+    #popupsidebar h2 {
+        color: #0D1A26;
         padding: 0;
         margin: 5px;
     }
@@ -142,11 +167,11 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     #sidebartags span {
-        padding: 5px;
-        border-radius: 10px;
-        background-color:#B0CC99;
+        padding: 7px;
+        border-radius: 14px;
+        background-color:#9BBF65;
         display: inline-block;
-        font-size: 13px;
+        font-size: 14px;
         margin-right: 5px;
         margin-bottom: 5px;
     }
@@ -187,7 +212,7 @@ h1, h2, h3, h4, h5, h6 {
         padding-left: 5px;
         display: inline-block;
         max-width: 150px;
-        font-size: 13px;
+        font-size: 14px;
     }
 
     .storeaddress img {
@@ -223,7 +248,7 @@ h1, h2, h3, h4, h5, h6 {
         margin-left: 0;
         padding-left: 5px;
         display: inline-block;
-        font-size-adjust: .5; 
+        font-size-adjust: .6; 
     }
 
     .openinghours img {
@@ -231,26 +256,29 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .sidebarlistitem {
-        background: rgb(180, 180, 180);
+        background: white;
         margin: 0 5px 10px 10px;
-        font-family: 'Lato', sans-serif;
+        /* font-family: 'Lato', sans-serif; */
         display: flex;
         flex-direction: row;
-        color: #005f00;
+        color: #0D1A26;
         min-height: 160px;
         cursor: pointer;
+        box-shadow: 0px 1px 6px rgba(0,0,0,0.25);
+        border-radius: 6px;
     }
 
     .sidebarlistitem img {
         width: 160px;
+        height: 240px;
         object-fit: cover;
         flex-shrink: 0;
+        border-radius: 6px 0 0 6px;
     }
 
     .sidebartext h3 {
         margin: 0;
-        color: #005f00;
-        font-family: 'Lato', sans-serif;
+        color: #0D1A26;
         font-size: 18px;
     }   
 
@@ -259,29 +287,37 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .sidebartext {
-        padding: 10px; 
+        padding: 10px 5px 5px 10px;
         font-size: 15px;
+        display: flex;
+        flex-direction: column;
     }
 
     .address {
-        color: #019701;
+        color:#588C65;
     }
 
-    #mapid {
-    flex-grow: 1;
-    border-radius: 10px;
+    .growparagraph {
+        flex-grow: 1;
+    }
+
+    #mapdesktop {
+        flex-grow: 1;
+        border-radius: 10px;
+    }
+
+    #mapmobile {
+        height: 100%;
     }
 
 #top-bar {
     background-color: none;
     text-align: center;
-    color: #74BF04;
     font-weight: bold;
     padding: 15px;
     text-align: left;
     display: flex;
-    flex-direction: row;
-    font-family: 'Amatic SC', cursive;    
+    flex-direction: row;  
 }
 
     #logo {
@@ -304,7 +340,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     #topbarleft {
-        width: 400px;
+        /* width: 400px; */
     }
 
     #topbarright {
@@ -318,27 +354,100 @@ h1, h2, h3, h4, h5, h6 {
         color: #74BF04;
     }
 
+    #fab {
+        display: none;
+        z-index: 1000;
+        cursor: pointer;
+        transition: opacity 200ms;
+        position: fixed;
+        right: 30px;
+        bottom: 30px;
+        background: #588C65;
+        width: 66px;
+        height: 66px;
+        border-radius: 33px;
+        padding: 15px;
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    }
+        #fab img {
+            width: 36px;
+            fill: #005f00;
+        }
+        #fablist {
+            display: none;
+        }
+
+    .markercontent {
+        display: flex;
+        flex-direction: row;
+    }
+    .leaflet-popup-content {
+        margin: 0;
+    }
+    .leaflet-popup-content-wrapper {
+        padding: 2px;
+        border-radius: 0;
+    }
+        .markercontent h2 {
+            margin: 5px 20px 0 0;
+            padding-bottom: 5px;
+            cursor: pointer;
+            min-width: 100px;
+        }
+        .markercontent img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            display: block;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .markercontent .link {
+            color: #005f00;
+            text-decoration: underline;
+            cursor: pointer;
+            margin-right: 30px;
+        }
 
 @media only screen and (max-width: 768px) {
+    #mappage {
+        padding: 0;
+    }
+
     #mainmapview {
         flex-direction: column-reverse;
         width: 100%;
     }
     #sidebar {
         width: 100%;
-        height: 183px;
-        display: none;
+        height: 100%;
+        /* display: none; */
+        border-radius: 0;
+    }
+    #sidebarfilter {
+        height: auto;
     }
     #logo {
       width: 100%;
       height: auto;
     }
+    #sidebarcolumn {
+        width: 200%;
+    }
+    #primarysidebar {
+        width: 50%;
+    }
+    #popupsidebar {
+        width: 50%;
+    }
     #sidebarlistitems {
-        overflow-y: unset;
-        overflow-x: auto;
+        overflow-y: auto;
     }
     .sidebarlistitem {
-        width: 75%;
-        height: 160px;
+        margin: 10px;
+        min-height: 240px
+    }
+    #fab {
+        display: block;
     }
 }
