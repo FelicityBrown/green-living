@@ -1,4 +1,4 @@
-var availableTags = ['Plastic Free', 'Plant Based', 'Health & Wellbeing', 'Sustainable Dining', 'Upcycling', 'Other']
+var availableTags = ['Plastic Free', 'Zero Waste', 'Plant Based', 'Health & Wellbeing', 'Sustainable Dining', 'Upcycling', 'Other']
 
 var places = [
   {
@@ -25,6 +25,7 @@ var places = [
     ],
     tags: [
       "Plastic Free",	
+      "Zero Waste",
     ],
   },
   {
@@ -49,6 +50,7 @@ var places = [
     ],
     tags: [
       "Plastic Free",	
+      "Zero Waste",
     ],
   },
   {
@@ -79,6 +81,7 @@ var places = [
     ],
     tags: [
       "Plastic Free",	
+      "Zero Waste",
     ],
   },
   {
@@ -101,10 +104,10 @@ var places = [
     photos: [
       "Images/media/store1.jpg",
       "Images/media/store2.jpg",
-      "Images/media/store3.jpg",
     ],
     tags: [
       "Plastic Free",	
+      "Zero Waste",
     ],	
   },
   {
@@ -113,19 +116,17 @@ var places = [
     address: "10 Church Street, Brighton, BN1 1US",
     shortDescription: "Vegan store with refill section and plastic free options",
     thumbnail: "Images/media/thecaptainpig.jpg",
-    businessLogo: "Images/media/thecaptainpiglogo.jpg",
+    businessLogo: "Images/media/thecaptainpiglogo.png",
     openingHours: [
       "Mon CLOSED",
       "Tues-Sat 10am-6pm",      
       "Sun 11am-5pm",
-      "",
-      "",
     ],
+    websiteLink: "https://www.facebook.com/TheCaptainPig.BrightonVeganShop/",
     longDescription: [
       "Brighton's 1st Vegan grogery store. Here you can find vegan staples and goodies, an opportunity to buy local produce, organic fruit and vegetables, all at a minimum waste, with a refill station.",
     ],
     photos: [
-      "Images/media/thecaptainpig1.jpg",
       "Images/media/thecaptainpig2.jpg",
       "Images/media/thecaptainpig3.jpg",
     ],
@@ -156,6 +157,7 @@ var places = [
     ],
     photos: [
       "Images/media/earthandstars1.jpg",
+      "Images/media/earthandstars2.jpeg",
     ],
     tags: [
       "Plant Based",	
@@ -172,6 +174,21 @@ var places = [
     address: "Elder Place, Brighton, BN1 4GY",
     shortDescription: "Recycled and reclaimed wood and furniture",
     thumbnail: "Images/media/woodstorefront.jpg",
+    businessLogo: "Images/media/woodstorelogo.jpg",  
+    openingHours: [
+      "Mon-Sat 9am-5pm",    
+      "Sundays and Bank Holidays 11am-4pm",
+    ],  
+    websiteLink: "https://www.woodrecycling.org.uk/",
+    longDescription: [
+      "The Wood Store is the trading name of Brighton & Hove Wood Recycling Project. We are a not-for-profit social enterprise and our aims are to help protect the environment by saving resources, and to change lives by providing jobs, training and volunteering opportunities for local people - especially for those who might be marginalised from the job market or suffer other forms of social exclusion.",
+      "Established in 1998, Brighton & Hove Wood Recycling Project was first scheme of its kind in the country; an organisation committed to finding a way to reuse waste timber….. seeing it for what it really is……. Not a waste but a precious resource!",
+      "At the Wood Store you can buy a variety of wood for all your projects, as well as beautifully crafted furniture in their shop.",
+    ],
+    photos: [
+      "Images/media/woodstore2.jpg",
+      "Images/media/woodstore3.jpg",
+    ],
     tags: [
       "Upcycling",
     ],	
@@ -182,31 +199,74 @@ var places = [
     address: "3-4 Circus Parade, Brighton, BN1 4GW",
     shortDescription: "Zero waste to landfill, sustainable produce café",
     thumbnail: "Images/media/backwoodcafe.jpg",	
+    businessLogo: "Images/media/backwoodcafelogo.jpg",
+    openingHours: [
+      "Mon-Fri 7:30am-6pm",
+      "Sat-Sun 8am-6pm"      
+    ],
+    websiteLink: "https://www.gobackwood.com/",
+    longDescription: [
+      "BackWood café/bar serves homemade food and drink made on site. BackWood is committed to sourcing our produce and ingredients sustainably, and locally where possible.",
+      "They minimise waste, compost and encourage re-use, including setting up their own coffee cup loan scheme."
+    ],
+    photos: [
+      "Images/media/backwood1.jpeg",
+      "Images/media/backwood2.jpeg"
+    ],
     tags: [
       "Sustainable Dining",
-      "Plant Based"	
+      "Plant Based",	
+      "Zero Waste",
     ],
     displayTags: [
       "Plant Based Options", 
       "Sustainable Dining",
+      "Zero Waste",
     ]
   },
   {
     name: "Responsible Travel",
-    coords: [50.8231163,-0.1403466],
-    address: "46 Windsor Street, Brighton, BN1 1RJ",
+    coords: [50.8231784,-0.1424923],
+    address: " 1st floor, Edge House, 42 Bond Street, Brighton, BN1 1RD, U",
     shortDescription: "Travel company with a strong emphasis on eco-friendly and ethnical travel",
     thumbnail: "Images/media/responsibletravel.jpg",
+    businessLogo: "Images/media/responsibletravel.jpg",
+    openingHours: [
+      "Mon-Fri 9am-5pm",     
+    ],
+    websiteLink: "https://www.responsibletravel.com/",
+    longDescription: [
+      "Responsible Travel want to make tourism a more caring industry and lead by example in responsible tourism.",
+      "They are an activist travel company offering responsible holidays and are transparent in their impact. They are passionate about campaiging for a more caring and to help protect the world, cultures and wildlife from unethical practices and irresponsible tourism.",
+      "They sell holidays designed to maximise the benefit and minimise the harm involved in tourism. The holidays they offer are screened for their compliance with environmental, social and economic criteria with an emphasis on grassroot initiatives and local providers.",
+    ],
+    photos: [
+      "Images/media/responsibletravel1.jpeg",
+      "Images/media/responsibletravel2.jpeg"
+    ],
     tags: [
       "Other",	
     ],
-  },
+  }, 
   {
     name: "V360 Icecreams",
     coords: [50.8210303,-0.1480986],
     address: "Kings Road Arches, 112, Brighton BN1 2LN",
     shortDescription: "Vegan icecream and sorbet shop",
     thumbnail: "Images/media/v360.jpg",
+    businessLogo: "Images/media/v360logo.jpg",  
+    openingHours: [
+      "Mon-Thurs 12pm-5.45pm",    
+      "Fri-Sun 12pm-6.45pm",
+    ],  
+    websiteLink: "https://www.facebook.com/v360vegancafe",
+    longDescription: [
+      "An all vegan icecream and sorbet shop, including their own locally made plant-based Mr Whippys.",
+    ],
+    photos: [
+      "Images/media/v3601.jpg",
+      "Images/media/v3602.jpg",
+    ],
     tags: [
       "Plant Based",	
     ],
@@ -217,16 +277,286 @@ var places = [
     address: "39-40 St James’s Street, Brighton, BN2 1RG",
     shortDescription: "Advocating making a positive difference for the planet and a healthy lifestyle",
     thumbnail: "Images/media/ecogym.png",
+    businessLogo: "Images/media/ecogym.png",  
+    openingHours: [
+      "Mon-Fri 6am-9pm",
+      "Sat-Sun 9am-6pm",
+    ],  
+    websiteLink: "http://eco-gym.co.uk/",
+    longDescription: [
+      "The Eco Gym in Brighton and Lancing advocating making a positive difference for the planet and a healthy lifestyle.",
+    ],
+    photos: [
+      "Images/media/ecogym1.jpeg",
+      "Images/media/ecogym2.jpeg",
+    ],
     tags: [
       "Health & Wellbeing",	
     ],
   },
   {
     name: "Magpie Recycling Co-Operative",
-    shortDescription: "Offering a wide range of recycling services, furniture collections and their furniture shop, Shabitat.",
+    coords: [50.8384379,-0.1269937],
+    address: "Shabitat, Saunders Park, Brighton, BN2 4AE",
+    shortDescription: "Offering a wide range of recycling services, furniture collections and their second-hand furniture shop, Shabitat.",
     thumbnail: "Images/media/magpierecycling.jpeg",
+    businessLogo: "Images/media/magpierecycling.jpeg",  
+    openingHours: [
+      "Shabitat Opening Hours",
+      "Mon-Fri 9am-5pm",
+      "Sat-Sun 11am-5pm",
+    ],  
+    websiteLink: "https://magpie.coop/",
+    longDescription: [
+      "Magpie collects your reusable unwanted furniture their warehouse, Shabitat.",
+      "Shabitat is their warehouse shop where you can find affordable furniture, electrical goods, quality second-hand clothes and homeware, as well as Magpie Recycling giving back to the local community through their Homeless Furniture Project",
+      "Magpie Recycling also offer both a Greenbox and recycling opt-in scheme, collected by their converted green, electric milk floats where possible. They collect a wider range of materials than the council recycling, including taking most types of plastics, textiles, tetra packs/juice cartons & aluminium tin foil. Being that you can ensure that these items are not being put into household waste", 
+      "As well as this they don't ship any of the collected materials abroad ensuring everything collected is recycled as locally as possible.",
+      "Magpie Recylcing also offer recycling serves for the Brighton & Hove area.This service includes confidential shredding, collection of a variety of grades of office paper, cans, plastics, tetra pak, foil, cardboard, and much more.",
+    ],
+    photos: [
+      "Images/media/magpie1.jpg",
+      "Images/media/magpie2.jpg",
+    ],
     tags: [
       "Other",	
+    ],
+  },
+  {
+    name: "Kernel of Hove",
+    coords: [50.825083, -0.175211],
+    address: "2 Victoria Terrace, Hove BN3 2WB",
+    shortDescription: "Vegetarian & vegan wholefood shop, offering a great selection of healthy and alternative products.",
+    thumbnail: "Images/media/kernelofhove.jpg",
+    businessLogo: "Images/media/kernelofhove.jpg",  
+    openingHours: [
+      "Mon-Sat 9am-6pm",
+      "Sun 10am-4pm",
+    ],  
+    websiteLink: "https://www.facebook.com/pg/KernelofHove/about/?ref=page_internal",
+    longDescription: [
+        "Kernel of Hove is a new Vegetarian, Vegan and free-from wholefood shop offering a great selection of healthy and alternative products and supplements. This includes fresh organic fruit and vegetables.",
+        "Every effort is made to stock locally sourced products,reducing food miles and supporting local producers.",
+    ],
+    photos: [
+      "Images/media/kernelofhove1.jpg",
+      "Images/media/kernelofhove2.jpg",
+    ],
+    tags: [
+      "Plant Based",	
+      "Plastic Free",
+    ],
+    displayTags: [
+      "Plant Based Options", 
+      "Plastic Free Options",
+    ]
+  },
+  {
+    name: "Down to Earth",
+    coords: [50.833274, -0.184159],
+    address: "128 Portland Rd, Hove BN3 5QL",
+    shortDescription: "Independent vegetarian health food store renowned for providing high quality and innovative natural health products.",
+    thumbnail: "Images/media/downtoearth.jpg",
+    businessLogo: "Images/media/downtoearth.jpg",  
+    openingHours: [
+      "Mon-Fri 9am-6pm",
+      "Sat 9am-5.30pm",
+      "Sun 10am-4pm",
+    ],  
+    websiteLink: "http://www.downtoearth-hove.co.uk/",
+    longDescription: [
+      "Down to Earth is Brighton and Hove's premier independent vegetarian health food store renowned for providing high quality and innovative natural health products. Their aim is to provide quality organic, natural and ethical health products from the most trusted brands.",
+      "Here they sell organic wholefoods, environmentally friendly household products, natural baby and skincare ranges, nutritional supplements, herbal remedies and much more.",
+      "They also stock an increasing range of Fairtrade products supporting independent producers near and far.",
+    ],
+    photos: [
+      "Images/media/downtoearth1.jpg",
+      "Images/media/downtoearth2.jpg",
+    ],
+    tags: [
+      "Plant Based",	
+      "Plastic Free",
+    ],
+    displayTags: [
+      "Plant Based Options",	
+      "Plastic Free Options",
+    ]
+  },
+  {
+    name: "Purezza Brighton",
+    coords: [50.821088, -0.135173],
+    address: "12 St James's St, Brighton, BN2 1RE",
+    shortDescription: "Plant-based pizza restaurant wood firing its own sour, hemp and gluten free doughs.",
+    thumbnail: "Images/media/purezza.jpg",
+    businessLogo: "Images/media/purezzalogo.jpg",  
+    openingHours: [
+      "Sun-Thurs 12pm-10pm",    
+      "Fri-Sat 12pm-11pm",
+    ],  
+    websiteLink: "https://purezza.co.uk/",
+    longDescription: [
+      "Purezza was founded in 2015, becoming the first vegan pizzeria in the UK. They are plant pioneers, revolutionising Italian food through cruelty free ingredients. ",
+      "At Purezza they have developed delicious cheeses including mozzarella, made from brown rice and cashew cheeses, that really melt.",
+      "The dough is freshly made each day, and diners are given the choice of bases, including a gluten free option.",
+      "Purezza also offer a range of plant-based sides, other Italian dishes, desserts and drinks.",
+    ],
+    photos: [
+      "Images/media/purezza1.jpg",
+      "Images/media/purezza2.jpg",
+    ],
+    tags: [
+      "Plant Based",
+    ],
+  },
+  {
+    name: "Eden Perfumes",
+    coords: [50.825461, -0.139380],
+    address: "26 Gardner Street, Brighton, BN1 1UP",
+    shortDescription: "Cruetly free and vegan alternative to your favourite perfume fragrances.",
+    thumbnail: "Images/media/edenperfumes.jpg",
+    businessLogo: "Images/media/edenperfumeslogo.png",  
+    openingHours: [
+      "Mon-Fri 10am-6pm",
+      "Sat 10am-7pm",
+      "Sun 11am-5pm",
+    ],  
+    websiteLink: "https://www.edenperfumes.co.uk/",
+    longDescription: [
+      "Eden Perfumes are 100% vegan ingredients and use botanticals and essential oils, with no nasty synthetic preservatives, no parabens, no phthalates to create perfumes and aftershaves similar to your favourite popular fragrance.",
+      "Their fragrances come in glass bottles, that can be refilled, offering a discount to those that choose this option.",
+    ],
+    photos: [
+      "Images/media/edenperfumes1.jpeg",
+      "Images/media/edenperfumes2.jpg",
+    ],
+    tags: [
+      "Health & Wellbeing",	
+      "Plant Based",
+      "Plastic Free",
+    ],
+  },
+  {
+    name: "Eden Perfumes",
+    coords: [50.8242267,-0.1499512],
+    address: "69 Western Road, Brighton, BN1 2HA",
+    shortDescription: "Cruetly free and vegan alternative to your favourite perfume fragrances.",
+    thumbnail: "Images/media/edenperfumes.jpg",
+    businessLogo: "Images/media/edenperfumeslogo.png",  
+    openingHours: [
+      "Mon-Sat 10.30am-7pm",
+      "Sun 11am-5pm",
+    ],  
+    websiteLink: "https://www.edenperfumes.co.uk/",
+    longDescription: [
+      "Eden Perfumes are 100% vegan ingredients and use botanticals and essential oils, with no nasty synthetic preservatives, no parabens, no phthalates to create perfumes and aftershaves similar to your favourite popular fragrance.",
+      "Their fragrances come in glass bottles, that can be refilled, offering a discount to those that choose this option.",
+    ],
+    photos: [
+      "Images/media/edenperfumes1.jpeg",
+      "Images/media/edenperfumes2.jpg",
+    ],
+    tags: [
+      "Health & Wellbeing",	
+      "Plant Based",
+      "Plastic Free",
+    ],
+  },
+  {
+    name: "Bird & Blend Tea Co.",
+    coords: [50.825035, -0.139383],
+    address: "41 Gardner Street, Brighton, BN1 1UN",
+    shortDescription: "Bird & Blend Tea Co. is an independent, award-winning, tea company on a mission to spread happiness & reimagine tea.",
+    thumbnail: "Images/media/birdandblend2.jpeg",
+    businessLogo: "Images/media/birdandblend.png",  
+    openingHours: [
+      "Mon-Fri 10.30am-6pm",
+      "Sat 10am-7pm",
+      "Sun 11am-5.30pm",
+    ],  
+    websiteLink: "https://birdandblendtea.com",
+    longDescription: [
+      "Bird & Blend Tea Co. is an independent, award-winning, tea company on a mission to spread happiness & reimagine tea, with options to buy loose leaf teas, including refilling your own containers.",
+    ],
+    photos: [
+      "Images/media/birdandblend1.jpg",
+      "Images/media/birdandblend2.jpeg",
+    ],
+    tags: [	
+      "Plant Based",
+      "Plastic Free",
+    ],
+    displayTags: [
+      "Plant Based Options",	
+      "Plastic Free Options",
+    ]
+  },
+  {
+    name: "Infinity Foods Co-operative",
+    coords: [50.8256064,-0.1396397],
+    address: "25 North Road, Brighton, BN1 1YA",
+    shortDescription: "Organic and ethically led supermarket for vegetarian and vegan produce, plus artisan bakery.",
+    thumbnail: "Images/media/infinityfoods1.jpg",
+    businessLogo: "Images/media/infinityfoodslogo.jpg",  
+    openingHours: [
+      "Mon-Sat 9.30am-6pm",
+      "Sun 11am-5pm",
+    ],  
+    websiteLink: "https://infinityfoodsretail.coop/",
+    longDescription: [
+      "Set in the heart of Brighton’s North Laine, Infinity Foods Shop has large selection of organic and natural vegetarian and vegan foods, cosmetics and household items. Democratically run by its workers.",
+      "The store includes sections throughout where you can purchase items without plastic packaging, including fruits and vegetables, pantry food items, household cleaning liquids, soaps, shampoo and condtioners.",
+    ],
+    photos: [
+      "Images/media/infinityfoods2.jpg",
+      "Images/media/infinityfoods3.jpg",
+    ],
+    tags: [	
+      "Plant Based",
+      "Plastic Free",
+    ],
+    displayTags: [
+      "Plant Based Options",	
+      "Plastic Free Options",
+    ]
+  },
+  {
+    name: "Olio",
+    shortDescription: "Olio is a mobile app for food-sharing, aiming to reduce food waste.",
+    thumbnail: "Images/media/olio1.jpg",
+    businessLogo: "Images/media/olio1.jpg",  
+    websiteLink: "https://olioex.com/",
+    longDescription: [
+      "OLIO is an app that connects neighbours with each other and with local businesses so surplus food can be shared, not thrown away. This could be food nearing its sell-by date in local stores, spare home-grown vegetables, bread from your baker, or the groceries in your fridge when you go away. For your convenience, OLIO can also be used for non-food household items too.",
+      "OLIO is super easy! To make an item available, simply open the app, add a photo, description, and when and where the item is available for pick-up.",
+      "To access items, simply browse the listings available near you, request whatever takes your fancy and arrange a pick-up via private messaging.",
+    ],
+    photos: [
+      "Images/media/olio3.jpg",
+      "Images/media/olio2.png",
+    ],
+    tags: [	
+      "Zero Waste",
+      "Other",
+    ],
+  },
+  {
+    name: "Too Good To Go",
+    shortDescription: "Too Good To Go is an app fighting food waste.",
+    thumbnail: "Images/media/toogoodtogologo.jpg",
+    businessLogo: "Images/media/toogoodtogologo.jpg",  
+    websiteLink: "https://toogoodtogo.co.uk",
+    longDescription: [
+        "Join millions of food waste warriors by downloading Too Good To Go that is fighting food waste. You can buy quality local food for as little as £2 - great food that would otherwise have gone to waste.",
+        "Each year, one-third of all food produced worldwide is thrown away. Too Good To Go want to put an end to food waste by creating a world where food produced is food consumed.",
+        "On the app you are able to view food items advertised by businesseses that haven't been purchases in the day and need to be eaten, or if you are a business you are able to advertise food items.",
+    ],
+    photos: [
+      "Images/media/toogoodtogo.jpg",
+      "Images/media/toogoodtogo2.jpg",
+    ],
+    tags: [	
+      "Zero Waste",
+      "Other",
     ],
   },
 ]
@@ -236,6 +566,9 @@ var markerGroup = null
 
 var isMobile = false
 var mobileShowingMap = false
+
+var initialCoordinatesDesktop = [50.840983, -0.137393]
+var initialCoordinatesMobile = [50.8333872,-0.1526689]
 
 
 // Sort the array of places alphabetically by name
@@ -260,6 +593,9 @@ function filter() {
   if (document.getElementById("chkPlasticFree").checked) {
       selected.push('Plastic Free');
   }
+  if (document.getElementById("chkZeroWaste").checked) {
+    selected.push('Zero Waste');
+  }  
   if (document.getElementById("chkPlantBased").checked) {
       selected.push('Plant Based');
   }
@@ -276,11 +612,22 @@ function filter() {
       selected.push('Other');
   }
   showListings(selected)
+  centerMap()
+}
+
+function centerMap() {
+  if (isMobile) {
+    mymap.setView(initialCoordinatesMobile, 13.3);
+  }
+  else {
+    mymap.setView(initialCoordinatesDesktop, 13.3);
+  }
 }
 
 function resetFilters(e) {
   // Set all filters back to deafaults and update the list view
   showListings(availableTags)
+  centerMap()
 }
 
 function showHiddenSidebar(index) {
@@ -381,13 +728,13 @@ function hideHiddenSidebar() {
 function initMap() {
   // debugger
   if (isMobile) {
-    mymap = L.map('mapmobile').setView([50.840983, -0.137393], 13.3);
+    mymap = L.map('mapmobile').setView(initialCoordinatesMobile, 13.3);
   }
   else {
-    mymap = L.map('mapdesktop').setView([50.840983, -0.137393], 13.3);
+    mymap = L.map('mapdesktop').setView(initialCoordinatesDesktop, 13.3);
   }
 
-  L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+  L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}{r}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
     maxZoom: 25,
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
       '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
