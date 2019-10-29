@@ -9,8 +9,9 @@ var places = [
     thumbnail: "Images/media/harrietsofhove1.jpg",
     businessLogo: "Images/media/harrietsofhoveroundlogo.png",
     openingHours: [
-      "Mon-Thurs 9am-5pm",
-      "Fri 9am-7pm",
+      "Mon-Wed 9am-5pm",
+      "Thurs 9am-7pm",
+      "Fri 9am-5pm",
       "Sat 10am-5pm",
       "Sun 11am-4pm",
     ],
@@ -24,7 +25,6 @@ var places = [
       "Images/media/harrietsofhove3.jpg",
     ],
     tags: [
-      "Plastic Free",	
       "Zero Waste",
     ],
   },
@@ -48,8 +48,7 @@ var places = [
       "Images/media/hisbe2.jpg",
       "Images/media/hisbe3.jpg",
     ],
-    tags: [
-      "Plastic Free",	
+    tags: [	
       "Zero Waste",
     ],
   },
@@ -80,7 +79,6 @@ var places = [
       "Images/media/wastenot3.jpg",
     ],
     tags: [
-      "Plastic Free",	
       "Zero Waste",
     ],
   },
@@ -106,7 +104,6 @@ var places = [
       "Images/media/store2.jpg",
     ],
     tags: [
-      "Plastic Free",	
       "Zero Waste",
     ],	
   },
@@ -132,11 +129,11 @@ var places = [
     ],
     tags: [
       "Plant Based", 
-      "Plastic Free",	
+      "Zero Waste",	
     ],	
     displayTags: [
       "Plant Based", 
-      "Plastic Free Options",
+      "Zero Waste Options",
     ]
   },
   {
@@ -224,30 +221,30 @@ var places = [
       "Zero Waste",
     ]
   },
-  {
-    name: "Responsible Travel",
-    coords: [50.8231784,-0.1424923],
-    address: " 1st floor, Edge House, 42 Bond Street, Brighton, BN1 1RD, U",
-    shortDescription: "Travel company with a strong emphasis on eco-friendly and ethnical travel",
-    thumbnail: "Images/media/responsibletravel.jpg",
-    businessLogo: "Images/media/responsibletravel.jpg",
-    openingHours: [
-      "Mon-Fri 9am-5pm",     
-    ],
-    websiteLink: "https://www.responsibletravel.com/",
-    longDescription: [
-      "Responsible Travel want to make tourism a more caring industry and lead by example in responsible tourism.",
-      "They are an activist travel company offering responsible holidays and are transparent in their impact. They are passionate about campaiging for a more caring and to help protect the world, cultures and wildlife from unethical practices and irresponsible tourism.",
-      "They sell holidays designed to maximise the benefit and minimise the harm involved in tourism. The holidays they offer are screened for their compliance with environmental, social and economic criteria with an emphasis on grassroot initiatives and local providers.",
-    ],
-    photos: [
-      "Images/media/responsibletravel1.jpeg",
-      "Images/media/responsibletravel2.jpeg"
-    ],
-    tags: [
-      "Other",	
-    ],
-  }, 
+  // {
+  //   name: "Responsible Travel",
+  //   coords: [50.8231784,-0.1424923],
+  //   address: " 1st floor, Edge House, 42 Bond Street, Brighton, BN1 1RD, U",
+  //   shortDescription: "Travel company with a strong emphasis on eco-friendly and ethnical travel",
+  //   thumbnail: "Images/media/responsibletravel.jpg",
+  //   businessLogo: "Images/media/responsibletravel.jpg",
+  //   openingHours: [
+  //     "Mon-Fri 9am-5pm",     
+  //   ],
+  //   websiteLink: "https://www.responsibletravel.com/",
+  //   longDescription: [
+  //     "Responsible Travel want to make tourism a more caring industry and lead by example in responsible tourism.",
+  //     "They are an activist travel company offering responsible holidays and are transparent in their impact. They are passionate about campaiging for a more caring and to help protect the world, cultures and wildlife from unethical practices and irresponsible tourism.",
+  //     "They sell holidays designed to maximise the benefit and minimise the harm involved in tourism. The holidays they offer are screened for their compliance with environmental, social and economic criteria with an emphasis on grassroot initiatives and local providers.",
+  //   ],
+  //   photos: [
+  //     "Images/media/responsibletravel1.jpeg",
+  //     "Images/media/responsibletravel2.jpeg"
+  //   ],
+  //   tags: [
+  //     "Other",	
+  //   ],
+  // }, 
   {
     name: "V360 Icecreams",
     coords: [50.8210303,-0.1480986],
@@ -344,11 +341,11 @@ var places = [
     ],
     tags: [
       "Plant Based",	
-      "Plastic Free",
+      "Zero Waste",
     ],
     displayTags: [
       "Plant Based Options", 
-      "Plastic Free Options",
+      "Zero Waste Options",
     ]
   },
   {
@@ -375,11 +372,11 @@ var places = [
     ],
     tags: [
       "Plant Based",	
-      "Plastic Free",
+      "Zero Waste",
     ],
     displayTags: [
       "Plant Based Options",	
-      "Plastic Free Options",
+      "Zero Waste Options",
     ]
   },
   {
@@ -432,7 +429,7 @@ var places = [
     tags: [
       "Health & Wellbeing",	
       "Plant Based",
-      "Plastic Free",
+      "Zero Waste",
     ],
   },
   {
@@ -458,7 +455,7 @@ var places = [
     tags: [
       "Health & Wellbeing",	
       "Plant Based",
-      "Plastic Free",
+      "Zero Waste",
     ],
   },
   {
@@ -483,11 +480,11 @@ var places = [
     ],
     tags: [	
       "Plant Based",
-      "Plastic Free",
+      "Zero Waste",
     ],
     displayTags: [
       "Plant Based Options",	
-      "Plastic Free Options",
+      "Zero Waste Options",
     ]
   },
   {
@@ -512,11 +509,11 @@ var places = [
     ],
     tags: [	
       "Plant Based",
-      "Plastic Free",
+      "Zero Waste",
     ],
     displayTags: [
       "Plant Based Options",	
-      "Plastic Free Options",
+      "Zero Waste Options",
     ]
   },
   {
@@ -543,7 +540,11 @@ var places = [
     name: "Too Good To Go",
     shortDescription: "Too Good To Go is an app fighting food waste.",
     thumbnail: "Images/media/toogoodtogologo.jpg",
-    businessLogo: "Images/media/toogoodtogologo.jpg",  
+    businessLogo: "Images/media/toogoodtogologo.jpg",
+    openingHours: [
+      "Mon-Sat 9.30am-6pm",
+      "Sun 11am-5pm",
+    ],    
     websiteLink: "https://toogoodtogo.co.uk",
     longDescription: [
         "Join millions of food waste warriors by downloading Too Good To Go that is fighting food waste. You can buy quality local food for as little as £2 - great food that would otherwise have gone to waste.",
@@ -559,6 +560,32 @@ var places = [
       "Other",
     ],
   },
+  {
+    name: "Cuttlefish Eco Hair Salon",
+    coords: [50.8269828,-0.139307],
+    address: "31 Gloucester Road, Brighton, BN1 4AQ",
+    shortDescription: "Brighton’s first 'Eco Salon'.",
+    thumbnail: "Images/media/cuttlefishsalon.png", 
+    businessLogo: "Images/media/cuttlefishsalon.png",  
+    websiteLink: "https://www.cuttlefishecosalons.com/",
+    openingHours: [
+      "Mon, Tues, Sat 10am-6pm",
+      "Wed 10am-4pm",
+      "Thurs, Fri 10am-7pm",
+      "Sun CLOSED",
+    ],
+    longDescription: [
+      "Brighton’s first Eco Salon, Cuttlefish pride themselves on providing a bespoke, eco-friendly experience in a relaxed environment.",
+      "Cuttlefish have a strong emphasis on caring for the environment and ensure that they are constantly sourcing what they believe are the cleanest and greenest products available, which are vegan, cruelty free and as sustainable as possible.",
+    ],
+    photos: [
+      "Images/media/cuttlefishsalon2.jpg",
+      "Images/media/cuttlefishsalon3.jpg",
+    ],
+    tags: [	
+      "Health & Wellbeing",
+    ],
+  },
 ]
 
 var mymap = null
@@ -568,8 +595,8 @@ var isMobile = false
 var mobileShowingMap = false
 
 var initialCoordinatesDesktop = [50.840983, -0.137393]
+var initialZoom = 13
 var initialCoordinatesMobile = [50.8333872,-0.1526689]
-
 
 // Sort the array of places alphabetically by name
 function compare(a, b) {
@@ -590,9 +617,6 @@ places.sort(compare);
 
 function filter() {
   var selected=[]
-  if (document.getElementById("chkPlasticFree").checked) {
-      selected.push('Plastic Free');
-  }
   if (document.getElementById("chkZeroWaste").checked) {
     selected.push('Zero Waste');
   }  
@@ -723,15 +747,18 @@ function hideHiddenSidebar() {
       document.getElementById('fab').style.opacity = '1'
     }, 200)
   }
+  else{
+    resetZoom()
+  }
 }
 
 function initMap() {
   // debugger
   if (isMobile) {
-    mymap = L.map('mapmobile').setView(initialCoordinatesMobile, 13.3);
+    mymap = L.map('mapmobile').setView(initialCoordinatesMobile, initialZoom);
   }
   else {
-    mymap = L.map('mapdesktop').setView(initialCoordinatesDesktop, 13.3);
+    mymap = L.map('mapdesktop').setView(initialCoordinatesDesktop, initialZoom);
   }
 
   L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}{r}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
@@ -791,6 +818,9 @@ function showListings(selections) {
       // onClick event calls showHiddenSidebar() with current place index
       result.onclick=function(index) {
         showHiddenSidebar(index)
+        if (!isMobile) {
+          zoomToMarker(index)
+        }
       }.bind(this, index)
 
       // Add result to DOM
@@ -808,7 +838,7 @@ function showListings(selections) {
         markerContent += '</div>'
         markerContent = '<div class="markercontent">' + markerContent + '</div>'
 
-        L.marker(place.coords)
+        place.marker = L.marker(place.coords)
           .bindPopup(markerContent)
           // onClick event which also calls showHiddenSidebar() with current place index
           .on('click', function(index) {
@@ -848,6 +878,20 @@ function toggleMobileListMap() {
     document.getElementById('sidebarlistitems').style.display = 'none'
     document.getElementById('mapmobile').style.display = 'block'
   }
+}
+
+function zoomToMarker(index) {
+  var place = places[index]
+  if (place.coords) {
+    mymap.flyTo(place.coords, 16, {duration: 1.2});
+    setTimeout(
+      function() {place.marker.bounce(3)
+    }, 1200)
+  }
+}
+
+function resetZoom() {
+  mymap.flyTo(initialCoordinatesDesktop, initialZoom, {duration: 1.2});
 }
 
 // Initialise app
