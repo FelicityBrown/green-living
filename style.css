@@ -145,6 +145,7 @@ h2, h3, h4, h5, h6 {
     #sidebarlistitemscontainer {
         overflow: auto;
         -webkit-overflow-scrolling: touch;
+        flex-basis: 100%;
     }
 
     #popupsidebar {
@@ -289,6 +290,7 @@ h2, h3, h4, h5, h6 {
         font-size: 15px;
         display: flex;
         flex-direction: column;
+        flex-basis: 100%;
     }
 
     .address {
@@ -467,6 +469,17 @@ h2, h3, h4, h5, h6 {
     }
 
     #fab {
+        display: block;
+    }
+}
+
+
+/* IE10+ */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .sidebartext {
+        display: block;
+    }
+    .hiddenimagesrow {
         display: block;
     }
 }

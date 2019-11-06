@@ -909,9 +909,10 @@ function init() {
   }
   showListings(availableTags)
 
-  if (navigator.userAgent.toLowerCase().indexOf('ipad') > -1) {
-    document.getElementById('sidebarlistitems').style.height = '340px';
-  }
+  // if (navigator.userAgent.toLowerCase().indexOf('ipad') > -1) {
+  //   var height = document.getElementById('primarysidebar').offsetHeight - document.getElementById('sidebarfilter').offsetHeight
+  //   document.getElementById('sidebarlistitems').style.height = height + 'px';
+  // }
 }
 
 init()
