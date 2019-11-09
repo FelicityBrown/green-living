@@ -221,30 +221,6 @@ var places = [
       "Zero Waste",
     ]
   },
-  // {
-  //   name: "Responsible Travel",
-  //   coords: [50.8231784,-0.1424923],
-  //   address: " 1st floor, Edge House, 42 Bond Street, Brighton, BN1 1RD, U",
-  //   shortDescription: "Travel company with a strong emphasis on eco-friendly and ethnical travel",
-  //   thumbnail: "Images/media/responsibletravel.jpg",
-  //   businessLogo: "Images/media/responsibletravel.jpg",
-  //   openingHours: [
-  //     "Mon-Fri 9am-5pm",     
-  //   ],
-  //   websiteLink: "https://www.responsibletravel.com/",
-  //   longDescription: [
-  //     "Responsible Travel want to make tourism a more caring industry and lead by example in responsible tourism.",
-  //     "They are an activist travel company offering responsible holidays and are transparent in their impact. They are passionate about campaiging for a more caring and to help protect the world, cultures and wildlife from unethical practices and irresponsible tourism.",
-  //     "They sell holidays designed to maximise the benefit and minimise the harm involved in tourism. The holidays they offer are screened for their compliance with environmental, social and economic criteria with an emphasis on grassroot initiatives and local providers.",
-  //   ],
-  //   photos: [
-  //     "Images/media/responsibletravel1.jpeg",
-  //     "Images/media/responsibletravel2.jpeg"
-  //   ],
-  //   tags: [
-  //     "Other",	
-  //   ],
-  // }, 
   {
     name: "V360 Icecreams",
     coords: [50.8210303,-0.1480986],
@@ -305,7 +281,7 @@ var places = [
     ],  
     websiteLink: "https://magpie.coop/",
     longDescription: [
-      "Magpie collects your reusable unwanted furniture their warehouse, Shabitat.",
+      "Magpie collects your reusable unwanted furniture at their warehouse, Shabitat.",
       "Shabitat is their warehouse shop where you can find affordable furniture, electrical goods, quality second-hand clothes and homeware, as well as Magpie Recycling giving back to the local community through their Homeless Furniture Project",
       "Magpie Recycling also offer both a Greenbox and recycling opt-in scheme, collected by their converted green, electric milk floats where possible. They collect a wider range of materials than the council recycling, including taking most types of plastics, textiles, tetra packs/juice cartons & aluminium tin foil. Being that you can ensure that these items are not being put into household waste", 
       "As well as this they don't ship any of the collected materials abroad ensuring everything collected is recycled as locally as possible.",
@@ -409,7 +385,7 @@ var places = [
     name: "Eden Perfumes",
     coords: [50.825461, -0.139380],
     address: "26 Gardner Street, Brighton, BN1 1UP",
-    shortDescription: "Cruetly free and vegan alternative to your favourite perfume fragrances.",
+    shortDescription: "Cruelty free and vegan alternative to your favourite perfume fragrances.",
     thumbnail: "Images/media/edenperfumes.jpg",
     businessLogo: "Images/media/edenperfumeslogo.png",  
     openingHours: [
@@ -436,7 +412,7 @@ var places = [
     name: "Eden Perfumes",
     coords: [50.8242267,-0.1499512],
     address: "69 Western Road, Brighton, BN1 2HA",
-    shortDescription: "Cruetly free and vegan alternative to your favourite perfume fragrances.",
+    shortDescription: "Cruelty free and vegan alternative to your favourite perfume fragrances.",
     thumbnail: "Images/media/edenperfumes.jpg",
     businessLogo: "Images/media/edenperfumeslogo.png",  
     openingHours: [
@@ -541,10 +517,6 @@ var places = [
     shortDescription: "Too Good To Go is an app fighting food waste.",
     thumbnail: "Images/media/toogoodtogologo.jpg",
     businessLogo: "Images/media/toogoodtogologo.jpg",
-    openingHours: [
-      "Mon-Sat 9.30am-6pm",
-      "Sun 11am-5pm",
-    ],    
     websiteLink: "https://toogoodtogo.co.uk",
     longDescription: [
         "Join millions of food waste warriors by downloading Too Good To Go that is fighting food waste. You can buy quality local food for as little as £2 - great food that would otherwise have gone to waste.",
@@ -585,6 +557,53 @@ var places = [
     tags: [	
       "Health & Wellbeing",
     ],
+  },
+  {
+    name: "Bright Moon Weaving Studio",
+    shortDescription: "Artist Weaving Studio selling beautiful products made from sustainably sourced wool and other natural materials.",
+    thumbnail: "Images/media/brightmoon2.jpg",
+    businessLogo: "Images/media/brightmoon2.jpg",
+    websiteLink: "https://www.brightmoonweaving.com/",
+    longDescription: [
+      "Imogen Di Sapia is a British weaver and exhibiting artist-maker in textiles, working with hand-weaving combined with storytelling, folklore and heritage crafts to create her studio textiles.", 
+      "At the heart of Imogen’s practice lies the story of the wool, ethical and traceable, from field to final piece.  It starts with a rescue flock of South Downs sheep, whose wool once sheared in Spring would otherwise be destined for compost.",  
+      "Instead their fleeces are sent to Cornwall where they are washed in environmentally-friendly processes.",
+      "Hand-spinning allows a freedom in blending the soft and springy wool with other ethical fibres, such as flax and silk.",
+      "All pieces are made in studio batches; the be placed on the preview list, please email  weaving@brightmoon.co",
+    ],
+    photos: [
+      "Images/media/brightmoon1.jpg",
+      "Images/media/brightmoon3.jpg",
+    ],
+    tags: [
+      "Zero Waste",
+    ],	
+  },
+  {
+    name: "Brighton Repair Cafe",
+    coords: [50.8286042,-0.1291036],
+    address: "The Hanover Centre, 33 Southover St, Brighton, BN2 9UD",
+    shortDescription: "Bringing people together to give broken objects a second lease of life, all whilst having a chat and have a cuppa.",
+    thumbnail: "Images/media/brightonrepaircafe2.jpg",
+    businessLogo: "Images/media/brightonrepaircafe2.jpg",
+    websiteLink: "https://www.facebook.com/brightonrepcafe",
+    openingHours: [
+      "Last Saturday of every month",
+      "(except December",
+      "10.30am-12,30pm",
+    ],
+    longDescription: [
+      "A community spirited and eco-friendly monthly event bringing people together to give broken objects a second lease of life, all whilst having a chat and have a cuppa.",
+      "Each month may vary in what expertise is avaliable, so please check what repairs will be avaliable before each event.",
+    ],
+    photos: [
+      "Images/media/brightonrepaircafe3.jpg",
+      "Images/media/brightonrepaircafe4.jpg",
+    ],
+    tags: [
+      "Other",
+      "Zero Waste",
+    ],	
   },
 ]
 
