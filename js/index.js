@@ -619,10 +619,10 @@ var initialCoordinatesMobile = [50.8333872,-0.1526689]
 
 // Sort the array of places alphabetically by name
 function compare(a, b) {
-  const nameA = a.name.toLowerCase();
-  const nameB = b.name.toLowerCase();
+  var nameA = a.name.toLowerCase();
+  var nameB = b.name.toLowerCase();
 
-  let comparison = 0;
+  var comparison = 0;
   if (nameA > nameB) {
     comparison = 1;
   }
@@ -685,7 +685,8 @@ function showHiddenSidebar(index) {
     tags = place.displayTags
   }
   var tagsHtml = ''
-  for (tag of tags) {
+  for (var i=0; i < tags.length; i++) {
+    var tag = tags[i]
     tagsHtml += "<span>" + tag + "</span>"
   }
   document.getElementById('sidebartags').innerHTML = tagsHtml
@@ -708,7 +709,8 @@ function showHiddenSidebar(index) {
   document.getElementById('openinghours').innerHTML = null
   if (place.openingHours) {
     var openingHoursHtml = '<img src="Images/static/calendarsymbol.svg"><ul>'
-    for (var line of place.openingHours) {
+    for (var i=0; i < place.openingHours.length; i++) {
+      var line = place.openingHours[i]
       openingHoursHtml += line + '<br/>'
     }
     openingHoursHtml += '</ul>'
@@ -726,7 +728,8 @@ function showHiddenSidebar(index) {
   document.getElementById('longdescription').innerHTML = null
   if (place.longDescription) {
     var longDescriptionHtml = ''
-    for (var line of place.longDescription) {
+    for (var i=0; i < place.longDescription.length; i++) {
+      var line = place.longDescription[i]
       longDescriptionHtml += '<p>'+line +'</p>'
     }
     document.getElementById('longdescription').innerHTML = longDescriptionHtml
@@ -736,7 +739,8 @@ function showHiddenSidebar(index) {
   document.getElementById('hiddenimagesrow').innerHTML = null
   if (place.photos) {
     var photosHtml = ''
-    for (var photo of place.photos) {
+    for (var i=0; i < place.photos.length; i++) {
+      var photo = place.photos[i]
       photosHtml += '<img class="hiddenimages" src="'+photo+'"/>'
     }
     document.getElementById('hiddenimagesrow').innerHTML = photosHtml
@@ -801,10 +805,11 @@ function showListings(selections) {
   results.innerHTML=''
 
   // Loop over places, adding them to list and map if they match the selected filters
-  for (var index in places) {
+  for (var index=0; index < places.length; index++) {
     var place = places[index]
     var show = false
-    for (var selection of selections) {
+    for (var i=0; i < selections.length; i++) {
+      var selection = selections[i]
       if (place.tags.indexOf(selection) > -1) {
         show=true
       }
@@ -822,7 +827,8 @@ function showListings(selections) {
         tags = place.displayTags
       }
       var tagsHtml = ''
-      for (tag of tags) {
+      for (var i=0; i < tags.length; i++) {
+        var tag = tags[i]
         tagsHtml += "<span>" + tag + "</span>"
       }
       result.className = "sidebarlistitem"
@@ -873,7 +879,6 @@ function showListings(selections) {
 
 function detectIsMobile() {
   var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
-  console.log('viewport width = ' + w)
   if (w <= 768) {
     isMobile = true
   }
@@ -887,14 +892,14 @@ function toggleMobileListMap() {
     mobileShowingMap = false
     document.getElementById('fablist').style.display = 'none'
     document.getElementById('fabmap').style.display = 'block'
-    document.getElementById('sidebarlistitems').style.display = 'block'
+    document.getElementById('sidebarlistitemscontainer').style.display = 'block'
     document.getElementById('mapmobile').style.display = 'none'
   }
   else {
     mobileShowingMap = true
     document.getElementById('fabmap').style.display = 'none'
     document.getElementById('fablist').style.display = 'block'
-    document.getElementById('sidebarlistitems').style.display = 'none'
+    document.getElementById('sidebarlistitemscontainer').style.display = 'none'
     document.getElementById('mapmobile').style.display = 'block'
   }
 }
@@ -917,10 +922,16 @@ function resetZoom() {
 function init() {
   detectIsMobile()
   initMap()
+
   if (isMobile) {
     document.getElementById('mapmobile').style.display = 'none'
   }
   showListings(availableTags)
+
+  // if (navigator.userAgent.toLowerCase().indexOf('ipad') > -1) {
+  //   var height = document.getElementById('primarysidebar').offsetHeight - document.getElementById('sidebarfilter').offsetHeight
+  //   document.getElementById('sidebarlistitems').style.height = height + 'px';
+  // }
 }
 
 init()
