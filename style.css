@@ -7,12 +7,12 @@ html {
 }
 
 body {
-    padding: 3vh;
     margin: 0;
     /* font-family: 'Lato', sans-serif; */
     font-family: 'Raleway', sans-serif;
     font-size: 15px;
     height: 100%;
+    background: white;
 }
 
 h1 {
@@ -32,11 +32,14 @@ h2, h3, h4, h5, h6 {
 }
 
 #mappage {
-    background: white;
     height: 100%;
     display: flex;
     flex-direction: column;
-    /* padding: 3vh; */
+    padding: 3vh;
+}
+
+#addlistingpage {
+    padding: 3vh;
 }
 
 #mainmapview {
