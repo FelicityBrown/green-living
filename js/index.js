@@ -892,14 +892,14 @@ function toggleMobileListMap() {
     mobileShowingMap = false
     document.getElementById('fablist').style.display = 'none'
     document.getElementById('fabmap').style.display = 'block'
-    document.getElementById('sidebarlistitems').style.display = 'block'
+    document.getElementById('sidebarlistitemscontainer').style.display = 'block'
     document.getElementById('mapmobile').style.display = 'none'
   }
   else {
     mobileShowingMap = true
     document.getElementById('fabmap').style.display = 'none'
     document.getElementById('fablist').style.display = 'block'
-    document.getElementById('sidebarlistitems').style.display = 'none'
+    document.getElementById('sidebarlistitemscontainer').style.display = 'none'
     document.getElementById('mapmobile').style.display = 'block'
   }
 }
