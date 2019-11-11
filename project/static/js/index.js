@@ -6,8 +6,8 @@ var places = [
     coords: [50.8313074,-0.1751294],
     address: "48 Blatchington Road, Hove, BN3 3YH",
     shortDescription: "Plastic free pantry and refill store",
-    thumbnail: "Images/media/harrietsofhove1.jpg",
-    businessLogo: "Images/media/harrietsofhoveroundlogo.png",
+    thumbnail: "/media/img/harrietsofhove1.jpg",
+    businessLogo: "/media/img/harrietsofhoveroundlogo.png",
     openingHours: [
       "Mon-Wed 9am-5pm",
       "Thurs 9am-7pm",
@@ -21,8 +21,8 @@ var places = [
       "As well as refills, Harriet’s of Hove offers unpackaged seasonal vegetables, a wide range of bamboo products and many more sustainable items for people to rid unnecessary plastics from their daily lives. Whether you are a sustainability expert or simply curious about the environment, Harriet’s of Hove will offer something for everyone, with the focus on helping our Planet.",
     ],
     photos: [
-      "Images/media/harrietsofhove2.jpg",
-      "Images/media/harrietsofhove3.jpg",
+      "/media/img/harrietsofhove2.jpg",
+      "/media/img/harrietsofhove3.jpg",
     ],
     tags: [
       "Zero Waste",
@@ -33,8 +33,8 @@ var places = [
     coords: [50.8288957,-0.1357773],
     address: "20-21 York Place, Brighton, BN1 4GU",
     shortDescription: "Plastic free pantry and refill store",
-    thumbnail: "Images/media/hisbefrontstore.jpg",
-    businessLogo: "Images/media/hisbelogo.jpg",
+    thumbnail: "/media/img/hisbefrontstore.jpg",
+    businessLogo: "/media/img/hisbelogo.jpg",
     openingHours: [
       "Everyday 8am – 9pm",
       "",
@@ -45,8 +45,8 @@ var places = [
       "HISBE has a large selection of package free fruit and vegetables, as well as other packaged free items. So round up you totes and jars to fill up at this vibrant store.",
     ],
     photos: [
-      "Images/media/hisbe2.jpg",
-      "Images/media/hisbe3.jpg",
+      "/media/img/hisbe2.jpg",
+      "/media/img/hisbe3.jpg",
     ],
     tags: [	
       "Zero Waste",
@@ -57,8 +57,8 @@ var places = [
     coords: [50.831654,-0.1354634],
     address: "Unit 9, Brighton Open Market, Marshalls Row, BN1 4JU",
     shortDescription: "Plastic free pantry and refill store",
-    thumbnail: "Images/media/wastenot.jpg",	
-    businessLogo: "Images/media/wastenotlogo.jpg",
+    thumbnail: "/media/img/wastenot.jpg",	
+    businessLogo: "/media/img/wastenotlogo.jpg",
     openingHours: [
       "Mon, Tues, Sat",
       "9.30am-5.30pm",
@@ -75,8 +75,8 @@ var places = [
       "A fully zero waste shop selling bulk produce, and household items to help you cut down on your waste and reduce your impact on the planet.",
     ],
     photos: [
-      "Images/media/wastenot1.jpg",
-      "Images/media/wastenot3.jpg",
+      "/media/img/wastenot1.jpg",
+      "/media/img/wastenot3.jpg",
     ],
     tags: [
       "Zero Waste",
@@ -87,8 +87,8 @@ var places = [
     coords: [50.8429385,-0.1350116],
     address: "253E Ditchling Road, Brighton, BN1 6JD",
     shortDescription: "Plastic free pantry and refill store",
-    thumbnail: "Images/media/storebrightonlogo.png",
-    businessLogo: "Images/media/storebrightonlogo.png",
+    thumbnail: "/media/img/storebrightonlogo.png",
+    businessLogo: "/media/img/storebrightonlogo.png",
     openingHours: [
       "Mon-Fri 9am-5.30pm",
       "Sat 10am-5.30pm",      
@@ -100,8 +100,8 @@ var places = [
       "Customers are encouraged to bring their own containers (jars, bottles, bags, tubs etc) to refill by weight, only paying for the product, not the packaging.",
     ],
     photos: [
-      "Images/media/store1.jpg",
-      "Images/media/store2.jpg",
+      "/media/img/store1.jpg",
+      "/media/img/store2.jpg",
     ],
     tags: [
       "Zero Waste",
@@ -112,8 +112,8 @@ var places = [
     coords: [50.8243355,-0.1405033],
     address: "10 Church Street, Brighton, BN1 1US",
     shortDescription: "Vegan store with refill section and plastic free options",
-    thumbnail: "Images/media/thecaptainpig.jpg",
-    businessLogo: "Images/media/thecaptainpiglogo.png",
+    thumbnail: "/media/img/thecaptainpig.jpg",
+    businessLogo: "/media/img/thecaptainpiglogo.png",
     openingHours: [
       "Mon CLOSED",
       "Tues-Sat 10am-6pm",      
@@ -124,8 +124,8 @@ var places = [
       "Brighton's 1st Vegan grogery store. Here you can find vegan staples and goodies, an opportunity to buy local produce, organic fruit and vegetables, all at a minimum waste, with a refill station.",
     ],
     photos: [
-      "Images/media/thecaptainpig2.jpg",
-      "Images/media/thecaptainpig3.jpg",
+      "/media/img/thecaptainpig2.jpg",
+      "/media/img/thecaptainpig3.jpg",
     ],
     tags: [
       "Plant Based", 
@@ -141,8 +141,8 @@ var places = [
     coords: [50.8248751,-0.1421102],
     address: "46 Windsor Street, Brighton, BN1 1RJ",
     shortDescription: "Eco-friendly pub with plenty of vegan options",
-    thumbnail: "Images/media/earthandstars.jpg",
-    businessLogo: "Images/media/earthandstarslogo.png",
+    thumbnail: "/media/img/earthandstars.jpg",
+    businessLogo: "/media/img/earthandstarslogo.png",
     openingHours: [
       "Sun-Thurs 12pm-midnight",
       "Fri-Sat 12pm-1am",      
@@ -153,8 +153,8 @@ var places = [
       "This pub also offers a wide range of plant-based meal options.",
     ],
     photos: [
-      "Images/media/earthandstars1.jpg",
-      "Images/media/earthandstars2.jpeg",
+      "/media/img/earthandstars1.jpg",
+      "/media/img/earthandstars2.jpeg",
     ],
     tags: [
       "Plant Based",	
@@ -170,8 +170,8 @@ var places = [
     coords: [50.832729, -0.138852],
     address: "Elder Place, Brighton, BN1 4GY",
     shortDescription: "Recycled and reclaimed wood and furniture",
-    thumbnail: "Images/media/woodstorefront.jpg",
-    businessLogo: "Images/media/woodstorelogo.jpg",  
+    thumbnail: "/media/img/woodstorefront.jpg",
+    businessLogo: "/media/img/woodstorelogo.jpg",  
     openingHours: [
       "Mon-Sat 9am-5pm",    
       "Sundays and Bank Holidays 11am-4pm",
@@ -183,8 +183,8 @@ var places = [
       "At the Wood Store you can buy a variety of wood for all your projects, as well as beautifully crafted furniture in their shop.",
     ],
     photos: [
-      "Images/media/woodstore2.jpg",
-      "Images/media/woodstore3.jpg",
+      "/media/img/woodstore2.jpg",
+      "/media/img/woodstore3.jpg",
     ],
     tags: [
       "Upcycling",
@@ -195,8 +195,8 @@ var places = [
     coords: [50.833398, -0.139837],
     address: "3-4 Circus Parade, Brighton, BN1 4GW",
     shortDescription: "Zero waste to landfill, sustainable produce café",
-    thumbnail: "Images/media/backwoodcafe.jpg",	
-    businessLogo: "Images/media/backwoodcafelogo.jpg",
+    thumbnail: "/media/img/backwoodcafe.jpg",	
+    businessLogo: "/media/img/backwoodcafelogo.jpg",
     openingHours: [
       "Mon-Fri 7:30am-6pm",
       "Sat-Sun 8am-6pm"      
@@ -207,8 +207,8 @@ var places = [
       "They minimise waste, compost and encourage re-use, including setting up their own coffee cup loan scheme."
     ],
     photos: [
-      "Images/media/backwood1.jpeg",
-      "Images/media/backwood2.jpeg"
+      "/media/img/backwood1.jpeg",
+      "/media/img/backwood2.jpeg"
     ],
     tags: [
       "Sustainable Dining",
@@ -226,8 +226,8 @@ var places = [
     coords: [50.8210303,-0.1480986],
     address: "Kings Road Arches, 112, Brighton BN1 2LN",
     shortDescription: "Vegan icecream and sorbet shop",
-    thumbnail: "Images/media/v360.jpg",
-    businessLogo: "Images/media/v360logo.jpg",  
+    thumbnail: "/media/img/v360.jpg",
+    businessLogo: "/media/img/v360logo.jpg",  
     openingHours: [
       "Mon-Thurs 12pm-5.45pm",    
       "Fri-Sun 12pm-6.45pm",
@@ -237,8 +237,8 @@ var places = [
       "An all vegan icecream and sorbet shop, including their own locally made plant-based Mr Whippys.",
     ],
     photos: [
-      "Images/media/v3601.jpg",
-      "Images/media/v3602.jpg",
+      "/media/img/v3601.jpg",
+      "/media/img/v3602.jpg",
     ],
     tags: [
       "Plant Based",	
@@ -249,8 +249,8 @@ var places = [
     coords: [50.8206885,-0.1324551],
     address: "39-40 St James’s Street, Brighton, BN2 1RG",
     shortDescription: "Advocating making a positive difference for the planet and a healthy lifestyle",
-    thumbnail: "Images/media/ecogym.png",
-    businessLogo: "Images/media/ecogym.png",  
+    thumbnail: "/media/img/ecogym.png",
+    businessLogo: "/media/img/ecogym.png",  
     openingHours: [
       "Mon-Fri 6am-9pm",
       "Sat-Sun 9am-6pm",
@@ -260,8 +260,8 @@ var places = [
       "The Eco Gym in Brighton and Lancing advocating making a positive difference for the planet and a healthy lifestyle.",
     ],
     photos: [
-      "Images/media/ecogym1.jpeg",
-      "Images/media/ecogym2.jpeg",
+      "/media/img/ecogym1.jpeg",
+      "/media/img/ecogym2.jpeg",
     ],
     tags: [
       "Health & Wellbeing",	
@@ -272,8 +272,8 @@ var places = [
     coords: [50.8384379,-0.1269937],
     address: "Shabitat, Saunders Park, Brighton, BN2 4AE",
     shortDescription: "Offering a wide range of recycling services, furniture collections and their second-hand furniture shop, Shabitat.",
-    thumbnail: "Images/media/magpierecycling.jpeg",
-    businessLogo: "Images/media/magpierecycling.jpeg",  
+    thumbnail: "/media/img/magpierecycling.jpeg",
+    businessLogo: "/media/img/magpierecycling.jpeg",  
     openingHours: [
       "Shabitat Opening Hours",
       "Mon-Fri 9am-5pm",
@@ -288,8 +288,8 @@ var places = [
       "Magpie Recylcing also offer recycling serves for the Brighton & Hove area.This service includes confidential shredding, collection of a variety of grades of office paper, cans, plastics, tetra pak, foil, cardboard, and much more.",
     ],
     photos: [
-      "Images/media/magpie1.jpg",
-      "Images/media/magpie2.jpg",
+      "/media/img/magpie1.jpg",
+      "/media/img/magpie2.jpg",
     ],
     tags: [
       "Other",	
@@ -300,8 +300,8 @@ var places = [
     coords: [50.825083, -0.175211],
     address: "2 Victoria Terrace, Hove BN3 2WB",
     shortDescription: "Vegetarian & vegan wholefood shop, offering a great selection of healthy and alternative products.",
-    thumbnail: "Images/media/kernelofhove.jpg",
-    businessLogo: "Images/media/kernelofhove.jpg",  
+    thumbnail: "/media/img/kernelofhove.jpg",
+    businessLogo: "/media/img/kernelofhove.jpg",  
     openingHours: [
       "Mon-Sat 9am-6pm",
       "Sun 10am-4pm",
@@ -312,8 +312,8 @@ var places = [
         "Every effort is made to stock locally sourced products,reducing food miles and supporting local producers.",
     ],
     photos: [
-      "Images/media/kernelofhove1.jpg",
-      "Images/media/kernelofhove2.jpg",
+      "/media/img/kernelofhove1.jpg",
+      "/media/img/kernelofhove2.jpg",
     ],
     tags: [
       "Plant Based",	
@@ -329,8 +329,8 @@ var places = [
     coords: [50.833274, -0.184159],
     address: "128 Portland Rd, Hove BN3 5QL",
     shortDescription: "Independent vegetarian health food store renowned for providing high quality and innovative natural health products.",
-    thumbnail: "Images/media/downtoearth.jpg",
-    businessLogo: "Images/media/downtoearth.jpg",  
+    thumbnail: "/media/img/downtoearth.jpg",
+    businessLogo: "/media/img/downtoearth.jpg",  
     openingHours: [
       "Mon-Fri 9am-6pm",
       "Sat 9am-5.30pm",
@@ -343,8 +343,8 @@ var places = [
       "They also stock an increasing range of Fairtrade products supporting independent producers near and far.",
     ],
     photos: [
-      "Images/media/downtoearth1.jpg",
-      "Images/media/downtoearth2.jpg",
+      "/media/img/downtoearth1.jpg",
+      "/media/img/downtoearth2.jpg",
     ],
     tags: [
       "Plant Based",	
@@ -360,8 +360,8 @@ var places = [
     coords: [50.821088, -0.135173],
     address: "12 St James's St, Brighton, BN2 1RE",
     shortDescription: "Plant-based pizza restaurant wood firing its own sour, hemp and gluten free doughs.",
-    thumbnail: "Images/media/purezza.jpg",
-    businessLogo: "Images/media/purezzalogo.jpg",  
+    thumbnail: "/media/img/purezza.jpg",
+    businessLogo: "/media/img/purezzalogo.jpg",  
     openingHours: [
       "Sun-Thurs 12pm-10pm",    
       "Fri-Sat 12pm-11pm",
@@ -374,8 +374,8 @@ var places = [
       "Purezza also offer a range of plant-based sides, other Italian dishes, desserts and drinks.",
     ],
     photos: [
-      "Images/media/purezza1.jpg",
-      "Images/media/purezza2.jpg",
+      "/media/img/purezza1.jpg",
+      "/media/img/purezza2.jpg",
     ],
     tags: [
       "Plant Based",
@@ -386,8 +386,8 @@ var places = [
     coords: [50.825461, -0.139380],
     address: "26 Gardner Street, Brighton, BN1 1UP",
     shortDescription: "Cruelty free and vegan alternative to your favourite perfume fragrances.",
-    thumbnail: "Images/media/edenperfumes.jpg",
-    businessLogo: "Images/media/edenperfumeslogo.png",  
+    thumbnail: "/media/img/edenperfumes.jpg",
+    businessLogo: "/media/img/edenperfumeslogo.png",  
     openingHours: [
       "Mon-Fri 10am-6pm",
       "Sat 10am-7pm",
@@ -399,8 +399,8 @@ var places = [
       "Their fragrances come in glass bottles, that can be refilled, offering a discount to those that choose this option.",
     ],
     photos: [
-      "Images/media/edenperfumes1.jpeg",
-      "Images/media/edenperfumes2.jpg",
+      "/media/img/edenperfumes1.jpeg",
+      "/media/img/edenperfumes2.jpg",
     ],
     tags: [
       "Health & Wellbeing",	
@@ -413,8 +413,8 @@ var places = [
     coords: [50.8242267,-0.1499512],
     address: "69 Western Road, Brighton, BN1 2HA",
     shortDescription: "Cruelty free and vegan alternative to your favourite perfume fragrances.",
-    thumbnail: "Images/media/edenperfumes.jpg",
-    businessLogo: "Images/media/edenperfumeslogo.png",  
+    thumbnail: "/media/img/edenperfumes.jpg",
+    businessLogo: "/media/img/edenperfumeslogo.png",  
     openingHours: [
       "Mon-Sat 10.30am-7pm",
       "Sun 11am-5pm",
@@ -425,8 +425,8 @@ var places = [
       "Their fragrances come in glass bottles, that can be refilled, offering a discount to those that choose this option.",
     ],
     photos: [
-      "Images/media/edenperfumes1.jpeg",
-      "Images/media/edenperfumes2.jpg",
+      "/media/img/edenperfumes1.jpeg",
+      "/media/img/edenperfumes2.jpg",
     ],
     tags: [
       "Health & Wellbeing",	
@@ -439,8 +439,8 @@ var places = [
     coords: [50.825035, -0.139383],
     address: "41 Gardner Street, Brighton, BN1 1UN",
     shortDescription: "Bird & Blend Tea Co. is an independent, award-winning, tea company on a mission to spread happiness & reimagine tea.",
-    thumbnail: "Images/media/birdandblend2.jpeg",
-    businessLogo: "Images/media/birdandblend.png",  
+    thumbnail: "/media/img/birdandblend2.jpeg",
+    businessLogo: "/media/img/birdandblend.png",  
     openingHours: [
       "Mon-Fri 10.30am-6pm",
       "Sat 10am-7pm",
@@ -451,8 +451,8 @@ var places = [
       "Bird & Blend Tea Co. is an independent, award-winning, tea company on a mission to spread happiness & reimagine tea, with options to buy loose leaf teas, including refilling your own containers.",
     ],
     photos: [
-      "Images/media/birdandblend1.jpg",
-      "Images/media/birdandblend2.jpeg",
+      "/media/img/birdandblend1.jpg",
+      "/media/img/birdandblend2.jpeg",
     ],
     tags: [	
       "Plant Based",
@@ -468,8 +468,8 @@ var places = [
     coords: [50.8256064,-0.1396397],
     address: "25 North Road, Brighton, BN1 1YA",
     shortDescription: "Organic and ethically led supermarket for vegetarian and vegan produce, plus artisan bakery.",
-    thumbnail: "Images/media/infinityfoods1.jpg",
-    businessLogo: "Images/media/infinityfoodslogo.jpg",  
+    thumbnail: "/media/img/infinityfoods1.jpg",
+    businessLogo: "/media/img/infinityfoodslogo.jpg",  
     openingHours: [
       "Mon-Sat 9.30am-6pm",
       "Sun 11am-5pm",
@@ -480,8 +480,8 @@ var places = [
       "The store includes sections throughout where you can purchase items without plastic packaging, including fruits and vegetables, pantry food items, household cleaning liquids, soaps, shampoo and condtioners.",
     ],
     photos: [
-      "Images/media/infinityfoods2.jpg",
-      "Images/media/infinityfoods3.jpg",
+      "/media/img/infinityfoods2.jpg",
+      "/media/img/infinityfoods3.jpg",
     ],
     tags: [	
       "Plant Based",
@@ -495,8 +495,8 @@ var places = [
   {
     name: "Olio",
     shortDescription: "Olio is a mobile app for food-sharing, aiming to reduce food waste.",
-    thumbnail: "Images/media/olio1.jpg",
-    businessLogo: "Images/media/olio1.jpg",  
+    thumbnail: "/media/img/olio1.jpg",
+    businessLogo: "/media/img/olio1.jpg",  
     websiteLink: "https://olioex.com/",
     longDescription: [
       "OLIO is an app that connects neighbours with each other and with local businesses so surplus food can be shared, not thrown away. This could be food nearing its sell-by date in local stores, spare home-grown vegetables, bread from your baker, or the groceries in your fridge when you go away. For your convenience, OLIO can also be used for non-food household items too.",
@@ -504,8 +504,8 @@ var places = [
       "To access items, simply browse the listings available near you, request whatever takes your fancy and arrange a pick-up via private messaging.",
     ],
     photos: [
-      "Images/media/olio3.jpg",
-      "Images/media/olio2.png",
+      "/media/img/olio3.jpg",
+      "/media/img/olio2.png",
     ],
     tags: [	
       "Zero Waste",
@@ -515,8 +515,8 @@ var places = [
   {
     name: "Too Good To Go",
     shortDescription: "Too Good To Go is an app fighting food waste.",
-    thumbnail: "Images/media/toogoodtogologo.jpg",
-    businessLogo: "Images/media/toogoodtogologo.jpg",
+    thumbnail: "/media/img/toogoodtogologo.jpg",
+    businessLogo: "/media/img/toogoodtogologo.jpg",
     websiteLink: "https://toogoodtogo.co.uk",
     longDescription: [
         "Join millions of food waste warriors by downloading Too Good To Go that is fighting food waste. You can buy quality local food for as little as £2 - great food that would otherwise have gone to waste.",
@@ -524,8 +524,8 @@ var places = [
         "On the app you are able to view food items advertised by businesseses that haven't been purchases in the day and need to be eaten, or if you are a business you are able to advertise food items.",
     ],
     photos: [
-      "Images/media/toogoodtogo.jpg",
-      "Images/media/toogoodtogo2.jpg",
+      "/media/img/toogoodtogo.jpg",
+      "/media/img/toogoodtogo2.jpg",
     ],
     tags: [	
       "Zero Waste",
@@ -537,8 +537,8 @@ var places = [
     coords: [50.8269828,-0.139307],
     address: "31 Gloucester Road, Brighton, BN1 4AQ",
     shortDescription: "Brighton’s first 'Eco Salon'.",
-    thumbnail: "Images/media/cuttlefishsalon.png", 
-    businessLogo: "Images/media/cuttlefishsalon.png",  
+    thumbnail: "/media/img/cuttlefishsalon.png", 
+    businessLogo: "/media/img/cuttlefishsalon.png",  
     websiteLink: "https://www.cuttlefishecosalons.com/",
     openingHours: [
       "Mon, Tues, Sat 10am-6pm",
@@ -551,8 +551,8 @@ var places = [
       "Cuttlefish have a strong emphasis on caring for the environment and ensure that they are constantly sourcing what they believe are the cleanest and greenest products available, which are vegan, cruelty free and as sustainable as possible.",
     ],
     photos: [
-      "Images/media/cuttlefishsalon2.jpg",
-      "Images/media/cuttlefishsalon3.jpg",
+      "/media/img/cuttlefishsalon2.jpg",
+      "/media/img/cuttlefishsalon3.jpg",
     ],
     tags: [	
       "Health & Wellbeing",
@@ -561,8 +561,8 @@ var places = [
   {
     name: "Bright Moon Weaving Studio",
     shortDescription: "Artist Weaving Studio selling beautiful products made from sustainably sourced wool and other natural materials.",
-    thumbnail: "Images/media/brightmoon2.jpg",
-    businessLogo: "Images/media/brightmoon2.jpg",
+    thumbnail: "/media/img/brightmoon2.jpg",
+    businessLogo: "/media/img/brightmoon2.jpg",
     websiteLink: "https://www.brightmoonweaving.com/",
     longDescription: [
       "Imogen Di Sapia is a British weaver and exhibiting artist-maker in textiles, working with hand-weaving combined with storytelling, folklore and heritage crafts to create her studio textiles.", 
@@ -572,8 +572,8 @@ var places = [
       "All pieces are made in studio batches; the be placed on the preview list, please email  weaving@brightmoon.co",
     ],
     photos: [
-      "Images/media/brightmoon1.jpg",
-      "Images/media/brightmoon3.jpg",
+      "/media/img/brightmoon1.jpg",
+      "/media/img/brightmoon3.jpg",
     ],
     tags: [
       "Zero Waste",
@@ -584,8 +584,8 @@ var places = [
     coords: [50.8286042,-0.1291036],
     address: "The Hanover Centre, 33 Southover St, Brighton, BN2 9UD",
     shortDescription: "Bringing people together to give broken objects a second lease of life, all whilst having a chat and have a cuppa.",
-    thumbnail: "Images/media/brightonrepaircafe2.jpg",
-    businessLogo: "Images/media/brightonrepaircafe2.jpg",
+    thumbnail: "/media/img/brightonrepaircafe2.jpg",
+    businessLogo: "/media/img/brightonrepaircafe2.jpg",
     websiteLink: "https://www.facebook.com/brightonrepcafe",
     openingHours: [
       "Last Saturday of every month",
@@ -597,8 +597,8 @@ var places = [
       "Each month may vary in what expertise is avaliable, so please check what repairs will be avaliable before each event.",
     ],
     photos: [
-      "Images/media/brightonrepaircafe3.jpg",
-      "Images/media/brightonrepaircafe4.jpg",
+      "/media/img/brightonrepaircafe3.jpg",
+      "/media/img/brightonrepaircafe4.jpg",
     ],
     tags: [
       "Other",
@@ -694,7 +694,7 @@ function showHiddenSidebar(index) {
   document.getElementById('storeaddress').innerText = place.address
   document.getElementById('storeaddress').innerHTML = null
   if (place.address) {
-    var addressHtml = '<img src="Images/static/business.svg"><ul>'+place.address+'</ul>'
+    var addressHtml = '<img src="/static/img/static/business.svg"><ul>'+place.address+'</ul>'
     document.getElementById('storeaddress').innerHTML = addressHtml
   }
 
@@ -707,7 +707,7 @@ function showHiddenSidebar(index) {
   // Opening hours
   document.getElementById('openinghours').innerHTML = null
   if (place.openingHours) {
-    var openingHoursHtml = '<img src="Images/static/calendarsymbol.svg"><ul>'
+    var openingHoursHtml = '<img src="/static/img/static/calendarsymbol.svg"><ul>'
     for (var line of place.openingHours) {
       openingHoursHtml += line + '<br/>'
     }

@@ -1,46 +1,29 @@
-<!DOCTYPE html>
-<html>
-<head>
-	
-	<title>Green Living Brighton</title>
+{% extends "base.html" %}
 
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<meta name="description" content="Discover Brighton & Hove's environmentally conscious and vegan shops, cafés, restaurantes and more." >
-
-	<link rel="shortcut icon" type="image/x-icon" href="Images/static/favicon.png" />
-
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
-	<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
-	<link rel="stylesheet" href="style.css">
-	<!-- <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">  -->
-	<!-- <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">  -->
-	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Raleway&display=swap" rel="stylesheet">  
-</head>
-<body>
-<div id="addlistingpage">
-<div id="top-bar"> 
-    <h1> <a href="index.html">GREEN LIVING<br />BRIGHTON</a></h1>
-    <div id="topbarleft">
-        <!-- <img id="logo" src="Images/static/fulllogo.svg"/> -->
-    </div>
-
-    <div id="topbarright"><ul>
-        <li><a href="addlisting.html">Add Listing</a></li>
-        <!-- <li><a href="blog.html">Blog</a></li> -->
-      </ul>
-    </div>
-
-</div> 
-
+{% block content %}
    <div id="addlistingform"> 
-    <form>
+
+        <div id="addlistingexplaination">
+            <p>
+                Are you a local eco, ethically minded business owner, or are you a customer that has found an awesome local business that you think should be added to our map? 
+            </p>
+            <p>
+                We are always delighted to learn about the hidden gems that we may not have discovered yet.  
+            </p>
+            <p>
+                Please fill in the form below so that we can check it out and add it.  
+            </p>
+            </div>
+
+    <form action="." method="post">
+        {% csrf_token %}
         Company name* <input type = "text" name = "Company_name" required/>
         <br>
         <br>
         Suggested filter/s
         <br> 
         <div id="addlistingfilter"> 
+
             <span> <input type = "checkbox" name = "zerowaste" value = "on"> Zero Waste </span>
             <span> <input type = "checkbox" name = "plantbased" value = "on"> Plant Based </span>
             <span> <input type = "checkbox" name = "healthandwellbeing" value = "on"> Health & Wellbeing </span>
@@ -71,7 +54,7 @@
         <br>
         <br>
             Description (optional) <br />
-            <textarea rows = "5" cols = "50" name = "description" placeholder="Enter description here..."></textarea>
+            <textarea rows = "7" name = "description" placeholder="Enter description here..."></textarea>
         <br>   
         <br>
         Your email address (optional) <input type = "addlistinguseremail" name = "addlistinguseremail" />
@@ -82,5 +65,5 @@
 
     </div>
 </div>
-</body>
-</html>
+
+{% endblock content %}

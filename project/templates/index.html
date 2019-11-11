@@ -1,3 +1,114 @@
-{% load version %}
-<link href="/static/css/main.css?{% version_date %}" rel="stylesheet" />
-<h1>Index</h1>
+{% extends "base.html" %}
+
+{% block content %}
+	<div id="mainmapview">
+		<div id="sidebar">
+			
+			<div id="sidebarcolumn">
+
+				<div id="primarysidebar"> 
+					<div id="sidebarfilter">
+						<img id="filterlogo" src="/static/img/filterlist.svg"/>
+						<h4>Filter</h4>
+						<form action = " ">
+							<fieldset>
+								<span>
+									<input type = "checkbox"
+										id = "chkZeroWaste"
+										value = "ZeroWaste"
+										checked />
+										<label for = "chkZeroWaste">Zero Waste</label>
+								</span>
+								<span>
+									<input type = "checkbox"
+									id = "chkPlantBased"
+									value = "Plant Based"
+									checked />
+									<label for = "chkPlantBased">Plant Based</label>
+								</span>
+								<span>
+									<input type = "checkbox"
+									id = "chkHealthandWellbeing"
+									value = "Health & Wellbeing"
+									checked />
+									<label for = "chkHealthandWellbeing">Health & Wellbeing</label>
+								</span>
+								<span>
+									<input type = "checkbox"
+									id = "chkSustainableDining"
+									value = "Sustainable Dining"
+									checked />
+									<label for = "chkSustainableDining">Sustainable Dining</label>
+								</span>	
+								<span>
+									<input type = "checkbox"
+										id = "chkUpcycling"
+										value = "Upcycling"
+										checked />
+										<label for = "chkUpcycling">Upcycling</label>
+								</span>
+								<span
+								>
+										<input type = "checkbox"
+											id = "chkOther"
+											value = "Other"
+											checked />
+											<label for = "chkOther">Other</label>
+									</span>
+							<button type = "button"
+							  onclick = "filter()">
+							 Search
+							</button>
+							<button type = "reset"
+								onclick = "resetFilters()">
+								Reset
+							</button>
+							</fieldset>
+						   </form>
+					</div>
+
+					<div id="sidebarlistitemscontainer">
+						<div id="sidebarlistitems"></div>
+					</div>
+
+					<div id="mapmobile"></div>
+
+					<div id="fab" onclick="toggleMobileListMap()">
+						<img id="fabmap" src="/static/img/map-24px.svg"/>
+						<img id="fablist" src="/static/img/format_list_bulleted-24px.svg"/>
+					</div>
+				</div>
+			
+				<div id="popupsidebar">
+					<img class="icon icon-back" onclick="hideHiddenSidebar()" src="/static/img/backarrow.svg"/>
+					<div>
+						<span id="businesslogo"></span>	
+						<div id="aboutbusinesssection">
+							<h2 id="sidebarplacename"></h2>
+								<span id="sidebartags"></span>
+								<div class="storeaddress" id="storeaddress"></div>
+								<div class="openinghours" id="openinghours"></div>
+								<div class="websitelink">
+									<img src="/static/img/web.svg">
+									<ul id="websitelink"></ul>
+								</div>
+							</div>
+							<div class="longdescription">
+								<p id="longdescription"></p>
+							</div>
+							<div class="hiddenimagesrow" id="hiddenimagesrow">	
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+		<div id="mapdesktop"></div>
+
+{% endblock content %}
+
+{% block body_end %}
+    <script type="text/javascript" src="/static/js/leaflet.smoothmarkerbouncing.js"></script>
+    <script src="/static/js/index.js"></script>
+{% endblock body_end %}

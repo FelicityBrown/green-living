@@ -52,13 +52,12 @@ h2, h3, h4, h5, h6 {
 
     #sidebar {
         width: 400px;
-        height: 100%;
         background-color: #e5e5e5;
         margin-right: 1.5vh;
         border-radius: 10px;
         overflow: hidden;
         box-shadow: inset 0px 3px 9px rgba(0,0,0,0.1);
-    } 
+    }
 
     .filtertags {
         display: block;
@@ -92,7 +91,7 @@ h2, h3, h4, h5, h6 {
     #sidebarfilter {
         height: 180px;
         padding: 10px 0 10px 10px;
-        }
+    }
 
     #filterlogo {
         vertical-align: top;
@@ -147,19 +146,24 @@ h2, h3, h4, h5, h6 {
 
 
     #primarysidebar {
-        overflow-y: auto;
         width: 400px;
         flex-direction: column;
         display: flex;
     }
+    #sidebarlistitemscontainer {
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+        flex-basis: 100%;
+    }
 
     #popupsidebar {
         width: 400px;
+        height: 100%;
         padding: 10px;
-        overflow: hidden;
-        overflow-y: auto;
+        overflow: auto;
         color: #005f00;
         padding: 10px;
+        -webkit-overflow-scrolling: touch;
     }
         #popupsidebar .icon-back {
             cursor: pointer;
@@ -294,6 +298,7 @@ h2, h3, h4, h5, h6 {
         font-size: 15px;
         display: flex;
         flex-direction: column;
+        flex-basis: 100%;
     }
 
     .address {
@@ -340,10 +345,6 @@ h2, h3, h4, h5, h6 {
     #top-bar li {
         display: inline-block;
         margin-left: 10px;
-    }
-
-    #topbarleft {
-        /* width: 400px; */
     }
 
     #topbarright {
@@ -415,6 +416,10 @@ h2, h3, h4, h5, h6 {
             margin-right: 30px;
         }
 
+    #mapmobile {
+        display: none;
+    }
+
     #addlistingform {
         background-color: #e5e5e5;
         margin:15px auto;
@@ -437,9 +442,24 @@ h2, h3, h4, h5, h6 {
         margin-bottom: 5px;
     }
 
+    textarea {
+        width: 100%;
+    }
+
+    #addlistingexplaination {
+        background-color: #cccccc;
+        border-radius: 14px;
+        margin-bottom: 25px;
+        padding: 5px 15px;
+    }
+
 @media only screen and (max-width: 768px) {
     #mappage {
         padding: 0;
+    }
+
+    #mapmobile {
+        display: block;
     }
 
     #mainmapview {
@@ -493,6 +513,20 @@ h2, h3, h4, h5, h6 {
     }
 
     #fab {
+        display: block;
+    }
+
+    #addlistingform {
+        border-radius: 0;
+    }
+}
+
+/* IE10+ */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .sidebartext {
+        display: block;
+    }
+    .hiddenimagesrow {
         display: block;
     }
 }

@@ -4,23 +4,23 @@ from django.http import HttpResponseRedirect
 from django.shortcuts import render
 
 
-def submit(request):
+def add_listing(request):
     if request.method == 'POST':
         context = {
-            'name': request.POST.get('name'),
-            'url': request.POST.get('url'),
+            'company_name': request.POST.get('Company_name'),
+            'zerowaste': request.POST.get('zerowaste')
         }
 
-        send_mail(
-            'New Green Living Submission',
-            'Here is the message.',
-            settings.EMAIL_HOST_USER,
-            [settings.EMAIL_SUBMISSION_RECIPIENT],
-            fail_silently=False,
-        )
+        # send_mail(
+        #     'New Green Living Submission',
+        #     'Here is the message.',
+        #     settings.EMAIL_HOST_USER,
+        #     [settings.EMAIL_SUBMISSION_RECIPIENT],
+        #     fail_silently=False,
+        # )
 
-        return HttpResponseRedirect('/submit/confirmation/')
+        # return HttpResponseRedirect('/addlisting/confirmation/')
+        return render(request, 'add_listing_test.html', context)
 
     else:
-        return render(request, 'submit.html')
-
+        return render(request, 'add_listing.html')
