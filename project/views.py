@@ -40,9 +40,9 @@ Your email address (optional): {request.POST.get('useremail')}
             fail_silently=False,
         )
 
-        # return HttpResponseRedirect('/?thankyou=1')
-        context['email_body'] = email_body
-        return render(request, 'add_listing_test.html', context)
+        return HttpResponseRedirect('/?thankyou=1')
+        # context['email_body'] = email_body
+        # return render(request, 'add_listing_test.html', context)
 
     else:
         return render(request, 'add_listing.html')
