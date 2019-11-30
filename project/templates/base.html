@@ -1,0 +1,64 @@
+{% load version %}
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>{% block title %}Green Living Brighton{% endblock title %}</title>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<meta name="description" content="Discover Brighton & Hove's eco friendly shops, cafés, restaurantes and more."/>
+
+	<link rel="shortcut icon" type="image/x-icon" href="/static/img/static/favicon.png" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+	<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+	<link rel="stylesheet" href="/static/css/style.css?{% version_date %}">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">  -->
+	<!-- <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">  -->
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Raleway&display=swap" rel="stylesheet">
+	{% block extra_head %}{% endblock extra_head %}
+</head>
+<body>
+
+<div id="mappage">
+    
+	<div id="top-bar"> 
+		<h1> <a href="/">GREEN LIVING<br />BRIGHTON</a></h1>
+		<div id="topbarleft">
+			<!-- <img id="logo" src="/static/img/static/fulllogo.svg"/> -->
+		</div>
+
+		<div id="topbarright"><ul>
+			<li><a href="/addlisting/">Add Listing</a></li>
+			<!-- <li><a href="/blog/">Blog</a></li> -->
+		  </ul>
+		</div>
+	
+	</div> 
+
+	{% block content %}{% endblock content %}
+
+	</div>
+</div>
+
+{% block body_end %}{% endblock body_end %}
+
+<!-- Matomo -->
+<script type="text/javascript">
+	var _paq = window._paq || [];
+	/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+	_paq.push(['trackPageView']);
+	_paq.push(['enableLinkTracking']);
+	(function() {
+	  var u="//stats.epixstudios.co.uk/";
+	  _paq.push(['setTrackerUrl', u+'matomo.php']);
+	  _paq.push(['setSiteId', '16']);
+	  var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+	  g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+	})();
+</script>
+<!-- End Matomo Code -->
+
+</body>
+</html>
