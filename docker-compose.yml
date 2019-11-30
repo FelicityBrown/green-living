@@ -1,0 +1,13 @@
+version: "2"
+
+services:
+  green-living:
+    container_name: green-living
+    build:
+      context: .
+    ports:
+      - "8000:80"
+    environment:
+      ENV: dev
+    volumes:
+      - ./project:/srv/project
