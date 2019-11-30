@@ -17,50 +17,54 @@
 
     <form action="." method="post">
         {% csrf_token %}
-        Company name* <input type = "text" name = "Company_name" required/>
+        Company name* <input type = "text" name = "company_name" required/>
         <br>
         <br>
         Suggested filter/s
         <br> 
         <div id="addlistingfilter"> 
 
-            <span> <input type = "checkbox" name = "zerowaste" value = "on"> Zero Waste </span>
-            <span> <input type = "checkbox" name = "plantbased" value = "on"> Plant Based </span>
-            <span> <input type = "checkbox" name = "healthandwellbeing" value = "on"> Health & Wellbeing </span>
-            <span> <input type = "checkbox" name = "sustainabledining" value = "on"> Sustainable Dining </span>
-            <span> <input type = "checkbox" name = "upcylcing" value = "on"> Upcycling </span>
-            <span> <input type = "checkbox" name = "other" value = "on"> Other </span>
+            <span> <input type = "checkbox" name = "filterselected" value = "Plastic Free" id="chkPlasticFree"/> <label for="chkPlasticFree">Plastic Free</label></span>
+            <span> <input type = "checkbox" name = "filterselected" value = "Plant Based" id="chkPlantBased"/> <label for="chkPlantBased">Plant Based</label></span>
+            <span> <input type = "checkbox" name = "filterselected" value = "Health & Wellbeing" id="chkHealthandWellbeing"> <label for="chkHealthandWellbeing">Health & Wellbeing</label></span>
+            <span> <input type = "checkbox" name = "filterselected" value = "Sustainable Dining" id="chkSustainableDining"/> <label for="chkSustainableDining">Sustainable Dining</label></span>
+            <span> <input type = "checkbox" name = "filterselected" value = "Upcycling" id="chkUpcycling"/> <label for="chkUpcycling">Upcycling</label></span>
+            <span><input type = "checkbox" name = "filterselected" value = "Clothing" id="chkClothing"/> <label for="chkClothing">Clothing</label></span>
+            <span><input type = "checkbox" name = "filterselected" value = "Children" id="chkChildren"/> <label for="chkChildren">Children</label></span>
+            <span> <input type = "checkbox" name = "filterselected" value = "Other" id="chkOther"/> <label for="chkOther">Other</label></span>
     </div>
-    <form >
-            or suggest new filter category <input type = "othersuggestedtag" name = "other_suggested_tag" />
+            or suggest new filter category <input type = "text" name = "other_suggested_tag" />
         <br>
         <br>
-        Town/city (if applicable) <input type = "text" name = "Town_city" />
+        Town/city (if applicable) <input type = "text" name = "town_city" />
         <br>
         <br>
-        Address and postcode (if known) <input type = "text" name = "Address" />
+        Address and postcode (if known) <input type = "text" name = "address" />
         <br>
         <br>
-        Website (if applicable) <input type = "text" name = "Website" />
+        Website (if applicable) <input type = "text" name = "website" />
         <br>
         <br>
         Social media links (if applicable)
         <br>
-        Facebook <input type = "text" name = "Facebook" />
+        Facebook <input type = "text" name = "facebook" />
         <br>
-        Instagram <input type = "text" name = "Instagram" />
+        Instagram <input type = "text" name = "instagram" />
         <br>
-        Twitter <input type = "text" name = "Twitter" />
+        Twitter <input type = "text" name = "twitter" />
         <br>
         <br>
             Description (optional) <br />
             <textarea rows = "7" name = "description" placeholder="Enter description here..."></textarea>
         <br>   
         <br>
-        Your email address (optional) <input type = "addlistinguseremail" name = "addlistinguseremail" />
+        Your email address (optional) <input type = "text" name = "useremail" />
         <br>
         <br>
         <input type="submit" value="Submit">
+        <!-- <button type = "reset">
+			Reset
+		</button> -->
     </form>
 
     </div>

@@ -3,7 +3,7 @@
 
 Running server:
 
-    cd ~/Documents/Eco map
+    cd ~/Documents/Eco\ map
     make start
 
 Go to http://localhost:8000/ in browser

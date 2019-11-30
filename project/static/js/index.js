@@ -1,4 +1,4 @@
-var availableTags = ['Plastic Free', 'Zero Waste', 'Plant Based', 'Health & Wellbeing', 'Sustainable Dining', 'Upcycling', 'Other']
+var availableTags = ['Plastic Free', 'Plastic Free', 'Plant Based', 'Health & Wellbeing', 'Sustainable Dining', 'Upcycling', 'Other']
 
 var places = [
   {
@@ -25,7 +25,7 @@ var places = [
       "/media/img/harrietsofhove3.jpg",
     ],
     tags: [
-      "Zero Waste",
+      "Plastic Free",
     ],
   },
   {
@@ -49,7 +49,7 @@ var places = [
       "/media/img/hisbe3.jpg",
     ],
     tags: [	
-      "Zero Waste",
+      "Plastic Free",
     ],
   },
   {
@@ -79,7 +79,7 @@ var places = [
       "/media/img/wastenot3.jpg",
     ],
     tags: [
-      "Zero Waste",
+      "Plastic Free",
     ],
   },
   {
@@ -104,7 +104,7 @@ var places = [
       "/media/img/store2.jpg",
     ],
     tags: [
-      "Zero Waste",
+      "Plastic Free",
     ],	
   },
   {
@@ -129,11 +129,11 @@ var places = [
     ],
     tags: [
       "Plant Based", 
-      "Zero Waste",	
+      "Plastic Free",	
     ],	
     displayTags: [
       "Plant Based", 
-      "Zero Waste Options",
+      "Plastic Free Options",
     ]
   },
   {
@@ -213,12 +213,12 @@ var places = [
     tags: [
       "Sustainable Dining",
       "Plant Based",	
-      "Zero Waste",
+      "Plastic Free",
     ],
     displayTags: [
       "Plant Based Options", 
       "Sustainable Dining",
-      "Zero Waste",
+      "Plastic Free",
     ]
   },
   {
@@ -292,7 +292,8 @@ var places = [
       "/media/img/magpie2.jpg",
     ],
     tags: [
-      "Other",	
+      "Other",
+      "Clothing",	
     ],
   },
   {
@@ -317,11 +318,11 @@ var places = [
     ],
     tags: [
       "Plant Based",	
-      "Zero Waste",
+      "Plastic Free",
     ],
     displayTags: [
       "Plant Based Options", 
-      "Zero Waste Options",
+      "Plastic Free Options",
     ]
   },
   {
@@ -348,11 +349,11 @@ var places = [
     ],
     tags: [
       "Plant Based",	
-      "Zero Waste",
+      "Plastic Free",
     ],
     displayTags: [
       "Plant Based Options",	
-      "Zero Waste Options",
+      "Plastic Free Options",
     ]
   },
   {
@@ -405,7 +406,7 @@ var places = [
     tags: [
       "Health & Wellbeing",	
       "Plant Based",
-      "Zero Waste",
+      "Plastic Free",
     ],
   },
   {
@@ -431,7 +432,7 @@ var places = [
     tags: [
       "Health & Wellbeing",	
       "Plant Based",
-      "Zero Waste",
+      "Plastic Free",
     ],
   },
   {
@@ -456,11 +457,11 @@ var places = [
     ],
     tags: [	
       "Plant Based",
-      "Zero Waste",
+      "Plastic Free",
     ],
     displayTags: [
       "Plant Based Options",	
-      "Zero Waste Options",
+      "Plastic Free Options",
     ]
   },
   {
@@ -485,11 +486,11 @@ var places = [
     ],
     tags: [	
       "Plant Based",
-      "Zero Waste",
+      "Plastic Free",
     ],
     displayTags: [
       "Plant Based Options",	
-      "Zero Waste Options",
+      "Plastic Free Options",
     ]
   },
   {
@@ -508,7 +509,7 @@ var places = [
       "/media/img/olio2.png",
     ],
     tags: [	
-      "Zero Waste",
+      "Plastic Free",
       "Other",
     ],
   },
@@ -528,7 +529,7 @@ var places = [
       "/media/img/toogoodtogo2.jpg",
     ],
     tags: [	
-      "Zero Waste",
+      "Plastic Free",
       "Other",
     ],
   },
@@ -576,7 +577,7 @@ var places = [
       "/media/img/brightmoon3.jpg",
     ],
     tags: [
-      "Zero Waste",
+      "Plastic Free",
     ],	
   },
   {
@@ -602,9 +603,144 @@ var places = [
     ],
     tags: [
       "Other",
-      "Zero Waste",
+      "Plastic Free",
     ],	
   },
+  {
+    name: "Neighbour Cafe",
+    coords: [50.8271486,-0.1392135],
+    address: "95 Gloucester Road, Brighton, BN1 4AP",
+    shortDescription: "Modern plant-based & vegetarian cafe bar.",
+    thumbnail: "/media/img/neighbourhoodlogo.jpg",
+    businessLogo: "/media/img/neighbourhoodlogo.jpg",
+    websiteLink: "https://www.neighbourhoodbrighton.co.uk/",
+    openingHours: [
+      "Sun-Thurs open until 5pm",
+      "Fri-Sat open until 10pm"
+    ],
+    longDescription: [
+      "Neighbourhood Cafe was created to bring something a little different to Brighton's North Laine. A friendly neighbourhood cafe bar with a relaxed atmosphere and at its heart a mission to be part of the conversation around good food, looking after our planet and its people.",
+      "They love fresh organic food, the School of Life, yoga, Permaculture, cycle rides, being in nature, ethical spending, and sometimes no spending at all, and aim to bring fresh food direct from local farms, field to plate, and get as much veg as they can direct from Ashurst Organics just outside Lewes, and are building relationships with other local organic growers.", 
+      "Our other suppliers include Infinity, Ecotricity, the Phone Coop (broadband), they pay Living Wage as a minimum (most paid more) and strive to put sustainability at the heart of the business.",
+    ],
+    photos: [
+      "/media/img/neighbourhood1.jpg",
+      "/media/img/neighbourhood2.jpg",
+    ],
+    tags: [
+      "Plant Based",
+      "Plastic Free",
+    ],	
+  },
+  {
+    name: "Timeless Toys",
+    coords: [50.8331826,-0.1850308],
+    address: "103 Portland Road, Hove, BN3 5DP",
+    shortDescription: "Made ethical, wooden children's toys.",
+    thumbnail: "/media/img/timelesstoys3.jpg",
+    businessLogo: "/media/img/timelesstoys.png",
+    websiteLink: "https://www.facebook.com/timelesstoysUK/?ref=page_internal",
+    openingHours: [
+      "Tues-Sat 10am-5pm",
+    ],
+    longDescription: [
+     "Selling the best wooden toys available on the market today for 0-6yr olds. Plastic-free, planet-friendly, sustainable and ethical toys.", 
+     "Handcrafted, independently produced. Montessori & Waldorf inspired. Powered by children, not batteries.",
+    ],
+    photos: [
+      "/media/img/timelesstoys1.jpg",
+      "/media/img/timelesstoys2.jpg",
+    ],
+    tags: [
+      "Children",
+      "Plastic Free",
+    ],	
+  },
+  {
+    name: "Sussex Cloth Nappy Library",
+    shortDescription: "To help support parents and carers to put their babies and little ones in cloth nappies for a brighter future for all.",
+    thumbnail: "/media/img/sussexnappylibrary.jpg",
+    businessLogo: "/media/img/sussexnappylibrary.jpg",
+    websiteLink: "https://www.sussexnappylibrary.com/",
+    longDescription: [
+      "Based in Worthing, Sussex Cloth Nappy Library is a non-profit organization voluntarily run by three mums who are all passionate about cloth nappies, dedicated to help you understand the world of reusable nappies.",
+      "They currently have 3 newborn kits, which contain approximately 15 nappies. We also have 9 birth to potty kits, which contain approximately 20 nappies. They include accessories such as liners, reusable wipes and wet bags in the kits.", 
+      "To ensure you have a range of nappies to try they have added five different types to the kits. These are pockets, all-in-ones, all-in-twos, two-parters, and flat nappies, and also aim to introduce to use to a number of different brands such as TotsBots, Close Parent Pop-ins, Little Lamb and TJ's Cloth Nappies. This may seem like nappy jargon to you, but don't worry, their team are here to help you grow in knowledge and confidence.",
+      "A kit can be hired for a month for £15 and £25 refundable deposit and collected at one of our drop-ins.",
+      "To make sure you get the most benefit of your kit SusNappies deliver a thorough consultation at handover, giving you the chance to ask any questions you may have and learn how cloth nappies can work for you and your little one.", 
+      "Whilst you are hiring the kits they will send you emails to provide you with tips, advice and discount codes to help you build your own nappy stash, and are also available online to answer any questions and to help resolve any issues you may experience.",
+    ],
+    photos: [
+      "/media/img/sussexnappylibrary1.jpg",
+      "/media/img/sussexnappylibrary3.jpg",
+    ],
+    tags: [
+      "Children",
+      "Plastic Free",
+    ],	
+  },
+  {
+    name: "UK Nappy Network",
+    shortDescription: "The UK has a network of Cloth Nappy Libraries that aim to help parents find a nappy solution that works for them.",
+    thumbnail: "/media/img/uknappynetworklogo.jpg",
+    businessLogo: "/media/img/uknappynetworklogo.jpg",
+    websiteLink: "http://www.uknappynetwork.org/",
+    longDescription: [
+      "Helping you find your local nappy library with their interactive map, as well as providing lots of useful information and tips on their website.",
+    ],
+    photos: [
+      "/media/img/uknappynetwork2.jpg",
+      "/media/img/uknappynetwork1.JPG",
+    ],
+    tags: [
+      "Children",
+      "Plastic Free",
+    ],	
+  },
+  {
+    name: "Brighton Sling Babies",
+    coords: [50.8289184,-0.1354623],
+    address: "2 Phoenix Place, Brighton, BN2 9ND",
+    shortDescription: "A meeting of mums and dads with some babywearing experience who would like to use their gained knowledge to help others progress on their babywearing journey.",
+    thumbnail: "/media/img/brightonslingbaby1.JPG",
+    businessLogo: "/media/img/brightonslingbaby2.jpg",
+    websiteLink: "https://www.facebook.com/brightonslingbabies/",
+    openingHours: [
+      "Meets first Friday",
+      "of every month",
+    ],
+    longDescription: [
+      "A meeting of mums and dads with some babywearing experience who would like to use their gained knowledge to help others progress on their babywearing journey.",
+      "They do not sell, promote or endorse any specific carrier type or brand, and we are not affiliated with any sellers. Any and all recommendations are impartial (and sometimes contrary to our individual preferences) and aimed to suit your needs.",
+    ],
+    photos: [
+      "/media/img/brightonslingbaby2.jpg",
+      "/media/img/brightonslingbaby1.JPG",
+    ],
+    tags: [
+      "Children",
+    ],	
+  },
+//   {
+//   name: "Charity Shops",
+//   shortDescription: "",
+//   thumbnail: "/media/img/brightonslingbaby1.JPG",
+//   businessLogo: "/media/img/brightonslingbaby2.jpg",
+//   longDescription: [
+//     "A meeting of mums and dads with some babywearing experience who would like to use their gained knowledge to help others progress on their babywearing journey.",
+//     "They do not sell, promote or endorse any specific carrier type or brand, and we are not affiliated with any sellers. Any and all recommendations are impartial (and sometimes contrary to our individual preferences) and aimed to suit your needs.",
+//   ],
+//   photos: [
+//     "/media/img/brightonslingbaby2.jpg",
+//     "/media/img/brightonslingbaby1.JPG",
+//   ],
+//   tags: [
+//     "Clothing",
+//     "Other",
+//     "Children",
+//     "Plastic Free",
+//   ],	
+// },
 ]
 
 var mymap = null
@@ -637,7 +773,7 @@ places.sort(compare);
 function filter() {
   var selected=[]
   if (document.getElementById("chkZeroWaste").checked) {
-    selected.push('Zero Waste');
+    selected.push('Plastic Free');
   }  
   if (document.getElementById("chkPlantBased").checked) {
       selected.push('Plant Based');
@@ -654,6 +790,12 @@ function filter() {
   if (document.getElementById("chkOther").checked) {
       selected.push('Other');
   }
+  if (document.getElementById("chkClothing").checked) {
+    selected.push('Clothing');
+  } 
+  if (document.getElementById("chkChildren").checked) {
+    selected.push('Children');
+  } 
   showListings(selected)
   centerMap()
 }
@@ -668,7 +810,7 @@ function centerMap() {
 }
 
 function resetFilters(e) {
-  // Set all filters back to deafaults and update the list view
+  // Set all filters back to defaults and update the list view
   showListings(availableTags)
   centerMap()
 }
@@ -694,7 +836,7 @@ function showHiddenSidebar(index) {
   document.getElementById('storeaddress').innerText = place.address
   document.getElementById('storeaddress').innerHTML = null
   if (place.address) {
-    var addressHtml = '<img src="/static/img/static/business.svg"><ul>'+place.address+'</ul>'
+    var addressHtml = '<img src="/static/img/business.svg"><ul>'+place.address+'</ul>'
     document.getElementById('storeaddress').innerHTML = addressHtml
   }
 
@@ -707,7 +849,7 @@ function showHiddenSidebar(index) {
   // Opening hours
   document.getElementById('openinghours').innerHTML = null
   if (place.openingHours) {
-    var openingHoursHtml = '<img src="/static/img/static/calendarsymbol.svg"><ul>'
+    var openingHoursHtml = '<img src="/static/img/calendarsymbol.svg"><ul>'
     for (var line of place.openingHours) {
       openingHoursHtml += line + '<br/>'
     }
@@ -902,7 +1044,7 @@ function toggleMobileListMap() {
 function zoomToMarker(index) {
   var place = places[index]
   if (place.coords) {
-    mymap.flyTo(place.coords, 16, {duration: 1.2});
+    mymap.flyTo(place.coords, 17.5, {duration: 1.2});
     setTimeout(
       function() {place.marker.bounce(3)
     }, 1200)
@@ -913,6 +1055,25 @@ function resetZoom() {
   mymap.flyTo(initialCoordinatesDesktop, initialZoom, {duration: 1.2});
 }
 
+function initModal() {
+  var urlParams = new URLSearchParams(window.location.search)
+  if (urlParams.get('thankyou')) {
+    var modalBtn = document.getElementById("modal-btn")
+    var modal = document.querySelector(".modal")
+    var closeBtn = document.querySelector(".close-btn")
+    modal.style.display = "block"
+    
+    closeBtn.onclick = function(){
+      modal.style.display = "none"
+    }
+    window.onclick = function(e){
+      if(e.target == modal){
+        modal.style.display = "none"
+      }
+    }
+  }
+}
+
 // Initialise app
 function init() {
   detectIsMobile()
@@ -921,6 +1082,7 @@ function init() {
     document.getElementById('mapmobile').style.display = 'none'
   }
   showListings(availableTags)
+  initModal()
 }
 
 init()

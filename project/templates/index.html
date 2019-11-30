@@ -14,10 +14,10 @@
 							<fieldset>
 								<span>
 									<input type = "checkbox"
-										id = "chkZeroWaste"
-										value = "ZeroWaste"
+										id = "chkPlasticFree"
+										value = "Plastic Free"
 										checked />
-										<label for = "chkZeroWaste">Zero Waste</label>
+										<label for = "chkPlasticFree">Plastic Free</label>
 								</span>
 								<span>
 									<input type = "checkbox"
@@ -47,13 +47,26 @@
 										checked />
 										<label for = "chkUpcycling">Upcycling</label>
 								</span>
-								<span
-								>
+								<span>
 										<input type = "checkbox"
-											id = "chkOther"
-											value = "Other"
+											id = "chkClothing"
+											value = "Clothing"
 											checked />
-											<label for = "chkOther">Other</label>
+											<label for = "chkClothing">Clothing</label>
+									</span>
+								<span>
+										<input type = "checkbox"
+											id = "chkChildren"
+											value = "Children"
+											checked />
+											<label for = "chkChildren">Children</label>
+									</span>
+								<span>
+									<input type = "checkbox"
+										id = "chkOther"
+										value = "Other"
+										checked />
+										<label for = "chkOther">Other</label>
 									</span>
 							<button type = "button"
 							  onclick = "filter()">
@@ -109,6 +122,15 @@
 {% endblock content %}
 
 {% block body_end %}
+<div class="modal">
+	<div class="modal-content">
+	  <span class="close-btn">&times;</span>
+	  <p>Thank you so much for suggesting a new place to add to our map, we really value you helping us build this community.</p>
+	  <p>Together we can use our shared knowledge and values to make a difference locally and across the world.</p>
+	  <p>If you've left your email address we will let you know if your suggestion is added.</p>
+	</div>
+  </div>
+
     <script type="text/javascript" src="/static/js/leaflet.smoothmarkerbouncing.js"></script>
     <script src="/static/js/index.js"></script>
 {% endblock body_end %}
