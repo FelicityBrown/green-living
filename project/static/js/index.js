@@ -1,4 +1,4 @@
-var availableTags = ['Plastic Free', 'Plastic Free', 'Plant Based', 'Health & Wellbeing', 'Sustainable Dining', 'Upcycling', 'Other']
+var availableTags = ['Plastic Free', 'Plastic Free', 'Plant Based', 'Health & Wellbeing', 'Sustainable Dining', 'Upcycling', 'Clothing', 'Other']
 
 var places = [
   {
@@ -87,7 +87,7 @@ var places = [
     coords: [50.8429385,-0.1350116],
     address: "253E Ditchling Road, Brighton, BN1 6JD",
     shortDescription: "Plastic free pantry and refill store",
-    thumbnail: "/media/img/storebrightonlogo.png",
+    thumbnail: "/media/img/store1.jpg",
     businessLogo: "/media/img/storebrightonlogo.png",
     openingHours: [
       "Mon-Fri 9am-5.30pm",
@@ -245,22 +245,25 @@ var places = [
     ],
   },
   {
-    name: "Eco Gym",
+    name: "Green Gym Group",
     coords: [50.8206885,-0.1324551],
     address: "39-40 St James’s Street, Brighton, BN2 1RG",
     shortDescription: "Advocating making a positive difference for the planet and a healthy lifestyle",
-    thumbnail: "/media/img/ecogym.png",
-    businessLogo: "/media/img/ecogym.png",  
+    thumbnail: "media/img/greengymgroup1.jpg",
+    businessLogo: "media/img/greengymgrouplogo.jpg",  
     openingHours: [
-      "Mon-Fri 6am-9pm",
-      "Sat-Sun 9am-6pm",
+      "Everyday 6am-10pm",
     ],  
-    websiteLink: "http://eco-gym.co.uk/",
+    websiteLink: "https://www.greengymgroup.com",
     longDescription: [
-      "The Eco Gym in Brighton and Lancing advocating making a positive difference for the planet and a healthy lifestyle.",
+      "The sustainable option. At the Green Gym Group, they believe that taking care of our health should not come at the expense of the planet.",
+      "Through state-of-the-art fitness equipment they harness the power of your workout and convert it in to clean reusable electricity.",
+      "Working together we can reduce our C02 emissions and the impact we have on the environment.",
+      "the Gym is also taking steps towards reducing unnecessary waste.",
+      "But don’t let your energy go to waste!",
     ],
     photos: [
-      "/media/img/ecogym1.jpeg",
+      "/media/img/greengymgroup1.jpg",
       "/media/img/ecogym2.jpeg",
     ],
     tags: [
@@ -327,7 +330,7 @@ var places = [
   },
   {
     name: "Down to Earth",
-    coords: [50.833274, -0.184159],
+    coords: [50.833081, -0.184046],
     address: "128 Portland Rd, Hove BN3 5QL",
     shortDescription: "Independent vegetarian health food store renowned for providing high quality and innovative natural health products.",
     thumbnail: "/media/img/downtoearth.jpg",
@@ -496,7 +499,7 @@ var places = [
   {
     name: "Olio",
     shortDescription: "Olio is a mobile app for food-sharing, aiming to reduce food waste.",
-    thumbnail: "/media/img/olio1.jpg",
+    thumbnail: "media/img/olio3.png",
     businessLogo: "/media/img/olio1.jpg",  
     websiteLink: "https://olioex.com/",
     longDescription: [
@@ -538,7 +541,7 @@ var places = [
     coords: [50.8269828,-0.139307],
     address: "31 Gloucester Road, Brighton, BN1 4AQ",
     shortDescription: "Brighton’s first 'Eco Salon'.",
-    thumbnail: "/media/img/cuttlefishsalon.png", 
+    thumbnail: "/media/img/cuttlefishsalon3.jpg", 
     businessLogo: "/media/img/cuttlefishsalon.png",  
     websiteLink: "https://www.cuttlefishecosalons.com/",
     openingHours: [
@@ -634,7 +637,7 @@ var places = [
   },
   {
     name: "Timeless Toys",
-    coords: [50.8331826,-0.1850308],
+    coords: [50.833200, -0.182826],
     address: "103 Portland Road, Hove, BN3 5DP",
     shortDescription: "Made ethical, wooden children's toys.",
     thumbnail: "/media/img/timelesstoys3.jpg",
@@ -659,7 +662,7 @@ var places = [
   {
     name: "Sussex Cloth Nappy Library",
     shortDescription: "To help support parents and carers to put their babies and little ones in cloth nappies for a brighter future for all.",
-    thumbnail: "/media/img/sussexnappylibrary.jpg",
+    thumbnail: "/media/img/sussexnappylibrary1.jpg",
     businessLogo: "/media/img/sussexnappylibrary.jpg",
     websiteLink: "https://www.sussexnappylibrary.com/",
     longDescription: [
@@ -721,26 +724,163 @@ var places = [
       "Children",
     ],	
   },
-//   {
-//   name: "Charity Shops",
-//   shortDescription: "",
-//   thumbnail: "/media/img/brightonslingbaby1.JPG",
-//   businessLogo: "/media/img/brightonslingbaby2.jpg",
-//   longDescription: [
-//     "A meeting of mums and dads with some babywearing experience who would like to use their gained knowledge to help others progress on their babywearing journey.",
-//     "They do not sell, promote or endorse any specific carrier type or brand, and we are not affiliated with any sellers. Any and all recommendations are impartial (and sometimes contrary to our individual preferences) and aimed to suit your needs.",
-//   ],
-//   photos: [
-//     "/media/img/brightonslingbaby2.jpg",
-//     "/media/img/brightonslingbaby1.JPG",
-//   ],
-//   tags: [
-//     "Clothing",
-//     "Other",
-//     "Children",
-//     "Plastic Free",
-//   ],	
-// },
+  {
+    name: "The Amyverse",
+    address: "Shoreham-by-Sea",
+    shortDescription: "Wedding stationery, calligraphy, illustrations and handmade cards with minimimal waste.",
+    thumbnail: "/media/img/amyverse3.jpeg",
+    businessLogo: "/media/img/theamyverselogo.jpg",
+    websiteLink: "http://www.theamyverse.com",
+    longDescription: [
+      "The Amyverse is based in Shoreham-by-Sea and has a unique and fun collection of greeting cards, prints and personalised gifts featuring Amy’s illustrations and beautiful calligraphy.",
+      "Amyverse greeting card designs are a little insight to personality, they are playful, silly and sarcastic.",
+      "As a small business the Amyverse is committed to minimising waste and being as eco-friendly as possible.",
+      "The Amyverse is proud to have taken the Naked Card Pledge and all cards, prints and gifts are packaged and sold without single use plastic cello bags. All designs are printed on card made from 100% recycled paper, turning waste into something new.",
+      "The Amyverse is a proud ‘Just a Card Warrior2. The Just a card campaign works to encourage people to support and buy from small and independent businesses",
+      "You can buy the Amyverse prints on Etsy www.etsy.com/shop/amyverse",
+    ],
+    photos: [
+      "/media/img/amyverse2.jpg",
+      "/media/img/amyverse1.jpg",
+    ],
+    tags: [
+      "Plastic Free",
+      // "Independent Business",
+    ],
+  },  
+  {
+  name: "Charity Shops",
+  shortDescription: "There is a wide variety of charity shops around Brighton & Hove that each have a unique range of preloved items including clothing and homeware.",
+  thumbnail: "/media/img/charityshop2.jpg",
+  businessLogo: "/media/img/charityshop4.jpg",
+  openingHours: [
+    "Various opening",
+    "hours dependent",
+    "upon the shop.",
+  ],
+  longDescription: [
+    "There is a wide variety of charity shops around Brighton & Hove that each have a unisue range of preloved items including clothing and homeware.",
+    "By purchasing in charity shops you are also directly supporting charities and the work that they do in the community."
+  ],
+  photos: [
+    "/media/img/charityshop1.jpg",
+    "/media/img/charityshop3.jpg",
+  ],
+  tags: [
+    "Clothing",
+    "Other",
+    "Children",
+  ],	
+},
+{
+  name: "The Source Bulk Foods",
+  coords : [50.824772, -0.1508854],
+  address: "142 Western Road, Brighton, BN1 2LA",
+  shortDescription: "The Source is a bulk food shop whereby you can take your own containers, buying as much or as little as you want.",
+  thumbnail: "/media/img/thesource1.jpg",
+  businessLogo: "/media/img/thesourcelogo.jpg",
+  openingHours: [
+  "Mon-Fri 9am-8pm",
+  "Sat 9am-7pm",
+  "Sun 10am-6pm",
+  ],
+  websiteLink: "www.thesourcebulkfoods.co.uk",
+  longDescription: [
+  "The Source is a bulk food store helping you to make healthy choices and fight against waste. The store offers hundreds of bulk foods including organic wholefoods, spices, cooking liquids, and oils, healthy snacks and sustainable personal household products. All items are plastic free to make your zero waste journey easier.",
+  "You are encouraged to bring your own containers and buy as much as you need, or use the paper bags available.",
+  ],
+  photos: [
+  "/media/img/thesource2.jpg",
+  "/media/img/thesource3.jpg",
+  ],
+  tags: [
+  "Plastic Free",
+  "Plant Based",
+  ],
+  displayTags: [
+  "Plant Based Options",
+  ],
+},
+{
+  name: "Kindly of Brighton",
+  coords : [50.8312829,-0.1475562],
+  address: "110-114 Dyke Road, Hove, BN1 3TE",
+  shortDescription: "A sustainable supermarket for the thoughtful people of Brighton.",
+  thumbnail: "/media/img/kindly1.jpg",
+  businessLogo: "/media/img/kindlylogo.jpg",
+  openingHours: [
+  "Everyday 9am-9pm ",
+  ],
+  websiteLink: "www.facebook.com/kindlybrighton",
+  // longDescription: [
+  // "",
+  // ],
+  photos: [
+  "/media/img/zerowaste1.jpg",
+  "/media/img/zerowaste2.jpg",
+  ],
+  tags: [
+  "Plastic Free",
+  "Plant Based",
+  ],
+  displayTags: [
+  "Plant Based Options",
+  "Plastic Free Options",
+  ],
+},
+{
+  name: "Flock Vintage & Handmade",
+  coords : [50.826962, -0.137910],
+  address: "46 Sydney Street, Brighton, BN1 4EP",
+  shortDescription: "Flock specialises in vintage and handmade clothes, stocking a selection of local labels, as well as shelves of vintage textiles haberdashery, and jewellery.",
+  thumbnail: "/media/img/flock3.jpg",
+  businessLogo: "/media/img/flocklogo.jpg",
+  openingHours: [
+  "Mon-Fri 10.30am-6pm",
+  "Sat 10am-6pm",
+  "Sun 11am-5pm",
+  ],
+  websiteLink: "www.flockbrighton.co.uk",
+  longDescription: [
+  "Nestled in the heart of Brighton Flock has a fantastic range of vintage clothing and items, alongside hand-tailored clothes and accessories.",
+  "Flock stocks the local labels: Pick up Sticks Vintage, Palomita (Amazonian inspired jewellery), The Emperor’s Old Clothes (handmade clothing & accessories with vintage fabrics), Hearts and Guns (clothing made from vintage fabrics), Maria Tilyard Designs (cushions handmade from vintage fabrics), Brighton Lace (underwear made from lace remnants) and Hal of Hove (handmade fragrances and toiletries).",
+  ],
+  photos: [
+  "/media/img/flock4.jpg",
+  "/media/img/flock2.jpg",
+  ],
+  tags: [
+  "Upcycling",
+  "Clothing",
+  "Other",
+  ],
+},
+{
+  name: "The Fair shop",
+  coords : [50.825323, -0.142882],
+  address: "21 Queens Road, Brighton, BN1 3XA",
+  shortDescription: "FAIR is one of the only shops in the country to specialise in Fair Trade and ethical fashion, with a great range of womenswear, an expanding range of menswear and products for the home.",
+  thumbnail: "media/img/fair3.jpg",
+  businessLogo: "media/img/fairlogo.jpg",
+  openingHours: [
+  "Mon 10am-5pm",
+  "Tues-Sat 10am-6pm",
+  "Sun 12pm-5pm",
+  ],
+  websiteLink: "https://thefairshop.co.uk",
+  longDescription: [
+  "FAIR stock a range of brands with strong ethical credentials, who not only support Fair Trade, but also use environmentally friendly materials and production processes.",
+  "FAIR show that there is an alternative to ‘fast fashion’ which has tremendous impact upon the workers and the planet. FAIR focus on ensuring that both people and the planet get the respect that they deserve.",
+  "FAIR lovingly select beautiful, individual, quality items for you, your wardrobe, your family and your home to show that Fair Trade and ethical fashion and household goods are stylish, functional and affordable.",
+  ],
+  photos: [
+  "media/img/fair2.jpg",
+  "media/img/fair3.jpg",
+  ],
+  tags: [
+  "Clothing",
+  ],
+  }
 ]
 
 var mymap = null

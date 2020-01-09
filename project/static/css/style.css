@@ -174,15 +174,15 @@ h6 {
   padding: 10px;
   -webkit-overflow-scrolling: touch;
 }
-#popupsidebar .icon-back {
-  cursor: pointer;
-}
+  #popupsidebar .icon-back {
+    cursor: pointer;
+  }
 
-#popupsidebar h2 {
-  color: #0d1a26;
-  padding: 0;
-  margin: 5px;
-}
+  #popupsidebar h2 {
+    color: #0d1a26;
+    padding: 0;
+    margin: 5px;
+  }
 
 #sidebartags {
   display: block;
@@ -204,9 +204,9 @@ h6 {
   float: right;
   margin: -25px 0px 0px 0px;
 }
-#businesslogo img {
-  width: 100%;
-}
+  #businesslogo img {
+    width: 100%;
+  }
 
 .hiddenimagesrow {
   display: flex;
@@ -240,36 +240,36 @@ h6 {
   font-size: 15px;
 }
 
-.websitelink ul {
-  list-style-image: none;
-  margin-top: 4px;
-  margin-bottom: 14px;
-  margin-left: 0;
-  padding-left: 5px;
-  display: inline-block;
-}
+  .websitelink ul {
+    list-style-image: none;
+    margin-top: 4px;
+    margin-bottom: 14px;
+    margin-left: 0;
+    padding-left: 5px;
+    display: inline-block;
+  }
 
-.websitelink img {
-  vertical-align: top;
-}
+  .websitelink img {
+    vertical-align: top;
+  }
 
 .openinghours {
   list-style: none;
   font-size: 13px;
 }
 
-.openinghours ul {
-  margin-top: 4px;
-  margin-bottom: 14px;
-  margin-left: 0;
-  padding-left: 5px;
-  display: inline-block;
-  font-size-adjust: 0.6;
-}
+  .openinghours ul {
+    margin-top: 4px;
+    margin-bottom: 14px;
+    margin-left: 0;
+    padding-left: 5px;
+    display: inline-block;
+    font-size-adjust: 0.6;
+  }
 
-.openinghours img {
-  vertical-align: top;
-}
+  .openinghours img {
+    vertical-align: top;
+  }
 
 .sidebarlistitem {
   background: white;
@@ -284,23 +284,23 @@ h6 {
   border-radius: 6px;
 }
 
-.sidebarlistitem img {
-  width: 160px;
-  height: 275px;
-  object-fit: cover;
-  flex-shrink: 0;
-  border-radius: 6px 0 0 6px;
-}
+  .sidebarlistitem img {
+    width: 160px;
+    height: 275px;
+    object-fit: cover;
+    flex-shrink: 0;
+    border-radius: 6px 0 0 6px;
+  }
 
-.sidebartext h3 {
-  margin: 0;
-  color: #0d1a26;
-  font-size: 18px;
-}
+  .sidebartext h3 {
+    margin: 0;
+    color: #0d1a26;
+    font-size: 18px;
+  }
 
-.sidebartext p {
-  margin: 10px 0;
-}
+  .sidebartext p {
+    margin: 10px 0;
+  }
 
 .sidebartext {
   padding: 10px 5px 5px 10px;
@@ -360,6 +360,7 @@ h6 {
   flex-grow: 1;
   text-align: right;
   font-size: 2.5vh;
+  vertical-align: middle;
   /* border-radius: 30px;
         outline: 10px;
         outline-color: #154034; */
@@ -368,6 +369,10 @@ h6 {
 #topbarright li a {
   text-decoration: none;
   color: #74bf04;
+}
+
+#socialmediaicons img {
+  height: 40px;
 }
 
 #fab {

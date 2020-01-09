@@ -5,7 +5,7 @@ start:
 	docker-compose up
 
 restart:
-	docker-compose green-living photonix
+	docker-compose restart green-living
 
 shell:
 	docker-compose exec green-living bash
