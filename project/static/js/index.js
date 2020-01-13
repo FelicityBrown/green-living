@@ -880,7 +880,56 @@ var places = [
   tags: [
   "Clothing",
   ],
-  }
+  },
+  {
+    name: "Vegetarian Shoes",
+    coords : [50.826447, -0.140065],
+    address: "27 Foundry Street, Brighton, BN1 4AT",
+    shortDescription: "The Vegetarian Shoe shop is located in the heart of the lanes in Brighton, offering cruelty free friendly footwear.",
+    thumbnail: "media/img/vegshoeshop1.jpg",
+    businessLogo: "media/img/vegshoeshop.png",
+    openingHours: [
+    "Mon-Tues, Thurs-Sat 10am-6pm",
+    "Wed 1pm-6pm",
+    "Sun 11am-5pm",
+    ],
+    websiteLink: "www.vegetarian-shoes.co.uk",
+    longDescription: [
+    "The Vegetarian Shoe shop is located in the heart of the lanes in Brighton, offering cruelty free friendly footwear.",
+    ],
+    photos: [
+    "media/img/vegshoeshop1.jpg",
+    "media/img/vegshoeshop2.jpg",
+    ],
+    tags: [
+    "Plant Based",
+    "Clothing",
+    ],
+    },
+    {
+      name: "Our Daily Edit",
+      coords : [50.822030, -0.141743],
+      address: "23 Ship Street, Brighton, BN1 1AD",
+      shortDescription: "ODE stock and support both independent and young designers, who place importance on sustainability and gender-neutral clothing.",
+      thumbnail: "media/img/ode2.jpg",
+      businessLogo: "media/img/ode.png",
+      openingHours: [
+      "Mon-Sat 10am-6pm",
+      "Sun 11am-5pm",
+      ],
+      websiteLink: "www.ourdailyedit.com",
+      longDescription: [
+      "With a carefully curated selection of menswear, womenswear and lifestyle products from across the globe, ODE has cemented its place in the Brighton Lanes – creating a welcoming and laid-back store.",
+      "ODE stock and support both independent and young designers, who place importance on sustainability and gender-neutral clothing.",
+      ],
+      photos: [
+      "media/img/ode1.jpg",
+      "media/img/ode2.jpg",
+      ],
+      tags: [
+      "Clothing",
+      ],
+      },
 ]
 
 var mymap = null
