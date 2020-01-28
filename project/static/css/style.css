@@ -376,7 +376,7 @@ h6 {
 
 #socialmediaicons li a {
   border: none;
-  padding: 5px
+  padding: 0;
 }
 
 #socialmediaicons img {
@@ -710,6 +710,7 @@ textarea {
 
   #socialmediaicons li {
     display: inline-block;
+    padding: 5px;
   }
 
   #socialmediaicons a {
