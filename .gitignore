@@ -1,1 +1,5 @@
 __pycache__
+project/media
+db.sqlite3
+.vscode
+Pipfile*
