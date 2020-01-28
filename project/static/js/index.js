@@ -1,4 +1,4 @@
-var availableTags = ['Plastic Free', 'Plastic Free', 'Plant Based', 'Health & Wellbeing', 'Sustainable Dining', 'Upcycling', 'Clothing', 'Other']
+var availableTags = ['Plastic Free', 'Plastic Free', 'Plant Based', 'Health & Wellbeing', 'Sustainable Dining', 'Upcycling', 'Clothing', 'Food Waste', 'Other']
 
 var places = []
 
@@ -55,6 +55,9 @@ function filter() {
   if (document.getElementById("chkChildren").checked) {
     selected.push('Children');
   } 
+  if (document.getElementById("chkFoodWaste").checked) {
+    selected.push('FoodWaste');
+  }
   showListings(selected)
   centerMap()
 }
