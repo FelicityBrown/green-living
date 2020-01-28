@@ -199,6 +199,7 @@ function initMap() {
 
 // Update list view and map markers
 function showListings(selections) {
+  // debugger
   // Clear map markers
   markerGroup.clearLayers()
   
@@ -209,9 +210,12 @@ function showListings(selections) {
   // Loop over places, adding them to list and map if they match the selected filters
   for (var index=0; index < places.length; index++) {
     var place = places[index]
+    console.log(place.name)
     var show = false
     for (var i=0; i < selections.length; i++) {
       var selection = selections[i]
+      console.log('  selection = ' + selection)
+      console.log('  place.tags = ' + place.tags)
       if (place.tags.indexOf(selection) > -1) {
         show=true
       }
@@ -352,6 +356,16 @@ function init() {
   }
   else {
     initMap()
+  }
+    
+  document.getElementById('hamburger').onclick = function() {
+    document.body.classList.add('has-open-mobile-nav')
+  }
+  document.getElementById('close-hamburger').onclick = function() {
+    document.body.classList.remove('has-open-mobile-nav')
+  }
+  document.getElementById('js-page-mask').onclick = function() {
+    document.body.classList.remove('has-open-mobile-nav')
   }
 
   var xhr = new XMLHttpRequest();

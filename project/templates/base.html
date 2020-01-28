@@ -39,6 +39,26 @@
 	{% block extra_head %}{% endblock extra_head %}
 </head>
 <body>
+	<div class="nav-mobile js-nav-mobile">
+		<button class="nav-mobile__close close-button" id="close-hamburger" aria-label="close menu">
+			<img src="/static/img/clear-24px.svg">
+		</button>
+		<nav data-nav="" data-nav-btn-class="nav-mobile__expand">
+			<ul class="nav">
+				<li><a href="/about/">About Us</a></li>
+				<li><a href="/blog/">Blog</a></li>
+				<li><a href="/actiongroups/">Action Groups</a></li>
+				<li><a href="/addlisting/">Add Listing</a></li>
+				<span id="socialmediaicons">
+					<li><a href="https://www.facebook.com/greenlivingapp/"><img src="/static/img/facebook.svg"></a></li>
+					<li><a href="https://www.instagram.com/greenlivingapp/"><img src="/static/img/instagram.svg"></a></li>
+					<li><a href="https://twitter.com/greenlivingapp"><img src="/static/img/twitter.svg"></a></li>
+				</span>
+			</ul>
+		</nav>
+	</div>
+	<div class="page-mask" id="js-page-mask"></div>
+
 
 <div id="mappage">
     
@@ -48,15 +68,21 @@
 			<!-- <img id="logo" src="/static/img/static/fulllogo.svg"/> -->
 		</div>
 
-		<div id="topbarright"><ul>
-			<li><a href="/addlisting/">Add Listing</a></li>
-			<!-- <li><a href="/blog/">Blog</a></li> -->
-			<!-- <span id="socialmediaicons">
-				<li><a href="https://www.facebook.com/greenlivingapp/"><img src="/static/img/facebook.svg"></a></li>
-				<li><a href="https://www.instagram.com/greenlivingapp/"><img src="/static/img/instagram.svg"></a></li>
-				<li><a href="https://twitter.com/greenlivingapp"><img src="/static/img/twitter.svg"></a></li> -->
-			</span>
-		  </ul>
+		<div id="topbarright">
+			<button class="burger" id="hamburger" aria-label="Open Menu">
+				<img src="/static/img/menu-24px.svg" />
+			</button>
+			<ul id="desktopmenu">
+				<li><a href="/about/">About Us</a></li>
+				<li><a href="/blog/">Blog</a></li>
+				<li><a href="/actiongroups/">Action Groups</a></li>
+				<li><a href="/addlisting/">Add Listing</a></li>
+				<span id="socialmediaicons">
+					<li><a href="https://www.facebook.com/greenlivingapp/"><img src="/static/img/facebook.svg"></a></li>
+					<li><a href="https://www.instagram.com/greenlivingapp/"><img src="/static/img/instagram.svg"></a></li>
+					<li><a href="https://twitter.com/greenlivingapp"><img src="/static/img/twitter.svg"></a></li>
+				</span>
+			</ul>
 		</div>
 	
 	</div> 

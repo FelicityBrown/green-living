@@ -9,10 +9,12 @@ from project.places.views import add_listing, places_api
 
 urlpatterns = [
     path('', TemplateView.as_view(template_name='index.html')),
+    path('admin/', admin.site.urls),
+    path('about/', TemplateView.as_view(template_name='about.html')),
+    path('blog/', TemplateView.as_view(template_name='blog.html')),
+    path('actiongroups/', TemplateView.as_view(template_name='action_groups.html')),
     path('addlisting/', add_listing),
     path('addlisting/confirmation/', TemplateView.as_view(template_name='add_listing_confirm.html')),
-    path('admin/', admin.site.urls),
-    path('blog/', TemplateView.as_view(template_name='blog.html')),
     path('places.json', places_api)
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
