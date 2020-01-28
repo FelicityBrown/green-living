@@ -179,7 +179,6 @@ function hideHiddenSidebar() {
 }
 
 function initMap() {
-  // debugger
   if (isMobile) {
     mymap = L.map('mapmobile').setView(initialCoordinatesMobile, initialZoom);
   }
@@ -343,10 +342,16 @@ function initModal() {
 // Initialise app
 function init() {
   detectIsMobile()
-  initMap()
 
   if (isMobile) {
+    document.getElementById('sidebarlistitemscontainer').style.display = 'none'
+    document.getElementById('mapmobile').style.display = 'block'
+    initMap()
+    document.getElementById('sidebarlistitemscontainer').style.display = 'block'
     document.getElementById('mapmobile').style.display = 'none'
+  }
+  else {
+    initMap()
   }
 
   var xhr = new XMLHttpRequest();
