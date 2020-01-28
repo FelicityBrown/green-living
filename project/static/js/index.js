@@ -56,7 +56,7 @@ function filter() {
     selected.push('Children');
   } 
   if (document.getElementById("chkFoodWaste").checked) {
-    selected.push('FoodWaste');
+    selected.push('Food Waste');
   }
   showListings(selected)
   centerMap()
