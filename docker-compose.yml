@@ -1,13 +1,29 @@
 version: "2"
 
 services:
+  postgres:
+    container_name: greenliving-postgres
+    image: postgres:11.1-alpine
+    ports:
+      - '5432:5432'
+    environment:
+      POSTGRES_DB: greenliving
+      POSTGRES_PASSWORD: password
+    volumes:
+      - ./data/db:/var/lib/postgresql/data
+
   green-living:
     container_name: green-living
     build:
       context: .
     ports:
-      - "8000:80"
+      - "8001:80"
     environment:
       ENV: dev
+      POSTGRES_HOST: postgres
+      POSTGRES_DB: greenliving
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
     volumes:
       - ./project:/srv/project
+      - ./data/media:/srv/media

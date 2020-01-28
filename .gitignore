@@ -3,3 +3,4 @@ project/media
 db.sqlite3
 .vscode
 Pipfile*
+data

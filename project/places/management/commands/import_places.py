@@ -39,13 +39,13 @@ class Command(BaseCommand):
 
         print('Importing\n')
 
-        with open('/home/felicity/Documents/Eco map/project/places/management/commands/places.json') as f:
+        with open(os.path.join(os.path.dirname(__file__), 'places.json')) as f:
             data = json.loads(f.read(), strict=False)
 
         for place in data:
             print(place['name'])
 
-            img_base_path = '/home/felicity/Documents/Eco map/project'
+            img_base_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..'))
             thumbnail = self.add_image_to_db(img_base_path + place['thumbnail'])
             business_logo = self.add_image_to_db(img_base_path + place['businessLogo'])
             photo1 = None
