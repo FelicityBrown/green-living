@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load version %}
 
 {% block content %}
 	<div id="mainmapview">
@@ -140,5 +141,5 @@
   </div>
 
     <script type="text/javascript" src="/static/js/leaflet.smoothmarkerbouncing.js"></script>
-    <script src="/static/js/index.js"></script>
+    <script src="/static/js/index.js?{% version_date %}"></script>
 {% endblock body_end %}
