@@ -2,12 +2,17 @@ from django.conf import settings
 from django.core.mail import send_mail
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
+from project.places.models import Place
 
+def places_api(request):
+    places = Place.objects.filter(approved=True)
+    context = {
+        'places': places
+    }
+    return render(request, 'places.json', context, content_type='text/json')
 
 def add_listing(request):
     if request.method == 'POST':
-        context = {}
-
         email_body = f'''Hello,
 
 Company name: {request.POST.get('company_name')}

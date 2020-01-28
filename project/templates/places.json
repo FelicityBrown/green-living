@@ -1,0 +1,42 @@
+{% load text thumbnail cache %}
+{% cache 604800 api_places %}
+[
+  {% for place in places %}
+  {
+    "name": "{{ place.name }}",
+    {% if place.latitude and place.longitude %}"coords": [{{ place.latitude}}, {{ place.longitude }}],{% endif %}
+    {% if place.address %}"address": "{{ place.address }}",{% endif %}
+    "shortDescription": "{{ place.short_description }}",
+    "thumbnail": "{% thumbnail place.thumbnail 320x550 crop quality=65 %}",
+    "businessLogo": "{% thumbnail place.business_logo 360x360 crop quality=65 %}",
+    {% if place.opening_hours%}"openingHours": [
+      {% with place.opening_hours|split:"\n" as opening_hours %}
+        {% for line in opening_hours %}"{{ line }}"{% if not forloop.last %},{% endif %}
+        {% endfor %}
+      {% endwith %}
+    ],{% endif %}
+    {% if place.website_link %}"websiteLink": "{{ place.website_link }}",{% endif %}
+    "longDescription": [
+      {% with place.long_description|split:"\n\n" as long_description %}
+        {% for line in long_description %}"{{ line }}"{% if not forloop.last %},{% endif %}
+        {% endfor %}
+      {% endwith %}
+    ],
+    "photos": [
+      "{% thumbnail place.photo1 368x400 crop quality=65 %}",
+      "{% thumbnail place.photo2 368x400 crop quality=65 %}"
+    ],
+    "tags": [
+      {% for tag in place.api_tags %}
+      "{{ tag }}"{% if not forloop.last %},{% endif %}
+      {% endfor %}
+    ],
+    "displayTags": [
+      {% for tag in place.api_display_tags %}
+      "{{ tag }}"{% if not forloop.last %},{% endif %}
+      {% endfor %}
+    ]
+  }{% if not forloop.last %},{% endif %}
+  {% endfor %}
+]
+{% endcache %}

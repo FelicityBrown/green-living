@@ -798,6 +798,7 @@ var places = [
   "Plant Based",
   ],
   displayTags: [
+  "Plastic Free", 
   "Plant Based Options",
   ],
 },
@@ -1008,7 +1009,7 @@ function showHiddenSidebar(index) {
   // Given an index of a place, update the sidebar details with the place info, then display it
   var el = document.getElementById('sidebarcolumn')
   var place = places[index]
-  document.getElementById('sidebarplacename').innerText = place.name
+  document.getElementById('sidebarplacename').innerHTML = place.name
 
   // Tags
   var tags = place.tags
@@ -1275,8 +1276,21 @@ function init() {
   if (isMobile) {
     document.getElementById('mapmobile').style.display = 'none'
   }
-  showListings(availableTags)
-  initModal()
+
+  var xhr = new XMLHttpRequest();
+
+  xhr.open('GET', '/places.json')
+  xhr.responseType = 'json'
+  xhr.send()
+
+  xhr.onload = function() {
+    if (xhr.status == 200) {
+      places = xhr.response
+      showListings(availableTags)
+      initModal()
+    }
+  }
+
 }
 
 init()

@@ -5,10 +5,16 @@
 In the terminal, run:
 
     cd ~/Documents/Eco\ map
-    make start
+    pipenv shell
+    python manage.py runserver
 
 Then go to http://localhost:8000/ in browser
 
+
+# Getting into the virtual environment
+```
+make shell
+```
 
 ## Using Git
 ```

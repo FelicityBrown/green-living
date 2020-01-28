@@ -25,7 +25,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'easy_thumbnails',
+    'filer',
+    'mptt',
     'project',
+    'project.places',
 ]
 
 MIDDLEWARE = [
@@ -49,6 +53,7 @@ TEMPLATES = [
             'context_processors': [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
+                'django.template.context_processors.media',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
@@ -107,7 +112,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'project', 'static')
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'project', 'media')
 
 
 if os.environ.get('EMAIL_HOST'):
@@ -122,3 +130,5 @@ EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
 EMAIL_USE_TLS = bool(os.environ.get('EMAIL_USE_TLS', 1))
 
 EMAIL_SUBMISSION_RECIPIENT = os.environ.get('EMAIL_SUBMISSION_RECIPIENT')
+
+THUMBNAIL_HIGH_RESOLUTION = True
