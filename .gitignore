@@ -4,3 +4,5 @@ db.sqlite3
 .vscode
 Pipfile*
 data
+media/filer_public
+media/filer_public_thumbnails
