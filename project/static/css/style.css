@@ -41,7 +41,7 @@ h6 {
 }
 
 #mappage {
-  height: 100%;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   padding: 3vh;
@@ -444,7 +444,7 @@ h6 {
 
 #addlistingform {
   background-color: #e5e5e5;
-  margin: 15px auto;
+  margin: 15px auto 0;
   padding: 20px;
   border-radius: 10px;
   color: #0d1a26;
@@ -482,6 +482,25 @@ textarea {
   border-radius: 14px;
   margin-bottom: 25px;
   padding: 5px 15px;
+}
+
+#about {
+  background-color:#e5e5e5;
+  margin: 15px auto 0;
+  padding: 20px;
+  border-radius: 10px;
+  color:#0d1a26;
+  max-width: 750px;
+}
+
+#aboutcoverphoto {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.aboutphotos img {
+  width: 33%;
+  margin-top: 20px;
 }
 
 .modal {
@@ -665,6 +684,10 @@ textarea {
   }
 
   #addlistingform {
+    border-radius: 0;
+  }
+
+  #about {
     border-radius: 0;
   }
 
