@@ -333,7 +333,6 @@ h6 {
 #top-bar {
   background-color: none;
   text-align: center;
-  font-weight: bold;
   padding: 0 0 20px 0;
   text-align: left;
   display: flex;
@@ -362,7 +361,7 @@ h6 {
 #topbarright {
   flex-grow: 1;
   text-align: right;
-  font-size: 2.5vh;
+  font-size: 21px;
   vertical-align: middle;
   /* border-radius: 30px;
         outline: 10px;
