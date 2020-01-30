@@ -40,11 +40,14 @@ h6 {
   font-family: 'Raleway', sans-serif;
 }
 
-#mappage {
+#page {
+  padding: 3vh;
+}
+
+.indexpage #page {
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  padding: 3vh;
 }
 
 #addlistingpage {
@@ -621,8 +624,11 @@ textarea {
 }
 
 @media only screen and (max-width: 768px) {
-  #mappage {
+  #page {
     padding: 0;
+  }
+  .indexpage #page {
+    height: 100%;
   }
 
   #mapmobile {

@@ -38,7 +38,7 @@
 
 	{% block extra_head %}{% endblock extra_head %}
 </head>
-<body>
+<body class="{% block body_class %}{% endblock body_class %}">
 	<div class="nav-mobile js-nav-mobile">
 		<button class="nav-mobile__close close-button" id="close-hamburger" aria-label="close menu">
 			<img src="/static/img/clear-24px.svg">
@@ -61,7 +61,7 @@
 	<div class="page-mask" id="js-page-mask"></div>
 
 
-<div id="mappage">
+<div id="page">
     
 	<div id="top-bar"> 
 		<h1> <a href="/">GREEN LIVING<br />BRIGHTON</a></h1>
