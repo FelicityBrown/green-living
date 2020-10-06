@@ -25,6 +25,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sitemaps',
     'easy_thumbnails',
     'filer',
     'mptt',
@@ -72,7 +73,7 @@ if os.environ.get('POSTGRES_HOST'):
         'default': {
             'ENGINE':   'django.db.backends.postgresql',
             'HOST':     os.environ.get('POSTGRES_HOST', '127.0.0.1'),
-            'NAME':     os.environ.get('POSTGRES_DB', 'photonix'),
+            'NAME':     os.environ.get('POSTGRES_DB', 'greenliving'),
             'USER':     os.environ.get('POSTGRES_USER', 'postgres'),
             'PASSWORD': os.environ.get('POSTGRES_PASSWORD', 'password'),
         }

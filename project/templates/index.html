@@ -1,15 +1,27 @@
 {% extends "base.html" %}
-{% load version %}
+{% load version thumbnail text %}
 
-{% block body_class %}indexpage{% endblock body_class %}
+{% block body_class %}indexpage{% endblock %}
+
+{% block title %}{% if place %}{{ place.name }} — {% endif %}Green Living Brighton{% endblock %}
+{% block meta_description %}{% if place %}{{ place.long_description }}{% else %}Discover Brighton & Hove's eco-friendly shops, cafés, restaurants and more.{% endif %}{% endblock %}
+{% block og_title %}{% if place %}{{ place.name }} — {% endif %}Green Living Brighton{% endblock %}
+{% block og_description %}{% if place %}{{ place.long_description }}{% else %}Discover Brighton & Hove's eco-friendly shops, cafés, restaurants and more.{% endif %}{% endblock %}
+{% block og_url %}https://greenliving.earth/{% if place %}place/{{ place.slug }}/{% endif %}{% endblock %}
+{% block og_image %}{% if place %}https://greenliving.earth{% thumbnail place.thumbnail 1920x1080 crop quality=65 %}{% else %}https://greenliving.earth/static/img/avatar.png{% endif %}{% endblock %}
+{% block og_image_secure %}{% if place %}https://greenliving.earth{% thumbnail place.thumbnail 1920x1080 crop quality=65 %}{% else %}https://greenliving.earth/static/img/avatar.png{% endif %}{% endblock %}
+{% block og_image_width %}{% if place %}1920{% else %}1080{% endif %}{% endblock %}
+{% block og_image_height %}{% if place %}1080{% else %}1080{% endif %}{% endblock %}
+{% block twitter_description %}{% if place %}{{ place.long_description }}{% else %}Discover Brighton & Hove's eco-friendly shops, cafés, restaurants and more.{% endif %}{% endblock %}
+{% block twitter_title %}{% if place %}{{ place.name }} — {% endif %}Green Living Brighton{% endblock %}
+{% block twitter_image %}{% if place %}https://greenliving.earth{% thumbnail place.thumbnail 1920x1080 crop quality=65 %}{% else %}https://greenliving.earth/static/img/avatar.png{% endif %}{% endblock %}
 
 {% block content %}
 	<div id="mainmapview">
 		<div id="sidebar">
 			
-			<div id="sidebarcolumn">
-
-				<div id="primarysidebar"> 
+			<div id="sidebarcolumn"{% if place %} class="showinghidden"{% endif %}>
+				<div id="primarysidebar">
 					<div id="sidebarfilter">
 						<img id="filterlogo" src="/static/img/filterlist.svg"/>
 						<h4>Filter</h4>
@@ -79,16 +91,16 @@
 									<label for = "chkOther">Other</label>
 								</span>
 
-							<button type = "button"
-							  onclick = "filter()">
-							 Search
-							</button>
-							<button type = "reset"
-								onclick = "resetFilters()">
-								Reset
-							</button>
+								<button type = "button"
+									onclick = "filter()">
+								Search
+								</button>
+								<button type = "reset"
+									onclick = "resetFilters()">
+									Reset
+								</button>
 							</fieldset>
-						   </form>
+						</form>
 					</div>
 
 					<div id="sidebarlistitemscontainer">
@@ -104,25 +116,63 @@
 				</div>
 			
 				<div id="popupsidebar">
-					<img class="icon icon-back" onclick="hideHiddenSidebar()" src="/static/img/backarrow.svg"/>
-					<div>
-						<span id="businesslogo"></span>	
-						<div id="aboutbusinesssection">
-							<h2 id="sidebarplacename"></h2>
-								<span id="sidebartags"></span>
-								<div class="storeaddress" id="storeaddress"></div>
-								<div class="openinghours" id="openinghours"></div>
+					{% if place %}
+						<img class="icon icon-back" onclick="hideHiddenSidebar()" src="/static/img/backarrow.svg">
+						<div>
+							<span id="businesslogo"><img src="{% thumbnail place.business_logo 360x360 quality=65 %}"></span>	
+							<div id="aboutbusinesssection">
+								<h2 id="sidebarplacename">{{ place.name }}</h2>
+								<span id="sidebartags">
+									{% for tag in place.api_tags %}<span>{{ tag }}</span>{% endfor %}
+								</span>
+								<div class="storeaddress" id="storeaddress"><img src="/static/img/business.svg"><ul>{{ place.address }}</ul></div>
+								<div class="openinghours" id="openinghours"><img src="/static/img/calendarsymbol.svg"><ul>
+									{% with place.opening_hours|split:"\n" as opening_hours %}
+										{% for line in opening_hours %}
+											{{ line }}<br/>
+										{% endfor %}
+									{% endwith %}
+								</ul></div>
 								<div class="websitelink">
 									<img src="/static/img/web.svg">
-									<ul id="websitelink"></ul>
+									<ul id="websitelink"><a href="{{ place.website_link }}">{{ place.website_link }}</a></ul>
+								</div>
+							</div>		
+							<div class="longdescription">
+								<div id="longdescription">
+									{% with place.long_description|split:"\n\n" as long_description %}
+										{% for line in long_description %}
+											<p>{{ line }}</p>
+										{% endfor %}
+									{% endwith %}
 								</div>
 							</div>
-							<div class="longdescription">
-								<p id="longdescription"></p>
+							<div class="hiddenimagesrow" id="hiddenimagesrow">
+								{% if place.photo1 %}<img class="hiddenimages" src="{% thumbnail place.photo1 368x400 crop quality=65 %}">{% endif %}
+								{% if place.photo2 %}<img class="hiddenimages" src="{% thumbnail place.photo2 368x400 crop quality=65 %}">{% endif %}
 							</div>
-							<div class="hiddenimagesrow" id="hiddenimagesrow">	
 						</div>
-					</div>
+					{% else %}
+						<img class="icon icon-back" onclick="hideHiddenSidebar()" src="/static/img/backarrow.svg"/>
+						<div>
+							<span id="businesslogo"></span>	
+							<div id="aboutbusinesssection">
+								<h2 id="sidebarplacename"></h2>
+									<span id="sidebartags"></span>
+									<div class="storeaddress" id="storeaddress"></div>
+									<div class="openinghours" id="openinghours"></div>
+									<div class="websitelink">
+										<img src="/static/img/web.svg">
+										<ul id="websitelink"></ul>
+									</div>
+								</div>
+								<div class="longdescription">
+									<p id="longdescription"></p>
+								</div>
+								<div class="hiddenimagesrow" id="hiddenimagesrow">	
+							</div>
+						</div>
+					{% endif %}
 				</div>
 				
 			</div>
@@ -133,15 +183,25 @@
 {% endblock content %}
 
 {% block body_end %}
-<div class="modal">
-	<div class="modal-content">
-	  <span class="close-btn">&times;</span>
-	  <p>Thank you so much for suggesting a new place to add to our map, we really value you helping us build this community.</p>
-	  <p>Together we can use our shared knowledge and values to make a difference locally and across the world.</p>
-	  <p>If you've left your email address we will let you know if your suggestion is added.</p>
-	</div>
+	<div class="modal">
+		<div class="modal-content">
+			<span class="close-btn">&times;</span>
+			<p>Thank you so much for suggesting a new place to add to our map, we really value you helping us build this community.</p>
+			<p>Together we can use our shared knowledge and values to make a difference locally and across the world.</p>
+			<p>If you've left your email address we will let you know if your suggestion is added.</p>
+		</div>
   </div>
 
-    <script type="text/javascript" src="/static/js/leaflet.smoothmarkerbouncing.js"></script>
-    <script src="/static/js/index.js?{% version_date %}"></script>
+	<script type="text/javascript" src="/static/js/leaflet.smoothmarkerbouncing.js"></script>
+	<script src="/static/js/index.js?{% version_date %}"></script>
+	{% if place %}
+		<script type="text/javascript">
+			if (history) {
+				history.replaceState({placeSlug: '{{ place.slug }}'}, '{{ place.name }} — Green Living Brighton', '/place/{{ place.slug }}/')
+			}
+			setTimeout(function() {
+				zoomToMarkerBySlug('{{ place.slug }}')
+			}, 5000)
+		</script>
+	{% endif %}
 {% endblock body_end %}

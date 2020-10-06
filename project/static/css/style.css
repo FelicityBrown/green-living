@@ -174,18 +174,17 @@ h6 {
   padding: 10px;
   overflow: auto;
   color: #005f00;
-  padding: 10px;
   -webkit-overflow-scrolling: touch;
 }
   #popupsidebar .icon-back {
     cursor: pointer;
   }
 
-  #popupsidebar h2 {
-    color: #0d1a26;
-    padding: 0;
-    margin: 5px;
-  }
+#preloadedplace {
+  padding: 10px;
+  color: #005f00;
+  -webkit-overflow-scrolling: touch;
+}
 
 #sidebartags {
   display: block;
@@ -196,6 +195,12 @@ h6 {
 #aboutbusinesssection {
   min-height: 205px;
 }
+
+  #aboutbusinesssection h2 {
+    color: #0d1a26;
+    padding: 0;
+    margin: 5px;
+  }
 
 .icon {
   width: 26px;

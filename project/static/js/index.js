@@ -77,10 +77,17 @@ function resetFilters(e) {
   centerMap()
 }
 
-function showHiddenSidebar(index) {
+function showHiddenSidebar(index, pushHistory=true) {
   // Given an index of a place, update the sidebar details with the place info, then display it
   var el = document.getElementById('sidebarcolumn')
   var place = places[index]
+
+  document.title = place.name +  ' — Green Living Brighton'
+  if (history && pushHistory) {
+    history.pushState({placeSlug: place.slug}, place.name +  ' — Green Living Brighton', '/place/' + place.slug)
+  }
+
+  // Title
   document.getElementById('sidebarplacename').innerHTML = place.name
 
   // Tags
@@ -161,10 +168,23 @@ function showHiddenSidebar(index) {
   }
 }
 
-function hideHiddenSidebar() {
+function slowHiddenSidebarBySlug(slug, pushHistory=true) {
+  places.find(function(element, index) {
+    if (element.slug == slug) {
+      showHiddenSidebar(index, pushHistory)
+    }
+  })
+}
+
+function hideHiddenSidebar(pushHistory=true) {
   // Remove class name, causing CSS to hide the detailed content and go back to the list/map view
   var el = document.getElementById('sidebarcolumn')
   el.className = ''
+
+  document.title = 'Green Living Brighton'
+  if (history && pushHistory) {
+    history.pushState({placeSlug: null}, 'Green Living Brighton', '/')
+  }
 
   if (isMobile) {
     // Show FAB again
@@ -210,12 +230,9 @@ function showListings(selections) {
   // Loop over places, adding them to list and map if they match the selected filters
   for (var index=0; index < places.length; index++) {
     var place = places[index]
-    console.log(place.name)
     var show = false
     for (var i=0; i < selections.length; i++) {
       var selection = selections[i]
-      console.log('  selection = ' + selection)
-      console.log('  place.tags = ' + place.tags)
       if (place.tags.indexOf(selection) > -1) {
         show=true
       }
@@ -320,8 +337,30 @@ function zoomToMarker(index) {
   }
 }
 
+function zoomToMarkerBySlug(slug) {
+  places.find(function(element, index) {
+    if (element.slug == slug) {
+      zoomToMarker(index)
+    }
+  })
+}
+
 function resetZoom() {
   mymap.flyTo(initialCoordinatesDesktop, initialZoom, {duration: 1.2});
+}
+
+function onHistoryChange(event) {
+  if (event.state) {
+    console.log(event.state)
+    if (event.state.placeSlug) {
+      slowHiddenSidebarBySlug(event.state.placeSlug, pushHistory=false)
+      zoomToMarkerBySlug(event.state.placeSlug)
+    }
+    else {
+      hideHiddenSidebar(pushHistory=false)
+      resetZoom()
+    }
+  }
 }
 
 function initModal() {
@@ -372,6 +411,7 @@ function init() {
     }
   }
 
+  window.onpopstate = onHistoryChange
 }
 
 init()

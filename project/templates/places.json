@@ -4,6 +4,7 @@
   {% for place in places %}
   {
     "name": "{{ place.name }}",
+    "slug": "{{ place.slug }}",
     {% if place.latitude and place.longitude %}"coords": [{{ place.latitude}}, {{ place.longitude }}],{% endif %}
     {% if place.address %}"address": "{{ place.address }}",{% endif %}
     "shortDescription": "{{ place.short_description }}",

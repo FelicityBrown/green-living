@@ -7,34 +7,34 @@
 
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-	<meta name="description" content="Discover Brighton & Hove's eco-friendly shops, cafés, restaurants and more."/>
+	<meta name="description" content="{% block meta_description %}Discover Brighton & Hove's eco-friendly shops, cafés, restaurants and more.{% endblock %}"/>
 
 	<link rel="shortcut icon" type="image/x-icon" href="/static/img/favicon.png" />
 
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
 	<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
 	<link rel="stylesheet" href="/static/css/style.css?{% version_date %}">
 	<!-- <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">  -->
 	<!-- <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">  -->
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Raleway&display=swap" rel="stylesheet">
 
-    <meta property="og:locale" content="en_GB" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Green Living Brighton" />
-    <meta property="og:description" content="Discover Brighton & Hove's eco-friendly shops, cafés, restaurants and more." />
-    <meta property="og:url" content="https://greenliving.earth/" />
-    <meta property="og:site_name" content="Green Living Brighton" />
-    <meta property="og:image" content="https://greenliving.earth/static/img/avatar.png" />
-    <meta property="og:image:secure_url" content="https://greenliving.earth/static/img/avatar.png" />
-    <meta property="og:image:width" content="1080" />
-	<meta property="og:image:height" content="1080" />
+	<meta property="og:locale" content="en_GB" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="{% block og_title %}Green Living Brighton{% endblock og_title %}" />
+	<meta property="og:description" content="{% block og_description %}Discover Brighton & Hove's eco-friendly shops, cafés, restaurants and more.{% endblock %}" />
+	<meta property="og:url" content="{% block og_url %}https://greenliving.earth/{% endblock og_url %}" />
+	<meta property="og:site_name" content="Green Living Brighton" />
+	<meta property="og:image" content="{% block og_image %}https://greenliving.earth/static/img/avatar.png{% endblock og_image %}" />
+	<meta property="og:image:secure_url" content="{% block og_image_secure %}https://greenliving.earth/static/img/avatar.png{% endblock og_image_secure %}" />
+	<meta property="og:image:width" content="{% block og_image_width %}1080{% endblock og_image_width %}" />
+	<meta property="og:image:height" content="{% block og_image_height %}1080{% endblock og_image_height %}" />
 
 	<meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Green Living Brighton" />
-    <meta name="twitter:description" content="Discover Brighton & Hove's eco-friendly shops, cafés, restaurants and more." />
-    <!-- <meta name="twitter:site" content="@" /> -->
-    <meta name="twitter:image" content="https://greenliving.earth/static/img/avatar.png" />
-    <!-- <meta name="twitter:creator" content="@" /> -->
+	<meta name="twitter:title" content="{% block twitter_title %}Green Living Brighton{% endblock twitter_title %}" />
+	<meta name="twitter:description" content="{% block twitter_description %}Discover Brighton & Hove's eco-friendly shops, cafés, restaurants and more.{% endblock %}" />
+	<meta name="twitter:site" content="@greenlivingapp" />
+	<meta name="twitter:image" content="{% block twitter_image %}https://greenliving.earth/static/img/avatar.png{% endblock twitter_image %}" />
+	<!-- <meta name="twitter:creator" content="@" /> -->
 
 	{% block extra_head %}{% endblock extra_head %}
 </head>

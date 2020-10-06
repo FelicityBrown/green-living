@@ -1,8 +1,9 @@
 from django.conf import settings
 from django.core.mail import send_mail
 from django.http import HttpResponseRedirect
-from django.shortcuts import render
+from django.shortcuts import get_object_or_404, render
 from project.places.models import Place
+
 
 def places_api(request):
     places = Place.objects.filter(approved=True)
@@ -10,6 +11,7 @@ def places_api(request):
         'places': places
     }
     return render(request, 'places.json', context, content_type='text/json')
+
 
 def add_listing(request):
     if request.method == 'POST':
@@ -49,3 +51,10 @@ Your email address (optional): {request.POST.get('useremail')}
 
     else:
         return render(request, 'add_listing.html')
+
+
+def place_landing(request, slug):
+    context = {
+        'place': get_object_or_404(Place, slug=slug)
+    }
+    return render(request, 'index.html', context)

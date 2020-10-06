@@ -17,7 +17,7 @@ services:
     build:
       context: .
     ports:
-      - "8001:80"
+      - "8000:80"
     environment:
       ENV: dev
       POSTGRES_HOST: postgres
