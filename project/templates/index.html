@@ -17,191 +17,197 @@
 {% block twitter_image %}{% if place %}https://greenliving.earth{% thumbnail place.thumbnail 1920x1080 crop quality=65 %}{% else %}https://greenliving.earth/static/img/avatar.png{% endif %}{% endblock %}
 
 {% block content %}
-	<div id="mainmapview">
-		<div id="sidebar">
-			
-			<div id="sidebarcolumn"{% if place %} class="showinghidden"{% endif %}>
-				<div id="primarysidebar">
-					<div id="sidebarfilter">
-						<img id="filterlogo" src="/static/img/filterlist.svg"/>
-						<h4>Filter</h4>
-						<form action = " ">
-							<fieldset>
-								<span>
-									<input type = "checkbox"
-										id = "chkPlasticFree"
-										value = "Plastic Free"
-									/>
-									<label for = "chkPlasticFree">Plastic Free</label>
-								</span>
-								<span>
-									<input type = "checkbox"
-										id = "chkPlantBased"
-										value = "Plant Based"
-									/>
-									<label for = "chkPlantBased">Plant Based</label>
-								</span>
-								<span>
-									<input type = "checkbox"
-										id = "chkHealthandWellbeing"
-										value = "Health & Wellbeing"
-									/>
-									<label for = "chkHealthandWellbeing">Health & Wellbeing</label>
-								</span>
-								<span>
-									<input type = "checkbox"
-										id = "chkSustainableDining"
-										value = "Sustainable Dining"
-									/>
-									<label for = "chkSustainableDining">Sustainable Dining</label>
-								</span>	
-								<span>
-									<input type = "checkbox"
-										id = "chkUpcycling"
-										value = "Upcycling"
-									/>
-									<label for = "chkUpcycling">Upcycling</label>
-								</span>
-								<span>
-									<input type = "checkbox"
-										id = "chkClothing"
-										value = "Clothing"
-									/>
-									<label for = "chkClothing">Clothing</label>
-								</span>
-								<span>
-									<input type = "checkbox"
-										id = "chkChildren"
-										value = "Children"
-											/>
-											<label for = "chkChildren">Children</label>
-								</span>
-								<span>
-									<input type = "checkbox"
-										id = "chkFoodWaste"
-										value = "Food Waste"
-									/>
-									<label for = "chkFoodWaste">Food Waste</label>
-								</span>
-								<span>
-									<input type = "checkbox"
-										id = "chkOther"
-										value = "Other"
-									/>
-									<label for = "chkOther">Other</label>
-								</span>
+  <div id="mainmapview">
+    <div id="sidebar">
 
-								<button type = "button"
-									onclick = "filter()">
-								Search
-								</button>
-								<button type = "reset"
-									onclick = "resetFilters()">
-									Reset
-								</button>
-							</fieldset>
-						</form>
-					</div>
+      <div id="sidebarcolumn"{% if place %} class="showinghidden"{% endif %}>
+        <div id="primarysidebar">
+          <div id="sidebarfilter">
+            <img id="filterlogo" src="/static/img/filterlist.svg"/>
+            <h4>Filter</h4>
+            <form action = " ">
+              <fieldset>
+                <span>
+                  <input type = "checkbox"
+                    id = "chkPlasticFree"
+                    value = "Plastic Free"
+                  />
+                  <label for = "chkPlasticFree">Plastic Free</label>
+                </span>
+                <span>
+                  <input type = "checkbox"
+                    id = "chkPlantBased"
+                    value = "Plant Based"
+                  />
+                  <label for = "chkPlantBased">Plant Based</label>
+                </span>
+                <span>
+                  <input type = "checkbox"
+                    id = "chkHealthandWellbeing"
+                    value = "Health & Wellbeing"
+                  />
+                  <label for = "chkHealthandWellbeing">Health & Wellbeing</label>
+                </span>
+                <span>
+                  <input type = "checkbox"
+                    id = "chkSustainableDining"
+                    value = "Sustainable Dining"
+                  />
+                  <label for = "chkSustainableDining">Sustainable Dining</label>
+                </span>
+                <span>
+                  <input type = "checkbox"
+                    id = "chkUpcycling"
+                    value = "Upcycling"
+                  />
+                  <label for = "chkUpcycling">Upcycling</label>
+                </span>
+                <span>
+                  <input type = "checkbox"
+                    id = "chkClothing"
+                    value = "Clothing"
+                  />
+                  <label for = "chkClothing">Clothing</label>
+                </span>
+                <span>
+                  <input type = "checkbox"
+                    id = "chkChildren"
+                    value = "Children"
+                      />
+                      <label for = "chkChildren">Children</label>
+                </span>
+                <span>
+                  <input type = "checkbox"
+                    id = "chkFoodWaste"
+                    value = "Food Waste"
+                  />
+                  <label for = "chkFoodWaste">Food Waste</label>
+                </span>
+                <span>
+                  <input type = "checkbox"
+                    id = "chkOther"
+                    value = "Other"
+                  />
+                  <label for = "chkOther">Other</label>
+                </span>
 
-					<div id="sidebarlistitemscontainer">
-						<div id="sidebarlistitems"></div>
-					</div>
+                <button type = "button"
+                  onclick = "filter()">
+                Search
+                </button>
+                <button type = "reset"
+                  onclick = "resetFilters()">
+                  Reset
+                </button>
+              </fieldset>
+            </form>
+          </div>
 
-					<div id="mapmobile"></div>
+          <div id="sidebarlistitemscontainer">
+            <div id="sidebarlistitems"></div>
+          </div>
 
-					<div id="fab" onclick="toggleMobileListMap()">
-						<img id="fabmap" src="/static/img/map-24px.svg"/>
-						<img id="fablist" src="/static/img/format_list_bulleted-24px.svg"/>
-					</div>
-				</div>
-			
-				<div id="popupsidebar">
-					{% if place %}
-						<img class="icon icon-back" onclick="hideHiddenSidebar()" src="/static/img/backarrow.svg">
-						<div>
-							<span id="businesslogo"><img src="{% thumbnail place.business_logo 360x360 quality=65 %}"></span>	
-							<div id="aboutbusinesssection">
-								<h2 id="sidebarplacename">{{ place.name }}</h2>
-								<span id="sidebartags">
-									{% for tag in place.api_tags %}<span>{{ tag }}</span>{% endfor %}
-								</span>
-								<div class="storeaddress" id="storeaddress"><img src="/static/img/business.svg"><ul>{{ place.address }}</ul></div>
-								<div class="openinghours" id="openinghours"><img src="/static/img/calendarsymbol.svg"><ul>
-									{% with place.opening_hours|split:"\n" as opening_hours %}
-										{% for line in opening_hours %}
-											{{ line }}<br/>
-										{% endfor %}
-									{% endwith %}
-								</ul></div>
-								<div class="websitelink">
-									<img src="/static/img/web.svg">
-									<ul id="websitelink"><a href="{{ place.website_link }}">{{ place.website_link }}</a></ul>
-								</div>
-							</div>		
-							<div class="longdescription">
-								<div id="longdescription">
-									{% with place.long_description|split:"\n\n" as long_description %}
-										{% for line in long_description %}
-											<p>{{ line }}</p>
-										{% endfor %}
-									{% endwith %}
-								</div>
-							</div>
-							<div class="hiddenimagesrow" id="hiddenimagesrow">
-								{% if place.photo1 %}<img class="hiddenimages" src="{% thumbnail place.photo1 368x400 crop quality=65 %}">{% endif %}
-								{% if place.photo2 %}<img class="hiddenimages" src="{% thumbnail place.photo2 368x400 crop quality=65 %}">{% endif %}
-							</div>
-						</div>
-					{% else %}
-						<img class="icon icon-back" onclick="hideHiddenSidebar()" src="/static/img/backarrow.svg"/>
-						<div>
-							<span id="businesslogo"></span>	
-							<div id="aboutbusinesssection">
-								<h2 id="sidebarplacename"></h2>
-									<span id="sidebartags"></span>
-									<div class="storeaddress" id="storeaddress"></div>
-									<div class="openinghours" id="openinghours"></div>
-									<div class="websitelink">
-										<img src="/static/img/web.svg">
-										<ul id="websitelink"></ul>
-									</div>
-								</div>
-								<div class="longdescription">
-									<p id="longdescription"></p>
-								</div>
-								<div class="hiddenimagesrow" id="hiddenimagesrow">	
-							</div>
-						</div>
-					{% endif %}
-				</div>
-				
-			</div>
-		</div>
+          <div id="mapmobile"></div>
 
-		<div id="mapdesktop"></div>
+          <div id="fab" onclick="toggleMobileListMap()">
+            <img id="fabmap" src="/static/img/map-24px.svg"/>
+            <img id="fablist" src="/static/img/format_list_bulleted-24px.svg"/>
+          </div>
+        </div>
+
+        <div id="popupsidebar">
+          <img class="icon icon-back" onclick="hideHiddenSidebar()" src="/static/img/backarrow.svg">
+          <div itemscope itemtype="http://schema.org/LocalBusiness">
+            <span id="businesslogo">
+              {% if place and place.business_logo %}
+                <img src="{% thumbnail place.business_logo 360x360 quality=65 %}" itemprop="logo">
+              {% endif %}
+            </span>
+            <div id="aboutbusinesssection">
+              <h2 id="sidebarplacename" itemprop="name">{% if place %}{{ place.name }}{% endif %}</h2>
+              <span id="sidebartags">
+                {% if place and place.api_tags %}
+                  {% for tag in place.api_tags %}<span>{{ tag }}</span>{% endfor %}
+                {% endif %}
+              </span>
+              <div class="storeaddress" id="storeaddress" itemprop="geo" itemscope itemtype="https://schema.org/GeoCoordinates">
+                {% if place %}
+                  <img src="/static/img/business.svg">
+                  <ul itemprop="address">{{ place.address }}</ul>
+                  {% if place.latitude and place.longitude %}
+                    <meta itemprop="latitude" content="{{ place.latitude }}" />
+                    <meta itemprop="longitude" content="{{ place.longitude }}" />
+                  {% endif %}
+                {% endif %}
+              </div>
+              <div class="openinghours" id="openinghours">
+                {% if place and place.opening_hours %}
+                  <img src="/static/img/calendarsymbol.svg">
+                  <ul itemprop="openingHours">
+                    {% with place.opening_hours|split:"\n" as opening_hours %}
+                      {% for line in opening_hours %}
+                        {{ line }}<br/>
+                      {% endfor %}
+                    {% endwith %}
+                  </ul>
+                {% endif %}
+              </div>
+              <div class="websitelink">
+                <img src="/static/img/web.svg">
+                <ul id="websitelink">{% if place and place.website_link %}<a href="{{ place.website_link }}" itemprop="url">{{ place.website_link }}</a>{% endif %}</ul>
+              </div>
+              <meta itemprop="publicAccess" content="true" />
+              <meta itemprop="currenciesAccepted" content="GBP" />
+              <meta itemprop="priceRange" content="$$" />
+              <meta itemprop="isAccessibleForFree" content="true" />
+              <meta itemprop="hasPOS" content="{% if place %}{% if place.address %}true{% else %}false{% endif %}{% endif %}" />
+            </div>
+            <div class="longdescription">
+              <div id="longdescription" itemprop="description">
+                {% if place %}
+                  {% with place.long_description|split:"\n\n" as long_description %}
+                    {% for line in long_description %}
+                      <p>{{ line }}</p>
+                    {% endfor %}
+                  {% endwith %}
+                {% endif %}
+              </div>
+            </div>
+            <div class="hiddenimagesrow" id="hiddenimagesrow">
+              {% if place %}
+                {% if place.photo1 %}<img class="hiddenimages" src="{% thumbnail place.photo1 368x400 crop quality=65 %}" itemprop="image">{% endif %}
+                {% if place.photo2 %}<img class="hiddenimages" src="{% thumbnail place.photo2 368x400 crop quality=65 %}" itemprop="image">{% endif %}
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="mapdesktop"></div>
 
 {% endblock content %}
 
 {% block body_end %}
-	<div class="modal">
-		<div class="modal-content">
-			<span class="close-btn">&times;</span>
-			<p>Thank you so much for suggesting a new place to add to our map, we really value you helping us build this community.</p>
-			<p>Together we can use our shared knowledge and values to make a difference locally and across the world.</p>
-			<p>If you've left your email address we will let you know if your suggestion is added.</p>
-		</div>
+  <div class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <p>Thank you so much for suggesting a new place to add to our map, we really value you helping us build this community.</p>
+      <p>Together we can use our shared knowledge and values to make a difference locally and across the world.</p>
+      <p>If you've left your email address we will let you know if your suggestion is added.</p>
+    </div>
   </div>
 
-	<script type="text/javascript" src="/static/js/leaflet.smoothmarkerbouncing.js"></script>
-	<script src="/static/js/index.js?{% version_date %}"></script>
-	{% if place %}
-		<script type="text/javascript">
-			if (history) {
-				history.replaceState({placeSlug: '{{ place.slug }}'}, '{{ place.name }} — Green Living Brighton', '/place/{{ place.slug }}/')
-			}
-			setTimeout(function() {
-				zoomToMarkerBySlug('{{ place.slug }}')
-			}, 5000)
-		</script>
-	{% endif %}
+  <script type="text/javascript" src="/static/js/leaflet.smoothmarkerbouncing.js"></script>
+  <script src="/static/js/index.js?{% version_date %}"></script>
+  {% if place %}
+    <script type="text/javascript">
+      if (history) {
+        history.replaceState({placeSlug: '{{ place.slug }}'}, '{{ place.name }} — Green Living Brighton', '/place/{{ place.slug }}/')
+      }
+      setTimeout(function() {
+        zoomToMarkerBySlug('{{ place.slug }}')
+      }, 5000)
+    </script>
+  {% endif %}
 {% endblock body_end %}

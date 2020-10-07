@@ -106,20 +106,23 @@ function showHiddenSidebar(index, pushHistory=true) {
   document.getElementById('storeaddress').innerText = place.address
   document.getElementById('storeaddress').innerHTML = null
   if (place.address) {
-    var addressHtml = '<img src="/static/img/business.svg"><ul>'+place.address+'</ul>'
+    var addressHtml = '<img src="/static/img/business.svg"><ul itemprop="address">'+place.address+'</ul>'
+    if (place.coords) {
+      addressHtml + '<meta itemprop="latitude" content="' + place.coords[0] + '" /><meta itemprop="longitude" content="' + place.coords[1] + '" />'
+    }
     document.getElementById('storeaddress').innerHTML = addressHtml
   }
 
   // Logo
   document.getElementById('businesslogo').innerHTML = null
   if (place.businessLogo) {
-    document.getElementById('businesslogo').innerHTML = '<img src="'+place.businessLogo+'" />'
+    document.getElementById('businesslogo').innerHTML = '<img src="'+place.businessLogo+'" itemprop="logo" />'
   }
   
   // Opening hours
   document.getElementById('openinghours').innerHTML = null
   if (place.openingHours) {
-    var openingHoursHtml = '<img src="/static/img/calendarsymbol.svg"><ul>'
+    var openingHoursHtml = '<img src="/static/img/calendarsymbol.svg"><ul itemprop="openingHours">'
     for (var line of place.openingHours) {
       openingHoursHtml += line + '<br/>'
     }
@@ -130,7 +133,7 @@ function showHiddenSidebar(index, pushHistory=true) {
   // Website link
   document.getElementById('websitelink').innerHTML = null
   if (place.websiteLink) {
-    var websiteLink = '<a href="'+place.websiteLink+'">'+place.websiteLink+'</a>'
+    var websiteLink = '<a href="'+place.websiteLink+'" itemprop="url">'+place.websiteLink+'</a>'
     document.getElementById('websitelink').innerHTML = websiteLink
   }
 
@@ -151,7 +154,7 @@ function showHiddenSidebar(index, pushHistory=true) {
     var photosHtml = ''
     for (var i=0; i < place.photos.length; i++) {
       var photo = place.photos[i]
-      photosHtml += '<img class="hiddenimages" src="'+photo+'"/>'
+      photosHtml += '<img class="hiddenimages" src="'+photo+'" itemprop="image"/>'
     }
     document.getElementById('hiddenimagesrow').innerHTML = photosHtml
   }
