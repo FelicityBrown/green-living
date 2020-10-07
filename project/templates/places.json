@@ -1,5 +1,6 @@
 {% load text thumbnail cache %}
 {% cache 604800 api_places %}
+{% autoescape off %}
 [
   {% for place in places %}
   {
@@ -40,4 +41,5 @@
   }{% if not forloop.last %},{% endif %}
   {% endfor %}
 ]
+{% endautoescape %}
 {% endcache %}
