@@ -84,7 +84,7 @@ function showHiddenSidebar(index, pushHistory=true) {
 
   document.title = place.name +  ' — Green Living Brighton'
   if (history && pushHistory) {
-    history.pushState({placeSlug: place.slug}, place.name +  ' — Green Living Brighton', '/place/' + place.slug)
+    history.pushState({placeSlug: place.slug}, place.name +  ' — Green Living Brighton', '/place/' + place.slug + '/')
   }
 
   // Title
