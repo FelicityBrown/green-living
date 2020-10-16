@@ -22,7 +22,7 @@ class Place(models.Model):
     long_description    = models.TextField(blank=True, null=True)
     photo1              = FilerImageField(related_name='place_photo1', blank=True, null=True, on_delete=models.SET_NULL)
     photo2              = FilerImageField(related_name='place_photo2', blank=True, null=True, on_delete=models.SET_NULL)
-    slug                = models.SlugField()
+    slug                = models.SlugField(unique=True)
     approved            = models.BooleanField(default=False)
     created_at          = models.DateTimeField(blank=True, null=True)
 
