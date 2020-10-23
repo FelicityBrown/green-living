@@ -77,7 +77,11 @@ function resetFilters(e) {
   centerMap()
 }
 
-function showHiddenSidebar(index, pushHistory=true) {
+function showHiddenSidebar(index, pushHistory) {
+  if (pushHistory === undefined) {
+    pushHistory = true
+  }
+
   // Given an index of a place, update the sidebar details with the place info, then display it
   var el = document.getElementById('sidebarcolumn')
   var place = places[index]
@@ -171,7 +175,10 @@ function showHiddenSidebar(index, pushHistory=true) {
   }
 }
 
-function slowHiddenSidebarBySlug(slug, pushHistory=true) {
+function slowHiddenSidebarBySlug(slug, pushHistory) {
+  if (pushHistory === undefined) {
+    pushHistory = true
+  }
   places.find(function(element, index) {
     if (element.slug == slug) {
       showHiddenSidebar(index, pushHistory)
@@ -179,7 +186,10 @@ function slowHiddenSidebarBySlug(slug, pushHistory=true) {
   })
 }
 
-function hideHiddenSidebar(pushHistory=true) {
+function hideHiddenSidebar(pushHistory) {
+  if (pushHistory === undefined) {
+    pushHistory = true
+  }
   // Remove class name, causing CSS to hide the detailed content and go back to the list/map view
   var el = document.getElementById('sidebarcolumn')
   el.className = ''
@@ -356,19 +366,18 @@ function onHistoryChange(event) {
   if (event.state) {
     console.log(event.state)
     if (event.state.placeSlug) {
-      slowHiddenSidebarBySlug(event.state.placeSlug, pushHistory=false)
+      slowHiddenSidebarBySlug(event.state.placeSlug, false)
       zoomToMarkerBySlug(event.state.placeSlug)
     }
     else {
-      hideHiddenSidebar(pushHistory=false)
+      hideHiddenSidebar(false)
       resetZoom()
     }
   }
 }
 
 function initModal() {
-  var urlParams = new URLSearchParams(window.location.search)
-  if (urlParams.get('thankyou')) {
+  if (window.location.search.indexOf('thankyou') > -1) {
     var modalBtn = document.getElementById("modal-btn")
     var modal = document.querySelector(".modal")
     var closeBtn = document.querySelector(".close-btn")
