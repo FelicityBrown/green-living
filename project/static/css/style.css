@@ -165,7 +165,7 @@ h6 {
 #sidebarlistitemscontainer {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-  flex-basis: 100%;
+  flex: 1;
 }
 
 #popupsidebar {
