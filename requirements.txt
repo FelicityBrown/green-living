@@ -1,4 +1,4 @@
-django==2.2.13
+django==2.2.20
 django-filer==1.6.0
 easy_thumbnails==2.7
 gunicorn==19.9.0
