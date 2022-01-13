@@ -2,5 +2,5 @@ django==2.2.13
 django-filer==1.6.0
 easy_thumbnails==2.7
 gunicorn==19.9.0
-Pillow==7.1.0
+Pillow==9.0.0
 psycopg2-binary==2.8.4
