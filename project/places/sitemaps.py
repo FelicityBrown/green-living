@@ -11,7 +11,7 @@ class PlacesSitemap(sitemaps.Sitemap):
     changefreq = 'monthly'
 
     def items(self):
-        return [(place.slug, place.created_at) for place in Place.objects.filter(approved=True)]
+        return [(place.slug, place.updated_at) for place in Place.objects.filter(approved=True)]
 
     def priority(self, item):
         priorities = {

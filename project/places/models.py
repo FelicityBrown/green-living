@@ -25,6 +25,7 @@ class Place(models.Model):
     slug                = models.SlugField(unique=True)
     approved            = models.BooleanField(default=False)
     created_at          = models.DateTimeField(blank=True, null=True)
+    updated_at          = models.DateTimeField(blank=True, null=True)
 
     class Meta:
         ordering = ['name']
@@ -36,6 +37,7 @@ class Place(models.Model):
         now = timezone.now()
         if not self.created_at:
             self.created_at = now
+        self.updated_at = now
         super(Place, self).save()
 
         # Clear cache
