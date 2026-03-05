@@ -11,9 +11,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '#u+uuq7$#6b8)2$%10@pcreq-v)t_7rrg$_2tqsi68z3=o-v8s'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('ENV') != 'prd'
+DEBUG = os.environ.get('ENV', 'prd') != 'prd'
 
-ALLOWED_HOSTS = ['localhost', 'greenliving.earth']
+ALLOWED_HOSTS = ['localhost', '.greenliving.earth']
 
 
 # Application definition
