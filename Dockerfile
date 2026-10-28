@@ -1,6 +1,8 @@
 FROM python:3.6.9-slim-buster
 
-RUN apt-get update && \
+# Debian buster is end-of-life and its packages have moved to archive.debian.org.
+RUN sed -i 's|deb.debian.org/debian|archive.debian.org/debian|; s|security.debian.org/debian-security|archive.debian.org/debian-security|; /buster-updates/d' /etc/apt/sources.list && \
+    apt-get update && \
     apt-get install -y \
         nginx-light \
         supervisor \
