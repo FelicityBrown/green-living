@@ -42,7 +42,7 @@ Your email address (optional): {request.POST.get('useremail')}
         send_mail(
             'New Green Living Add Listing Request - ' + request.POST.get('company_name'),
             email_body,
-            settings.EMAIL_HOST_USER,
+            settings.DEFAULT_FROM_EMAIL,
             [settings.EMAIL_SUBMISSION_RECIPIENT],
             fail_silently=False,
         )
